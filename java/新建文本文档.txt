@@ -1,0 +1,32 @@
+import java.util.scanner;
+public class CalendarDemo
+{
+       public static void main(String[] args)
+       {
+            Scanner in = new Sanner(System.in);
+            System.out.println("请输入年份");
+            int year = in.nextInt();
+            System.out.println("请输入月份");
+            int month = in.nextInt();
+            int sum = 0;
+
+            for(int i=1900;i<year;i++){
+               if(i%4==0&&i%100!=0 || i%400==0){
+          
+                   sum = sum + 366;
+                }else{
+                   sum = sum + 365;
+                  }
+              }
+
+             
+            for(int i=1;i<mouth;i++){
+               if(i==2){
+                          (i%4==0&&i%100!=0 || i%400==0){
+          
+                   sum = sum + 366;
+                }else{
+                   sum = sum + 365;
+                  }
+              }
+

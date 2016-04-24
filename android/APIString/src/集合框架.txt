@@ -1,0 +1,111 @@
+1.添加。
+  boolean add(Object obj);
+  boolean addAll(Collection coll);
+  
+2.删除。
+  boolean remove(Object obj);
+  boolean removeAll(Collection coll);
+  void clear();
+  
+3.判断。
+  boolean contains(Object obj);
+  boolean containAll(Collection coll);
+  boolean isEmpty();判断集合中是否有元素。
+  
+4.获取。
+  int  size();
+  Iterator iterator();取出元素的方式：迭代器。
+       该对象必须依赖于具体容器，因为每一个容器的数据结构都不同。
+       所以该迭代器对象是在容器中进行内部实现的。
+       对于使用容器而言，具体的实现不重要，只要通过容器获取到该实现的迭代器的对象即可。
+       也就是iterator发法。
+       
+5.其他
+  boolean retainAll(Collection coll);取交集。
+  Object[] toArray():将集合转换成数组。
+  
+  
+---------------------------------------
+Collection
+    |--List:有序（存入和取出的顺序一致），元素都有索引（角标），元素可以重复。
+    |--Set:元素不能重复。无序。
+    
+List：特有的常见方法：有一个共性特点就是都可以操作角标。
+1.添加：
+
+
+
+
+
+
+2.删除：
+  Object remove(index);
+
+
+
+
+3.修改：
+  Object set(index,element);
+
+
+
+4.获取：
+   Object get(index);
+   int indexOf(object);
+   int lastIndexOf(object);
+   List subList(from,to);
+   
+list集合是可以完成对元素的增删改查。
+
+
+List:
+    |--Vector:内部 是数组数据结构，是同步的。增删，查询都很慢。
+    |--ArrayList:内部是数组数据结构，是不同步的。替代了Vector。查询的速度快。
+    |--LinkedList:内部是链表数据结构，是不同步的。增删元素的速度很快。
+    
+LinkedList:
+    addfirst();
+    addLast();
+    
+    
+    getFirst();//获取但不移除，如果链表为空，抛出NoSuchElementException
+    getLast();
+    jdk1.6
+    peekFirst();//获取但不移除，如果链表为空，返回null。
+    PeekLast();
+    
+    removeFirst();获取并移除，如果链表为空，抛出NoSuchElementException
+    removeLast();
+    jdk1.6
+    pollFirst();获取并移除，如果链表为空，返回null。
+    pollLast();
+    
+    
+    
+-----------------------------------------------
+
+Set:元素不可以重复。是无序。
+    Set接口中的方法和Collection一致。
+    |--HashSet
+    |--TreeSet
+
+
+|--HashSet
+    如果对象的hashCode值不同，那么不用判断equals方法，就直接存储到哈希表中。
+    如果对象的hashCode值相同，那么要再次判断对象的equals方法是否为true.
+    如果为true，视为相同元素，不存。如果为false，那么视为不同元素，就进行存储。
+    
+ 记住：如果元素要存储到HashSet集合中，就必须覆盖hashcode方法和equals方法。
+ 一般情况下，如果定义的类会产生很多对象，比如人，学生，书，通常都要覆盖equals，hashcode方法。
+ 建立对象判断是否相同的依据。
+ 
+ 
+ 、|--TreeSet:可以对Set集合中的元素进行排序。是不同步的。
+             判断元素唯一性的方式：就是根据比较方法的返回结果是否是0，是0就是相同元素不存。
+    让元素自身具备比较功能，元素就需要实现Comparable接口，覆盖 comparaTo方法。
+    
+     如果不要按照对象中具备的自然顺序进行排序。如果对象中不具备自然顺序，怎么办？
+     可以使用TreeSet集合的第二种排序方式：
+     让集合自身具备比较功能，定义一个类实现ComparabOr接口，覆盖compara方法。
+     将该类对象作为参数传递给TreeSet集合的构造函数。
+    

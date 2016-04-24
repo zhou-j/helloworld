@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/nameET"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="请输入文件名"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/contentET"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nameET"
+        android:layout_below="@+id/nameET"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:hint="请输入文件内容"
+        android:inputType="textMultiLine"
+        android:minLines="3" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:onClick="onClick"
+        android:id="@+id/sdBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/contentET"
+        android:layout_below="@+id/contentET"
+        android:layout_marginTop="32dp"
+        android:text="保存到SD卡" />
+
+    <Button
+        android:onClick="onClick"
+        android:id="@+id/romBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sdBT"
+        android:layout_alignBottom="@+id/sdBT"
+        android:layout_alignRight="@+id/contentET"
+        android:layout_marginRight="27dp"
+        android:text="保存到手机" />
+
+</RelativeLayout>

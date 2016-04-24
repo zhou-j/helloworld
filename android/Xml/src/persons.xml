@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<persons>
+	<person id="1">
+		<name>范冰冰</name>
+		<age>31</age>
+	</person>
+	<person id="2">
+		<name>林志玲</name>
+		<age>38</age>
+	</person>
+	<person id="3">
+		<name>杨幂</name>
+		<age>26</age>
+	</person>
+</persons>

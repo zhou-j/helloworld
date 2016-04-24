@@ -1,0 +1,32 @@
+给非同步的集合加锁。
+
+class MyCollections{
+   Public List synList(List list){
+            return  new  MyList(list)
+            }
+ }
+private class MyList implements List{
+   
+   private List list;
+   
+   private static final Object lock  = new Object();
+   MyList(List list){
+       this.list = list;
+   }
+   public boolean add(Object obj){
+     synchronized(lock)
+     {
+      return list.add(obj);
+      
+      }
+    }
+    
+    public boolean remove(Object obj){
+    synchronized(lock)
+    {
+      return list.remove(obj);
+    }
+    }
+  }    
+      
+   

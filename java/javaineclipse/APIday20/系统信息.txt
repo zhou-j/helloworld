@@ -1,0 +1,61 @@
+java.runtime.name::Java(TM) SE Runtime Environment
+sun.boot.library.path::C:\Program Files\Java\jdk1.8.0_05\jre\bin
+java.vm.version::25.5-b02
+java.vm.vendor::Oracle Corporation
+java.vendor.url::http://java.oracle.com/
+path.separator::;
+java.vm.name::Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg::sun.io
+user.script::
+user.country::CN
+sun.java.launcher::SUN_STANDARD
+sun.os.patch.level::
+java.vm.specification.name::Java Virtual Machine Specification
+user.dir::C:\Users\jojo\workspace\APIday20
+java.runtime.version::1.8.0_05-b13
+java.awt.graphicsenv::sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs::C:\Program Files\Java\jdk1.8.0_05\jre\lib\endorsed
+os.arch::amd64
+java.io.tmpdir::C:\Users\jojo\AppData\Local\Temp\
+line.separator::
+
+java.vm.specification.vendor::Oracle Corporation
+user.variant::
+os.name::Windows 8
+sun.jnu.encoding::GBK
+java.library.path::C:\Program Files\Java\jdk1.8.0_05\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk1.8.0_05/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_05/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_05/bin/../jre/lib/amd64;C:\Program Files\Java\jdk1.8.0_05\bin;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;c:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Users\jojo\Downloads\eclipse-java-luna-SR1-win32-x86_64\eclipse;;.
+java.specification.name::Java Platform API Specification
+java.class.version::52.0
+sun.management.compiler::HotSpot 64-Bit Tiered Compilers
+os.version::6.2
+user.home::C:\Users\jojo
+user.timezone::GMT+08:00
+java.awt.printerjob::sun.awt.windows.WPrinterJob
+file.encoding::GBK
+java.specification.version::1.8
+user.name::jojo
+java.class.path::C:\Users\jojo\workspace\APIday20\bin
+java.vm.specification.version::1.8
+sun.arch.data.model::64
+java.home::C:\Program Files\Java\jdk1.8.0_05\jre
+sun.java.command::cn.itcast.other.system.SystemDemo
+java.specification.vendor::Oracle Corporation
+user.language::zh
+awt.toolkit::sun.awt.windows.WToolkit
+java.vm.info::mixed mode
+java.version::1.8.0_05
+java.ext.dirs::C:\Program Files\Java\jdk1.8.0_05\jre\lib\ext;C:\Windows\Sun\Java\lib\ext
+sun.boot.class.path::C:\Program Files\Java\jdk1.8.0_05\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_05\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_05\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_05\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_05\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_05\jre\lib\jfr.jar
+java.vendor::Oracle Corporation
+file.separator::\
+java.vendor.url.bug::http://bugreport.sun.com/bugreport/
+sun.cpu.endian::little
+sun.io.unicode.encoding::UnicodeLittle
+sun.desktop::windows
+sun.cpu.isalist::amd64
+
+
+
+
+=========================================================
+java.util.GregorianCalendar[time=1429923506863,areFieldsSet=true,areAllFieldsSet=true,lenient=true,zone=sun.util.calendar.ZoneInfo[id="GMT+08:00",offset=28800000,dstSavings=0,useDaylight=false,transitions=0,lastRule=null],firstDayOfWeek=1,minimalDaysInFirstWeek=1,ERA=1,YEAR=2015,MONTH=3,WEEK_OF_YEAR=17,WEEK_OF_MONTH=4,DAY_OF_MONTH=25,DAY_OF_YEAR=115,DAY_OF_WEEK=7,DAY_OF_WEEK_IN_MONTH=4,AM_PM=0,HOUR=8,HOUR_OF_DAY=8,MINUTE=58,SECOND=26,MILLISECOND=863,ZONE_OFFSET=28800000,DST_OFFSET=0]

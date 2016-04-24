@@ -1,0 +1,1090 @@
+11111111111111111111111111
+111111111111111111111111111
+11111111111111111111111
+11111111111111111111111
+11111111111111111111111
+====================================================================
+|--Program Files
+|  |--360se6
+|  |  |--Application
+|  |  |  |--360se.exe
+|  |  |  |--7.1.1.550
+|  |  |  |  |--360base.dll
+|  |  |  |  |--360bdoctor.exe
+|  |  |  |  |--360BDoctorExt
+|  |  |  |  |  |--bdoctor.dll
+|  |  |  |  |  |--bin
+|  |  |  |  |  |  |--360feedback.exe
+|  |  |  |  |--360cloudsdk.dll
+|  |  |  |  |--360dl.dll
+|  |  |  |  |--360ini.dll
+|  |  |  |  |--360mmbrowser.dll
+|  |  |  |  |--360netul.dll
+|  |  |  |  |--adblock
+|  |  |  |  |  |--adblock_0.dat
+|  |  |  |  |  |--adblock_1.dat
+|  |  |  |  |  |--adblock_2.dat
+|  |  |  |  |--adblock.zip
+|  |  |  |  |--afe.dll
+|  |  |  |  |--antilsp.dll
+|  |  |  |  |--Apps
+|  |  |  |  |  |--extsearchtab.dll
+|  |  |  |  |--audiomute.dll
+|  |  |  |  |--bimgs.dat
+|  |  |  |  |--chrome.dll
+|  |  |  |  |--chrome_100_percent.pak
+|  |  |  |  |--chrome_child.dll
+|  |  |  |  |--cloudurls.dat
+|  |  |  |  |--download
+|  |  |  |  |  |--atl71.dll
+|  |  |  |  |  |--dc.ini
+|  |  |  |  |  |--dl_peer_id.dll
+|  |  |  |  |  |--download_engine.dll
+|  |  |  |  |  |--id.dat
+|  |  |  |  |  |--MiniThunderPlatform.exe
+|  |  |  |  |  |--minizip.dll
+|  |  |  |  |  |--mini_unzip_dll.dll
+|  |  |  |  |  |--msvcp71.dll
+|  |  |  |  |  |--msvcr71.dll
+|  |  |  |  |  |--XLBugHandler.dll
+|  |  |  |  |  |--XLBugReport.exe
+|  |  |  |  |  |--zlib1.dll
+|  |  |  |  |--dswitcher
+|  |  |  |  |--eacl.dat
+|  |  |  |  |--extu3d.dll
+|  |  |  |  |--fancygame.ocx
+|  |  |  |  |--ffmpegsumo.dll
+|  |  |  |  |--flashplayercplapp.cpl
+|  |  |  |  |--icudt.dll
+|  |  |  |  |--iecompat
+|  |  |  |  |--installer
+|  |  |  |  |  |--360net.dll
+|  |  |  |  |  |--360p2sp.dll
+|  |  |  |  |  |--chrome.core.7z
+|  |  |  |  |  |--chrome.ext.7z
+|  |  |  |  |  |--chromeup.dll
+|  |  |  |  |  |--liveupd360.dll
+|  |  |  |  |  |--pdown.dll
+|  |  |  |  |  |--safelive.dll
+|  |  |  |  |  |--setup.exe
+|  |  |  |  |  |--seup.exe
+|  |  |  |  |  |--uninstall.ico
+|  |  |  |  |  |--updatecache.dat
+|  |  |  |  |--khtn.bin
+|  |  |  |  |--libpeerconnection.dll
+|  |  |  |  |--Locales
+|  |  |  |  |  |--en-us.pak
+|  |  |  |  |  |--zh-cn.pak
+|  |  |  |  |--mobileadapter.dll
+|  |  |  |  |--mobile_list.dat
+|  |  |  |  |--navhome.htm
+|  |  |  |  |--newpages.zip
+|  |  |  |  |--newpages_incognito.zip
+|  |  |  |  |--new_historys.zip
+|  |  |  |  |--npswf32_11_6_602_180.dll
+|  |  |  |  |--options.zip
+|  |  |  |  |--pattern
+|  |  |  |  |--pdf.dll
+|  |  |  |  |--plugin.vch
+|  |  |  |  |--plugins
+|  |  |  |  |  |--itrusenroll.dll
+|  |  |  |  |  |--np-mswmp.dll
+|  |  |  |  |  |--npaliedit.dll
+|  |  |  |  |  |--npalissologin.dll
+|  |  |  |  |  |--npcombrg.dll
+|  |  |  |  |  |--npfancygame.dll
+|  |  |  |  |  |--pta.dll
+|  |  |  |  |--pproc.dat
+|  |  |  |  |--preset_j.dat
+|  |  |  |  |--ProcSpeciaData.dat
+|  |  |  |  |--resources.pak
+|  |  |  |  |--safe505.dll
+|  |  |  |  |--seappmgr.dll
+|  |  |  |  |--seerrors.zip
+|  |  |  |  |--sehome.zip
+|  |  |  |  |--selast.zip
+|  |  |  |  |--sepro.dll
+|  |  |  |  |--seregedit.dll
+|  |  |  |  |--sesafe.dll
+|  |  |  |  |--sesvc.exe
+|  |  |  |  |--setdefbrowser.dll
+|  |  |  |  |--se_flags.ini
+|  |  |  |  |--se_plugin_hung.dmp
+|  |  |  |  |--se_renderer-ie_hung.dmp
+|  |  |  |  |--sibc.dat
+|  |  |  |  |--sig
+|  |  |  |  |--smartpreheat.dat
+|  |  |  |  |--smartpreheat.dll
+|  |  |  |  |--sqlite3.dll
+|  |  |  |  |--switcher
+|  |  |  |  |--uawl
+|  |  |  |  |--urllibauth.dat
+|  |  |  |  |--urlproc.dll
+|  |  |  |  |--vkwlist.dat
+|  |  |  |  |--wdcnf.dat
+|  |  |  |--7.1.1.566
+|  |  |  |  |--360base.dll
+|  |  |  |  |--360bdoctor.exe
+|  |  |  |  |--360BDoctorExt
+|  |  |  |  |  |--bdoctor.dll
+|  |  |  |  |  |--bin
+|  |  |  |  |  |  |--360feedback.exe
+|  |  |  |  |--360cloudsdk.dll
+|  |  |  |  |--360dl.dll
+|  |  |  |  |--360ini.dll
+|  |  |  |  |--360netul.dll
+|  |  |  |  |--adblock
+|  |  |  |  |  |--adblock_0.dat
+|  |  |  |  |  |--adblock_1.dat
+|  |  |  |  |  |--adblock_2.dat
+|  |  |  |  |--adblock.zip
+|  |  |  |  |--afe.dll
+|  |  |  |  |--antilsp.dll
+|  |  |  |  |--Apps
+|  |  |  |  |  |--extsearchtab.dll
+|  |  |  |  |--audiomute.dll
+|  |  |  |  |--bimgs.dat
+|  |  |  |  |--chrome.dll
+|  |  |  |  |--chrome_100_percent.pak
+|  |  |  |  |--chrome_child.dll
+|  |  |  |  |--cloudurls.dat
+|  |  |  |  |--download
+|  |  |  |  |  |--atl71.dll
+|  |  |  |  |  |--dc.ini
+|  |  |  |  |  |--dl_peer_id.dll
+|  |  |  |  |  |--download_engine.dll
+|  |  |  |  |  |--id.dat
+|  |  |  |  |  |--MiniThunderPlatform.exe
+|  |  |  |  |  |--minizip.dll
+|  |  |  |  |  |--mini_unzip_dll.dll
+|  |  |  |  |  |--msvcp71.dll
+|  |  |  |  |  |--msvcr71.dll
+|  |  |  |  |  |--XLBugHandler.dll
+|  |  |  |  |  |--XLBugReport.exe
+|  |  |  |  |  |--zlib1.dll
+|  |  |  |  |--dswitcher
+|  |  |  |  |--eacl.dat
+|  |  |  |  |--extandroid.dll
+|  |  |  |  |--Extensions
+|  |  |  |  |  |--shopping.crx
+|  |  |  |  |--extu3d.dll
+|  |  |  |  |--fancygame.ocx
+|  |  |  |  |--ffmpegsumo.dll
+|  |  |  |  |--flashplayercplapp.cpl
+|  |  |  |  |--icudt.dll
+|  |  |  |  |--iecompat
+|  |  |  |  |--installer
+|  |  |  |  |  |--360net.dll
+|  |  |  |  |  |--360p2sp.dll
+|  |  |  |  |  |--chrome.core.7z
+|  |  |  |  |  |--chrome.ext.7z
+|  |  |  |  |  |--chromeup.dll
+|  |  |  |  |  |--liveupd360.dll
+|  |  |  |  |  |--pdown.dll
+|  |  |  |  |  |--safelive.dll
+|  |  |  |  |  |--setup.exe
+|  |  |  |  |  |--seup.exe
+|  |  |  |  |  |--uninstall.ico
+|  |  |  |  |  |--updatecache.dat
+|  |  |  |  |--khtn.bin
+|  |  |  |  |--libpeerconnection.dll
+|  |  |  |  |--Locales
+|  |  |  |  |  |--en-us.pak
+|  |  |  |  |  |--zh-cn.pak
+|  |  |  |  |--mobileadapter.dll
+|  |  |  |  |--mobile_list.dat
+|  |  |  |  |--navhome.htm
+|  |  |  |  |--newpages.zip
+|  |  |  |  |--newpages_incognito.zip
+|  |  |  |  |--new_historys.zip
+|  |  |  |  |--npswf32_11_6_602_180.dll
+|  |  |  |  |--options.zip
+|  |  |  |  |--pattern
+|  |  |  |  |--pdf.dll
+|  |  |  |  |--plugin.vch
+|  |  |  |  |--plugins
+|  |  |  |  |  |--itrusenroll.dll
+|  |  |  |  |  |--np-mswmp.dll
+|  |  |  |  |  |--npaliedit.dll
+|  |  |  |  |  |--npalissologin.dll
+|  |  |  |  |  |--npcombrg.dll
+|  |  |  |  |  |--npfancygame.dll
+|  |  |  |  |  |--pta.dll
+|  |  |  |  |--pproc.dat
+|  |  |  |  |--preset_j.dat
+|  |  |  |  |--resources.pak
+|  |  |  |  |--safe505.dll
+|  |  |  |  |--seappmgr.dll
+|  |  |  |  |--seerrors.zip
+|  |  |  |  |--sehome.zip
+|  |  |  |  |--selast.zip
+|  |  |  |  |--sepro.dll
+|  |  |  |  |--seregedit.dll
+|  |  |  |  |--sesafe.dll
+|  |  |  |  |--sesvc.exe
+|  |  |  |  |--setdefbrowser.dll
+|  |  |  |  |--se_flags.ini
+|  |  |  |  |--sibc.dat
+|  |  |  |  |--sig
+|  |  |  |  |--smartpreheat.dat
+|  |  |  |  |--smartpreheat.dll
+|  |  |  |  |--sqlite3.dll
+|  |  |  |  |--switcher
+|  |  |  |  |--uawl
+|  |  |  |  |--urllibauth.dat
+|  |  |  |  |--urlproc.dll
+|  |  |  |  |--vkwlist.dat
+|  |  |  |  |--wdcnf.dat
+|  |  |  |--debug.log
+|  |  |  |--Dictionaries
+|  |  |  |  |--en-US-2-3.bdic
+|  |  |  |--First Run
+|  |  |  |--wow_helper.exe
+|  |  |--apps
+|  |  |  |--bin
+|  |  |  |  |--core
+|  |  |  |  |  |--favorites6.dll
+|  |  |--User Data
+|  |  |  |--Default
+|  |  |  |  |--767F.tmp
+|  |  |  |  |--7B1C.tmp
+|  |  |  |  |--A7AD.tmp
+|  |  |  |  |--Archived History
+|  |  |  |  |--B0D6.tmp
+|  |  |  |  |--C7BB.tmp
+|  |  |  |  |--Cache
+|  |  |  |  |  |--data_0
+|  |  |  |  |  |--data_1
+|  |  |  |  |  |--data_2
+|  |  |  |  |  |--data_3
+|  |  |  |  |  |--index
+|  |  |  |  |--CacheIE
+|  |  |  |  |--CE6B.tmp
+|  |  |  |  |--Cookies
+|  |  |  |  |--Cookies-journal
+|  |  |  |  |--Current Session
+|  |  |  |  |--Current Tabs
+|  |  |  |  |--D1F5.tmp
+|  |  |  |  |--databases
+|  |  |  |  |  |--chrome-extension_dobbgecnokkloebjbcnjpgcopegjabpa_0
+|  |  |  |  |  |  |--1
+|  |  |  |  |  |--Databases.db
+|  |  |  |  |  |--http_passport.weibo.com_0
+|  |  |  |  |  |  |--2
+|  |  |  |  |--DF1D.tmp
+|  |  |  |  |--Extension Cookies
+|  |  |  |  |--Extension State
+|  |  |  |  |  |--001039.ldb
+|  |  |  |  |  |--001076.log
+|  |  |  |  |  |--001077.ldb
+|  |  |  |  |  |--CURRENT
+|  |  |  |  |  |--LOCK
+|  |  |  |  |  |--LOG
+|  |  |  |  |  |--LOG.old
+|  |  |  |  |  |--MANIFEST-001074
+|  |  |  |  |--Extensions
+|  |  |  |  |  |--dobbgecnokkloebjbcnjpgcopegjabpa
+|  |  |  |  |  |  |--2.0.0.12_0
+|  |  |  |  |  |  |  |--background.html
+|  |  |  |  |  |  |  |--config.json
+|  |  |  |  |  |  |  |--css
+|  |  |  |  |  |  |  |  |--content.css
+|  |  |  |  |  |  |  |  |--history.css
+|  |  |  |  |  |  |  |  |--loadingpage.css
+|  |  |  |  |  |  |  |  |--options.css
+|  |  |  |  |  |  |  |  |--popup.css
+|  |  |  |  |  |  |  |--history.html
+|  |  |  |  |  |  |  |--images
+|  |  |  |  |  |  |  |  |--16
+|  |  |  |  |  |  |  |  |  |--16-base1.png
+|  |  |  |  |  |  |  |  |  |--16-base10.png
+|  |  |  |  |  |  |  |  |  |--16-base11.png
+|  |  |  |  |  |  |  |  |  |--16-base2.png
+|  |  |  |  |  |  |  |  |  |--16-base3.png
+|  |  |  |  |  |  |  |  |  |--16-base4.png
+|  |  |  |  |  |  |  |  |  |--16-base5.png
+|  |  |  |  |  |  |  |  |  |--16-base6.png
+|  |  |  |  |  |  |  |  |  |--16-base7.png
+|  |  |  |  |  |  |  |  |  |--16-base8.png
+|  |  |  |  |  |  |  |  |  |--16-base9.png
+|  |  |  |  |  |  |  |  |  |--16-drop1.png
+|  |  |  |  |  |  |  |  |  |--16-drop10.png
+|  |  |  |  |  |  |  |  |  |--16-drop11.png
+|  |  |  |  |  |  |  |  |  |--16-drop2.png
+|  |  |  |  |  |  |  |  |  |--16-drop3.png
+|  |  |  |  |  |  |  |  |  |--16-drop4.png
+|  |  |  |  |  |  |  |  |  |--16-drop5.png
+|  |  |  |  |  |  |  |  |  |--16-drop6.png
+|  |  |  |  |  |  |  |  |  |--16-drop7.png
+|  |  |  |  |  |  |  |  |  |--16-drop8.png
+|  |  |  |  |  |  |  |  |  |--16-drop9.png
+|  |  |  |  |  |  |  |  |  |--16-lowest1.png
+|  |  |  |  |  |  |  |  |  |--16-lowest10.png
+|  |  |  |  |  |  |  |  |  |--16-lowest11.png
+|  |  |  |  |  |  |  |  |  |--16-lowest12.png
+|  |  |  |  |  |  |  |  |  |--16-lowest13.png
+|  |  |  |  |  |  |  |  |  |--16-lowest14.png
+|  |  |  |  |  |  |  |  |  |--16-lowest15.png
+|  |  |  |  |  |  |  |  |  |--16-lowest16.png
+|  |  |  |  |  |  |  |  |  |--16-lowest17.png
+|  |  |  |  |  |  |  |  |  |--16-lowest18.png
+|  |  |  |  |  |  |  |  |  |--16-lowest19.png
+|  |  |  |  |  |  |  |  |  |--16-lowest2.png
+|  |  |  |  |  |  |  |  |  |--16-lowest20.png
+|  |  |  |  |  |  |  |  |  |--16-lowest21.png
+|  |  |  |  |  |  |  |  |  |--16-lowest3.png
+|  |  |  |  |  |  |  |  |  |--16-lowest4.png
+|  |  |  |  |  |  |  |  |  |--16-lowest5.png
+|  |  |  |  |  |  |  |  |  |--16-lowest6.png
+|  |  |  |  |  |  |  |  |  |--16-lowest7.png
+|  |  |  |  |  |  |  |  |  |--16-lowest8.png
+|  |  |  |  |  |  |  |  |  |--16-lowest9.png
+|  |  |  |  |  |  |  |  |  |--16-rise1.png
+|  |  |  |  |  |  |  |  |  |--16-rise10.png
+|  |  |  |  |  |  |  |  |  |--16-rise2.png
+|  |  |  |  |  |  |  |  |  |--16-rise3.png
+|  |  |  |  |  |  |  |  |  |--16-rise4.png
+|  |  |  |  |  |  |  |  |  |--16-rise5.png
+|  |  |  |  |  |  |  |  |  |--16-rise6.png
+|  |  |  |  |  |  |  |  |  |--16-rise7.png
+|  |  |  |  |  |  |  |  |  |--16-rise8.png
+|  |  |  |  |  |  |  |  |  |--16-rise9.png
+|  |  |  |  |  |  |  |  |  |--16-steady1.png
+|  |  |  |  |  |  |  |  |  |--16-steady10.png
+|  |  |  |  |  |  |  |  |  |--16-steady11.png
+|  |  |  |  |  |  |  |  |  |--16-steady12.png
+|  |  |  |  |  |  |  |  |  |--16-steady2.png
+|  |  |  |  |  |  |  |  |  |--16-steady3.png
+|  |  |  |  |  |  |  |  |  |--16-steady4.png
+|  |  |  |  |  |  |  |  |  |--16-steady5.png
+|  |  |  |  |  |  |  |  |  |--16-steady6.png
+|  |  |  |  |  |  |  |  |  |--16-steady7.png
+|  |  |  |  |  |  |  |  |  |--16-steady8.png
+|  |  |  |  |  |  |  |  |  |--16-steady9.png
+|  |  |  |  |  |  |  |  |--30
+|  |  |  |  |  |  |  |  |  |--30-base1.png
+|  |  |  |  |  |  |  |  |  |--30-base10.png
+|  |  |  |  |  |  |  |  |  |--30-base11.png
+|  |  |  |  |  |  |  |  |  |--30-base2.png
+|  |  |  |  |  |  |  |  |  |--30-base3.png
+|  |  |  |  |  |  |  |  |  |--30-base4.png
+|  |  |  |  |  |  |  |  |  |--30-base5.png
+|  |  |  |  |  |  |  |  |  |--30-base6.png
+|  |  |  |  |  |  |  |  |  |--30-base7.png
+|  |  |  |  |  |  |  |  |  |--30-base8.png
+|  |  |  |  |  |  |  |  |  |--30-base9.png
+|  |  |  |  |  |  |  |  |  |--30-drop1.png
+|  |  |  |  |  |  |  |  |  |--30-drop10.png
+|  |  |  |  |  |  |  |  |  |--30-drop11.png
+|  |  |  |  |  |  |  |  |  |--30-drop12.png
+|  |  |  |  |  |  |  |  |  |--30-drop2.png
+|  |  |  |  |  |  |  |  |  |--30-drop3.png
+|  |  |  |  |  |  |  |  |  |--30-drop4.png
+|  |  |  |  |  |  |  |  |  |--30-drop5.png
+|  |  |  |  |  |  |  |  |  |--30-drop6.png
+|  |  |  |  |  |  |  |  |  |--30-drop7.png
+|  |  |  |  |  |  |  |  |  |--30-drop8.png
+|  |  |  |  |  |  |  |  |  |--30-drop9.png
+|  |  |  |  |  |  |  |  |  |--30-lowest1.png
+|  |  |  |  |  |  |  |  |  |--30-lowest10.png
+|  |  |  |  |  |  |  |  |  |--30-lowest11.png
+|  |  |  |  |  |  |  |  |  |--30-lowest12.png
+|  |  |  |  |  |  |  |  |  |--30-lowest13.png
+|  |  |  |  |  |  |  |  |  |--30-lowest14.png
+|  |  |  |  |  |  |  |  |  |--30-lowest15.png
+|  |  |  |  |  |  |  |  |  |--30-lowest16.png
+|  |  |  |  |  |  |  |  |  |--30-lowest17.png
+|  |  |  |  |  |  |  |  |  |--30-lowest18.png
+|  |  |  |  |  |  |  |  |  |--30-lowest19.png
+|  |  |  |  |  |  |  |  |  |--30-lowest2.png
+|  |  |  |  |  |  |  |  |  |--30-lowest20.png
+|  |  |  |  |  |  |  |  |  |--30-lowest21.png
+|  |  |  |  |  |  |  |  |  |--30-lowest22.png
+|  |  |  |  |  |  |  |  |  |--30-lowest23.png
+|  |  |  |  |  |  |  |  |  |--30-lowest24.png
+|  |  |  |  |  |  |  |  |  |--30-lowest25.png
+|  |  |  |  |  |  |  |  |  |--30-lowest26.png
+|  |  |  |  |  |  |  |  |  |--30-lowest27.png
+|  |  |  |  |  |  |  |  |  |--30-lowest3.png
+|  |  |  |  |  |  |  |  |  |--30-lowest4.png
+|  |  |  |  |  |  |  |  |  |--30-lowest5.png
+|  |  |  |  |  |  |  |  |  |--30-lowest6.png
+|  |  |  |  |  |  |  |  |  |--30-lowest7.png
+|  |  |  |  |  |  |  |  |  |--30-lowest8.png
+|  |  |  |  |  |  |  |  |  |--30-lowest9.png
+|  |  |  |  |  |  |  |  |  |--30-rise1.png
+|  |  |  |  |  |  |  |  |  |--30-rise10.png
+|  |  |  |  |  |  |  |  |  |--30-rise11.png
+|  |  |  |  |  |  |  |  |  |--30-rise12.png
+|  |  |  |  |  |  |  |  |  |--30-rise2.png
+|  |  |  |  |  |  |  |  |  |--30-rise3.png
+|  |  |  |  |  |  |  |  |  |--30-rise4.png
+|  |  |  |  |  |  |  |  |  |--30-rise5.png
+|  |  |  |  |  |  |  |  |  |--30-rise6.png
+|  |  |  |  |  |  |  |  |  |--30-rise7.png
+|  |  |  |  |  |  |  |  |  |--30-rise8.png
+|  |  |  |  |  |  |  |  |  |--30-rise9.png
+|  |  |  |  |  |  |  |  |  |--30-steady1.png
+|  |  |  |  |  |  |  |  |  |--30-steady10.png
+|  |  |  |  |  |  |  |  |  |--30-steady11.png
+|  |  |  |  |  |  |  |  |  |--30-steady12.png
+|  |  |  |  |  |  |  |  |  |--30-steady13.png
+|  |  |  |  |  |  |  |  |  |--30-steady14.png
+|  |  |  |  |  |  |  |  |  |--30-steady15.png
+|  |  |  |  |  |  |  |  |  |--30-steady16.png
+|  |  |  |  |  |  |  |  |  |--30-steady17.png
+|  |  |  |  |  |  |  |  |  |--30-steady2.png
+|  |  |  |  |  |  |  |  |  |--30-steady3.png
+|  |  |  |  |  |  |  |  |  |--30-steady4.png
+|  |  |  |  |  |  |  |  |  |--30-steady5.png
+|  |  |  |  |  |  |  |  |  |--30-steady6.png
+|  |  |  |  |  |  |  |  |  |--30-steady7.png
+|  |  |  |  |  |  |  |  |  |--30-steady8.png
+|  |  |  |  |  |  |  |  |  |--30-steady9.png
+|  |  |  |  |  |  |  |  |--animation_default.png
+|  |  |  |  |  |  |  |  |--background_game.png
+|  |  |  |  |  |  |  |  |--background_new.png
+|  |  |  |  |  |  |  |  |--cart128.png
+|  |  |  |  |  |  |  |  |--cart16.png
+|  |  |  |  |  |  |  |  |--cart32.png
+|  |  |  |  |  |  |  |  |--cart48.png
+|  |  |  |  |  |  |  |  |--category.png
+|  |  |  |  |  |  |  |  |--goto_icon.png
+|  |  |  |  |  |  |  |  |--message.png
+|  |  |  |  |  |  |  |  |--newimage.png
+|  |  |  |  |  |  |  |  |--null.png
+|  |  |  |  |  |  |  |  |--open_background.png
+|  |  |  |  |  |  |  |  |--option_icon.png
+|  |  |  |  |  |  |  |  |--photoShutter.mp3
+|  |  |  |  |  |  |  |  |--pleasewait.png
+|  |  |  |  |  |  |  |  |--popup.png
+|  |  |  |  |  |  |  |  |--pop_background.png
+|  |  |  |  |  |  |  |--js
+|  |  |  |  |  |  |  |  |--background.js
+|  |  |  |  |  |  |  |  |--content.js
+|  |  |  |  |  |  |  |  |--customization_background.js
+|  |  |  |  |  |  |  |  |--history.js
+|  |  |  |  |  |  |  |  |--jquery-1.8.3.min.js
+|  |  |  |  |  |  |  |  |--loader.js
+|  |  |  |  |  |  |  |  |--loadingpage.js
+|  |  |  |  |  |  |  |  |--options.js
+|  |  |  |  |  |  |  |  |--popup_new.js
+|  |  |  |  |  |  |  |  |--remind.js
+|  |  |  |  |  |  |  |--loadingpage.html
+|  |  |  |  |  |  |  |--manifest.json
+|  |  |  |  |  |  |  |--options.html
+|  |  |  |  |  |  |  |--popup_new.html
+|  |  |  |  |  |  |  |--remind.html
+|  |  |  |  |--F76F.tmp
+|  |  |  |  |--Favicons
+|  |  |  |  |--FDEF.tmp
+|  |  |  |  |--Google Profile.ico
+|  |  |  |  |--History
+|  |  |  |  |--History Provider Cache
+|  |  |  |  |--History.bak
+|  |  |  |  |--hunginfo.log
+|  |  |  |  |--IndexedDB
+|  |  |  |  |  |--http_passport.weibo.com_0.indexeddb.leveldb
+|  |  |  |  |  |  |--000003.log
+|  |  |  |  |  |  |--CURRENT
+|  |  |  |  |  |  |--LOCK
+|  |  |  |  |  |  |--MANIFEST-000002
+|  |  |  |  |--JumpListIcons
+|  |  |  |  |  |--BD9D.tmp
+|  |  |  |  |  |--BDDD.tmp
+|  |  |  |  |  |--BE0E.tmp
+|  |  |  |  |  |--BE3F.tmp
+|  |  |  |  |  |--BE40.tmp
+|  |  |  |  |  |--BE80.tmp
+|  |  |  |  |  |--BE81.tmp
+|  |  |  |  |  |--BEB2.tmp
+|  |  |  |  |  |--BEE3.tmp
+|  |  |  |  |  |--BF13.tmp
+|  |  |  |  |  |--BF24.tmp
+|  |  |  |  |  |--BF25.tmp
+|  |  |  |  |  |--BF46.tmp
+|  |  |  |  |--JumpListIconsOld
+|  |  |  |  |  |--B037.tmp
+|  |  |  |  |  |--B078.tmp
+|  |  |  |  |  |--B0A8.tmp
+|  |  |  |  |  |--B0CA.tmp
+|  |  |  |  |  |--B0DA.tmp
+|  |  |  |  |  |--B10B.tmp
+|  |  |  |  |  |--B10C.tmp
+|  |  |  |  |  |--B14C.tmp
+|  |  |  |  |  |--B17D.tmp
+|  |  |  |  |  |--B1DD.tmp
+|  |  |  |  |  |--B1DE.tmp
+|  |  |  |  |  |--B1DF.tmp
+|  |  |  |  |  |--B210.tmp
+|  |  |  |  |--Last Session
+|  |  |  |  |--Last Tabs
+|  |  |  |  |--Local Extension Settings
+|  |  |  |  |  |--dobbgecnokkloebjbcnjpgcopegjabpa
+|  |  |  |  |  |  |--001305.ldb
+|  |  |  |  |  |  |--001313.ldb
+|  |  |  |  |  |  |--001316.ldb
+|  |  |  |  |  |  |--001321.ldb
+|  |  |  |  |  |  |--001325.log
+|  |  |  |  |  |  |--CURRENT
+|  |  |  |  |  |  |--LOCK
+|  |  |  |  |  |  |--LOG
+|  |  |  |  |  |  |--LOG.old
+|  |  |  |  |  |  |--MANIFEST-001323
+|  |  |  |  |--Local Storage
+|  |  |  |  |  |--chrome-extension_dobbgecnokkloebjbcnjpgcopegjabpa_0.localstorage
+|  |  |  |  |  |--chrome-extension_dobbgecnokkloebjbcnjpgcopegjabpa_0.localstorage-journal
+|  |  |  |  |  |--chrome_guess-ulike_0.localstorage
+|  |  |  |  |  |--chrome_guess-ulike_0.localstorage-journal
+|  |  |  |  |  |--chrome_newtab_0.localstorage
+|  |  |  |  |  |--chrome_newtab_0.localstorage-journal
+|  |  |  |  |  |--https_account.xiaomi.com_0.localstorage
+|  |  |  |  |  |--https_auth.alipay.com_0.localstorage
+|  |  |  |  |  |--https_creative.adobe.com_0.localstorage
+|  |  |  |  |  |--https_login.taobao.com_0.localstorage
+|  |  |  |  |  |--https_www.adobe.com_0.localstorage
+|  |  |  |  |  |--https_www.baidu.com_0.localstorage
+|  |  |  |  |  |--http_api.t.qq.com_0.localstorage
+|  |  |  |  |  |--http_app100620636.qzone.qzoneapp.com_0.localstorage
+|  |  |  |  |  |--http_appstore.qzone.qq.com_0.localstorage
+|  |  |  |  |  |--http_article.pchome.net_0.localstorage
+|  |  |  |  |  |--http_ask.39.net_0.localstorage
+|  |  |  |  |  |--http_assistant.youshang.com_0.localstorage
+|  |  |  |  |  |--http_b.hd.baofeng.com_0.localstorage
+|  |  |  |  |  |--http_baike.baidu.com_0.localstorage
+|  |  |  |  |  |--http_baike.haosou.com_0.localstorage
+|  |  |  |  |  |--http_bbs.csdn.net_0.localstorage
+|  |  |  |  |  |--http_beacon.sina.com.cn_0.localstorage
+|  |  |  |  |  |--http_beauty.9939.com_0.localstorage
+|  |  |  |  |  |--http_blog.csdn.net_0.localstorage
+|  |  |  |  |  |--http_blog.sina.com.cn_0.localstorage
+|  |  |  |  |  |--http_cdn.tanx.com_0.localstorage
+|  |  |  |  |  |--http_club.xywy.com_0.localstorage
+|  |  |  |  |  |--http_cpro.baidu.com_0.localstorage
+|  |  |  |  |  |--http_ctc.qzs.qq.com_0.localstorage
+|  |  |  |  |  |--http_d.jcwcn.com_0.localstorage
+|  |  |  |  |  |--http_d1.sina.com.cn_0.localstorage
+|  |  |  |  |  |--http_database.ctocio.com.cn_0.localstorage
+|  |  |  |  |  |--http_detail.tmall.com_0.localstorage
+|  |  |  |  |  |--http_detail.zol.com.cn_0.localstorage
+|  |  |  |  |  |--http_dg.job5156.com_0.localstorage
+|  |  |  |  |  |--http_download.csdn.net_0.localstorage
+|  |  |  |  |  |--http_event.leyingke.com_0.localstorage
+|  |  |  |  |  |--http_event.yixun.com_0.localstorage
+|  |  |  |  |  |--http_fanxing.kugou.com_0.localstorage
+|  |  |  |  |  |--http_g.163.com_0.localstorage
+|  |  |  |  |  |--http_g.hd.baofeng.com_0.localstorage
+|  |  |  |  |  |--http_gz.58.com_0.localstorage
+|  |  |  |  |  |--http_gz.ganji.com_0.localstorage
+|  |  |  |  |  |--http_hao.360.cn_0.localstorage
+|  |  |  |  |  |--http_hao123.xywy.com_0.localstorage
+|  |  |  |  |  |--http_haxiu.zimilan.org_0.localstorage
+|  |  |  |  |  |--http_hd.kisdee.com_0.localstorage
+|  |  |  |  |  |--http_hi.baidu.com_0.localstorage
+|  |  |  |  |  |--http_hunantv.8684.com_0.localstorage
+|  |  |  |  |  |--http_i.xunlei.com_0.localstorage
+|  |  |  |  |  |--http_iask.games.sina.com.cn_0.localstorage
+|  |  |  |  |  |--http_iask.sina.com.cn_0.localstorage
+|  |  |  |  |  |--http_images.sohu.com_0.localstorage
+|  |  |  |  |  |--http_img1.126.net_0.localstorage
+|  |  |  |  |  |--http_item.taobao.com_0.localstorage
+|  |  |  |  |  |--http_java.itcast.cn_0.localstorage
+|  |  |  |  |  |--http_jingyan.baidu.com_0.localstorage
+|  |  |  |  |  |--http_job.dajie.com_0.localstorage
+|  |  |  |  |  |--http_kaoshi.china.com_0.localstorage
+|  |  |  |  |  |--http_kt.jcwcn.com_0.localstorage
+|  |  |  |  |  |--http_live.imgo.tv_0.localstorage
+|  |  |  |  |  |--http_mail.qq.com_0.localstorage
+|  |  |  |  |  |--http_movie.mtime.com_0.localstorage
+|  |  |  |  |  |--http_mpp.taobao.com_0.localstorage
+|  |  |  |  |  |--http_msdn.microsoft.com_0.localstorage
+|  |  |  |  |  |--http_music.163.com_0.localstorage
+|  |  |  |  |  |--http_naruto.5068.com_0.localstorage
+|  |  |  |  |  |--http_news.aibo123.com_0.localstorage
+|  |  |  |  |  |--http_news.xinmin.cn_0.localstorage
+|  |  |  |  |  |--http_ok.sina.com.cn_0.localstorage
+|  |  |  |  |  |--http_order.mi.com_0.localstorage
+|  |  |  |  |  |--http_passport.weibo.com_0.localstorage
+|  |  |  |  |  |--http_picture.youth.cn_0.localstorage
+|  |  |  |  |  |--http_pos.baidu.com_0.localstorage
+|  |  |  |  |  |--http_product.ch.gongchang.com_0.localstorage
+|  |  |  |  |  |--http_product.pchome.net_0.localstorage
+|  |  |  |  |  |--http_qht.zimilan.com_0.localstorage
+|  |  |  |  |  |--http_qu.8684.com_0.localstorage
+|  |  |  |  |  |--http_qy.58.com_0.localstorage
+|  |  |  |  |  |--http_qzs.qq.com_0.localstorage
+|  |  |  |  |  |--http_rc.qzone.qq.com_0.localstorage
+|  |  |  |  |  |--http_rzchina.s78-123.myverydz.com_0.localstorage
+|  |  |  |  |  |--http_s.job5156.com_0.localstorage
+|  |  |  |  |  |--http_s.taobao.com_0.localstorage
+|  |  |  |  |  |--http_sale.jd.com_0.localstorage
+|  |  |  |  |  |--http_sale.vmall.com_0.localstorage
+|  |  |  |  |  |--http_secure.verycd.com_0.localstorage
+|  |  |  |  |  |--http_service.youshang.com_0.localstorage
+|  |  |  |  |  |--http_set3.mail.qq.com_0.localstorage
+|  |  |  |  |  |--http_shop.vivo.com.cn_0.localstorage
+|  |  |  |  |  |--http_show.qq.com_0.localstorage
+|  |  |  |  |  |--http_so.hunantv.com_0.localstorage
+|  |  |  |  |  |--http_sta.ganji.com_0.localstorage
+|  |  |  |  |  |--http_store.apple.com_0.localstorage
+|  |  |  |  |  |--http_sz.user.qzone.qq.com_0.localstorage
+|  |  |  |  |  |--http_technet.microsoft.com_0.localstorage
+|  |  |  |  |  |--http_tieba.baidu.com_0.localstorage
+|  |  |  |  |  |--http_tk.taotaosou.com_0.localstorage
+|  |  |  |  |  |--http_trust.baidu.com_0.localstorage
+|  |  |  |  |  |--http_ui.tudou.com_0.localstorage
+|  |  |  |  |  |--http_user.qzone.qq.com_0.localstorage
+|  |  |  |  |  |--http_v.114la.com_0.localstorage
+|  |  |  |  |  |--http_v.360.cn_0.localstorage
+|  |  |  |  |  |--http_v.qq.com_0.localstorage
+|  |  |  |  |  |--http_wa.gtimg.com_0.localstorage
+|  |  |  |  |  |--http_wenda.so.com_0.localstorage
+|  |  |  |  |  |--http_wenku.baidu.com_0.localstorage
+|  |  |  |  |  |--http_wenku.it168.com_0.localstorage
+|  |  |  |  |  |--http_www.120ask.com_0.localstorage
+|  |  |  |  |  |--http_www.22225555.net_0.localstorage
+|  |  |  |  |  |--http_www.233.com_0.localstorage
+|  |  |  |  |  |--http_www.2345.com_0.localstorage
+|  |  |  |  |  |--http_www.3600.com_0.localstorage
+|  |  |  |  |  |--http_www.360doc.com_0.localstorage
+|  |  |  |  |  |--http_www.360kan.com_0.localstorage
+|  |  |  |  |  |--http_www.3jy.com_0.localstorage
+|  |  |  |  |  |--http_www.941gb.com_0.localstorage
+|  |  |  |  |  |--http_www.aipai.com_0.localstorage
+|  |  |  |  |  |--http_www.apple.com_0.localstorage
+|  |  |  |  |  |--http_www.baidu.com_0.localstorage
+|  |  |  |  |  |--http_www.biye5u.com_0.localstorage
+|  |  |  |  |  |--http_www.bjsxt.com_0.localstorage
+|  |  |  |  |  |--http_www.chinadmd.com_0.localstorage
+|  |  |  |  |  |--http_www.cjol.com_0.localstorage
+|  |  |  |  |  |--http_www.cncrk.com_0.localstorage
+|  |  |  |  |  |--http_www.coolpad.com_0.localstorage
+|  |  |  |  |  |--http_www.cr173.com_0.localstorage
+|  |  |  |  |  |--http_www.daanwang.com_0.localstorage
+|  |  |  |  |  |--http_www.dajie.com_0.localstorage
+|  |  |  |  |  |--http_www.dgmlf.com_0.localstorage
+|  |  |  |  |  |--http_www.doc88.com_0.localstorage
+|  |  |  |  |  |--http_www.docin.com_0.localstorage
+|  |  |  |  |  |--http_www.educity.cn_0.localstorage
+|  |  |  |  |  |--http_www.eimhe.com_0.localstorage
+|  |  |  |  |  |--http_www.ganji.com_0.localstorage
+|  |  |  |  |  |--http_www.gaokaopai.com_0.localstorage
+|  |  |  |  |  |--http_www.greenxf.com_0.localstorage
+|  |  |  |  |  |--http_www.gz-djjc.com_0.localstorage
+|  |  |  |  |  |--http_www.gzsg.cn_0.localstorage
+|  |  |  |  |  |--http_www.haosou.com_0.localstorage
+|  |  |  |  |  |--http_www.huacolor.com_0.localstorage
+|  |  |  |  |  |--http_www.hujiang.com_0.localstorage
+|  |  |  |  |  |--http_www.hunantv.com_0.localstorage
+|  |  |  |  |  |--http_www.iqiyi.com_0.localstorage
+|  |  |  |  |  |--http_www.itcast.cn_0.localstorage
+|  |  |  |  |  |--http_www.jcwcn.com_0.localstorage
+|  |  |  |  |  |--http_www.jindongli.net_0.localstorage
+|  |  |  |  |  |--http_www.jingkao.net_0.localstorage
+|  |  |  |  |  |--http_www.job5156.com_0.localstorage
+|  |  |  |  |  |--http_www.letv.com_0.localstorage
+|  |  |  |  |  |--http_www.liepin.com_0.localstorage
+|  |  |  |  |  |--http_www.m1905.com_0.localstorage
+|  |  |  |  |  |--http_www.mdbtip.com_0.localstorage
+|  |  |  |  |  |--http_www.meteni.com_0.localstorage
+|  |  |  |  |  |--http_www.mgzhibo.com_0.localstorage
+|  |  |  |  |  |--http_www.mi.com_0.localstorage
+|  |  |  |  |  |--http_www.myexception.cn_0.localstorage
+|  |  |  |  |  |--http_www.mylike.cc_0.localstorage
+|  |  |  |  |  |--http_www.nba98.com_0.localstorage
+|  |  |  |  |  |--http_www.nexoncn.com_0.localstorage
+|  |  |  |  |  |--http_www.officestudy.net_0.localstorage
+|  |  |  |  |  |--http_www.pc6.com_0.localstorage
+|  |  |  |  |  |--http_www.pchome.net_0.localstorage
+|  |  |  |  |  |--http_www.qq.com_0.localstorage
+|  |  |  |  |  |--http_www.qqtn.com_0.localstorage
+|  |  |  |  |  |--http_www.sgmw.com.cn_0.localstorage
+|  |  |  |  |  |--http_www.shangxueba.com_0.localstorage
+|  |  |  |  |  |--http_www.so.com_0.localstorage
+|  |  |  |  |  |--http_www.tangdou.com_0.localstorage
+|  |  |  |  |  |--http_www.taobao.com_0.localstorage
+|  |  |  |  |  |--http_www.tmall.com_0.localstorage
+|  |  |  |  |  |--http_www.tudou.com_0.localstorage
+|  |  |  |  |  |--http_www.verydemo.com_0.localstorage
+|  |  |  |  |  |--http_www.vipabc.com_0.localstorage
+|  |  |  |  |  |--http_www.vivo.com.cn_0.localstorage
+|  |  |  |  |  |--http_www.vmall.com_0.localstorage
+|  |  |  |  |  |--http_www.yksuit.com_0.localstorage
+|  |  |  |  |  |--http_www.youshang.com_0.localstorage
+|  |  |  |  |  |--http_www.ztehn.com_0.localstorage
+|  |  |  |  |  |--http_www.zueiai.net_0.localstorage
+|  |  |  |  |  |--http_www2.xinmin.cn_0.localstorage
+|  |  |  |  |  |--http_x5thin.vivo.com.cn_0.localstorage
+|  |  |  |  |  |--http_zhidao.baidu.com_0.localstorage
+|  |  |  |  |--Media Cache
+|  |  |  |  |--Network Action Predictor
+|  |  |  |  |--Origin Bound Certs
+|  |  |  |  |--Preferences
+|  |  |  |  |--Preferences.bak
+|  |  |  |  |--QuotaManager
+|  |  |  |  |--QuotaManager-journal
+|  |  |  |  |--README
+|  |  |  |  |--Session Storage
+|  |  |  |  |  |--001018.log
+|  |  |  |  |  |--001019.ldb
+|  |  |  |  |  |--CURRENT
+|  |  |  |  |  |--LOCK
+|  |  |  |  |  |--LOG
+|  |  |  |  |  |--LOG.old
+|  |  |  |  |  |--MANIFEST-001016
+|  |  |  |  |--switcher
+|  |  |  |  |--Top Sites
+|  |  |  |  |--TransportSecurity
+|  |  |  |  |--UnClosed Pages
+|  |  |  |  |--UnClosed Pages-journal
+|  |  |  |  |--User StyleSheets
+|  |  |  |  |  |--Custom.css
+|  |  |  |  |--Visited Links
+|  |  |  |  |--Web Data
+|  |  |  |  |--Web Data.bak
+|  |  |  |  |--WebRTCIdentityStore
+|  |  |  |--Local State
+|  |  |  |--Local State.bak
+|  |  |  |--Local State~RF41a7cc5c.TMP
+|  |  |  |--safemon
+|  |  |  |  |--urllib.dat
+|  |  |  |  |--urllibw.dat
+|  |  |  |--tcdump
+|  |  |  |  |--3446686_968_secrash_main_process.dmp
+|  |  |  |  |--4301259_744_secrash_renderer.dmp
+|  |  |  |  |--crashinfo_3441038_2729.dat
+|  |  |  |  |--crashinfo_4299933_6582.dat
+|  |  |  |  |--secrash_main_process.dmp
+|  |  |  |  |--secrash_renderer.dmp
+|  |  |  |  |--StandaloneCrashInfo
+|  |  |  |--Temp
+|  |  |  |--tipextra.dat
+|  |  |  |--v3update
+|  |  |  |  |--config
+|  |  |  |  |  |--updatecfg.ini
+|  |  |  |  |  |--updateSafe.ini
+|  |  |  |  |--download
+|  |  |  |  |--old
+|  |  |  |  |  |--adblock_0.dat
+|  |  |  |  |  |--adblock_1.dat
+|  |  |  |  |  |--adblock_2.dat
+|  |  |  |  |  |--dswitcher
+|  |--Kingsoft
+|  |  |--WPS Office Professional
+|  |  |  |--ksee
+|  |  |  |  |--Fonts
+|  |  |  |  |  |--TrueType
+|  |  |  |  |  |  |--mtextra.ttf
+|  |--LuDaShi
+|  |  |--360Base.dll
+|  |  |--360Base64.dll
+|  |  |--360Conf.dll
+|  |  |--360net.dll
+|  |  |--360P2SP.dll
+|  |  |--360verify.dll
+|  |  |--7Z.dll
+|  |  |--adb.exe
+|  |  |--AdbWinApi.dll
+|  |  |--AdbWinUsbApi.dll
+|  |  |--atiags32.dll
+|  |  |--BenchmarkData
+|  |  |  |--core.spk
+|  |  |  |--lds.spk
+|  |  |  |--shaders_sm_3_0.cache
+|  |  |  |--shaders_sm_5_0.cache
+|  |  |--ComputerMonZ.dll
+|  |  |--ComputerMonZ.exe
+|  |  |--ComputerZ.set
+|  |  |--ComputerZ.sys
+|  |  |--ComputerZ0.dll
+|  |  |--ComputerZ1.dll
+|  |  |--ComputerZ10.dll
+|  |  |--ComputerZ11.dll
+|  |  |--ComputerZ2.dll
+|  |  |--ComputerZ4.dll
+|  |  |--ComputerZ4_x64.dll
+|  |  |--ComputerZ5.dll
+|  |  |--ComputerZ7.dll
+|  |  |--ComputerZ7_x64.dll
+|  |  |--ComputerZBrowser.exe
+|  |  |--ComputerZHelper_x64.exe
+|  |  |--ComputerZLock.sys
+|  |  |--ComputerZLock_x64.sys
+|  |  |--ComputerZService.exe
+|  |  |--ComputerZTray.exe
+|  |  |--ComputerZTray.exe.log
+|  |  |--ComputerZ_Accelerator.dll
+|  |  |--ComputerZ_Bench.dll
+|  |  |--ComputerZ_CN.exe
+|  |  |--ComputerZ_HardwareDll.dll
+|  |  |--ComputerZ_PowerSaveDll.dll
+|  |  |--ComputerZ_PR.exe
+|  |  |--ComputerZ_x64.sys
+|  |  |--config
+|  |  |  |--config.xml
+|  |  |  |--defaultskin
+|  |  |  |  |--defaultskin.ui
+|  |  |  |  |--MiniUI.xml
+|  |  |--D3DX81ab.dll
+|  |  |--DataMgr.dll
+|  |  |--DataMgr_x64.dll
+|  |  |--deviceid.ini
+|  |  |--Display3D.exe
+|  |  |--Display3DEx.exe
+|  |  |--DrvMgr
+|  |  |  |--360Common.dll
+|  |  |  |--360NetBase.dll
+|  |  |  |--360NetUL.dll
+|  |  |  |--7za.dll
+|  |  |  |--config
+|  |  |  |  |--config.xml
+|  |  |  |  |--defaultskin
+|  |  |  |  |  |--defaultskin.ui
+|  |  |  |  |  |--MiniUI.xml
+|  |  |  |--DIFxAPI_x86.dll
+|  |  |  |--DownloadMgr.dll
+|  |  |  |--DrvInst64.exe
+|  |  |  |--DrvMgr.exe
+|  |  |  |--DrvmgrCore.dll
+|  |  |  |--DrvMgrUI.dll
+|  |  |  |--dynlenv.dll
+|  |  |  |--feedback
+|  |  |  |  |--360ScreenCapture.exe
+|  |  |  |  |--DrvMgrFeedBack.exe
+|  |  |  |  |--DrvMgrFeedBack.ui
+|  |  |  |  |--DrvMgrFeedBack.xml
+|  |  |  |  |--LuDaShiFeedBack.exe
+|  |  |  |  |--LuDaShiFeedback.ui
+|  |  |  |  |--LuDaShiFeedBack.xml
+|  |  |  |--normal.dat
+|  |  |  |--repairpkg.7z
+|  |  |  |--safelive.dll
+|  |  |--GDIPlus.dll
+|  |  |--HWParams.dat
+|  |  |--installer.exe
+|  |  |--InstallStat.dll
+|  |  |--Intro
+|  |  |  |--end.png
+|  |  |  |--LdsIntro.wmv
+|  |  |  |--LudashiIntroduce.exe
+|  |  |  |--start.png
+|  |  |  |--video.ini
+|  |  |--LDSBenchmark.dll
+|  |  |--Light.png
+|  |  |--LiveUpd360.dll
+|  |  |--Log
+|  |  |--Log.dat
+|  |  |--ludashi.apk
+|  |  |--MiniUI.dll
+|  |  |--ModuleUpdate.exe
+|  |  |--Monitors.dat
+|  |  |--msvcp100.dll
+|  |  |--msvcr100.dll
+|  |  |--nBench
+|  |  |  |--BenchmarkLauncher.exe
+|  |  |  |--BenchmarkLauncher_x64.exe
+|  |  |  |--BenchmarkSuite.dll
+|  |  |  |--ComputerZ_Bench.dll
+|  |  |  |--ComputerZ_Bench_x64.dll
+|  |  |  |--cudart32_50_35.dll
+|  |  |  |--cuda_miner_benchmark.dll
+|  |  |  |--libgcc_s_dw2-1.dll
+|  |  |  |--MinerBenchmark.exe
+|  |  |  |--NNET.DAT
+|  |  |  |--OCLBenchmark.dll
+|  |  |  |--ocl_miner_benchmark.dll
+|  |  |  |--pthreadGC2.dll
+|  |  |--NNET.DAT
+|  |  |--PDown.dll
+|  |  |--PowerSaveZ.sys
+|  |  |--PowerSaveZ_x64.sys
+|  |  |--ProcSpecial.dat
+|  |  |--Safelive.dll
+|  |  |--SchemeLib.dat
+|  |  |--SignHelper.dll
+|  |  |--sites.dll
+|  |  |--SiteUIHelper.dll
+|  |  |--softmgr
+|  |  |  |--DownMgr.dll
+|  |  |  |--SoftMgr.dll
+|  |  |  |--SoftMgrInst.exe
+|  |  |  |--SoftMgrPage.dll
+|  |  |--StatsFiles
+|  |  |--sweeper
+|  |  |  |--CleanHelper64.exe
+|  |  |  |--CleanPage.dll
+|  |  |  |--CleanPageEngine.dll
+|  |  |  |--ComputerZS1.dll
+|  |  |  |--HardwareCleaner.dll
+|  |  |  |--heavygate.dll
+|  |  |  |--RubbishCleanEngine.dat
+|  |  |  |--SysSweeper.dat
+|  |  |  |--SysSweeper.dll
+|  |  |  |--TEngine.dll
+|  |  |  |--Tracehelper.exe
+|  |  |  |--tracesweeper.dat
+|  |  |  |--TrashClean.dll
+|  |  |  |--WhiteList.dat
+|  |  |--SwirlEngine.dll
+|  |  |--Themes
+|  |  |  |--Default
+|  |  |  |  |--CleanPage
+|  |  |  |  |  |--CleanPage_Theme.ui
+|  |  |  |  |  |--clean_page_theme.xml
+|  |  |  |  |--default_theme.ui
+|  |  |  |  |--DownMgr
+|  |  |  |  |  |--DownMgr_theme.ui
+|  |  |  |  |  |--downmgr_theme.xml
+|  |  |--TrayHelper.exe
+|  |  |--unins000.dat
+|  |  |--unins000.exe
+|  |  |--uninst.exe
+|  |  |--update
+|  |  |  |--Link.exe
+|  |  |  |--Temp
+|  |  |  |  |--updatecache.dat
+|  |  |  |--~14C5.cab
+|  |  |  |--~1759.cab
+|  |  |  |--~1A04.cab
+|  |  |  |--~1DD8.cab
+|  |  |  |--~1DEA.cab
+|  |  |  |--~1F04.cab
+|  |  |  |--~1F3.cab
+|  |  |  |--~23E5.cab
+|  |  |  |--~24CE.cab
+|  |  |  |--~24FE.cab
+|  |  |  |--~2703.cab
+|  |  |  |--~28F5.cab
+|  |  |  |--~29A7.cab
+|  |  |  |--~2AB9.cab
+|  |  |  |--~2D6A.cab
+|  |  |  |--~3075.cab
+|  |  |  |--~337.cab
+|  |  |  |--~33B2.cab
+|  |  |  |--~344D.cab
+|  |  |  |--~370B.cab
+|  |  |  |--~3A89.cab
+|  |  |  |--~3AA.cab
+|  |  |  |--~3AC5.cab
+|  |  |  |--~3C76.cab
+|  |  |  |--~411A.cab
+|  |  |  |--~42AB.cab
+|  |  |  |--~45.cab
+|  |  |  |--~454A.cab
+|  |  |  |--~4586.cab.~p2s
+|  |  |  |--~45D.cab
+|  |  |  |--~4628.cab
+|  |  |  |--~46E9.cab
+|  |  |  |--~55E0.cab
+|  |  |  |--~5C0F.cab
+|  |  |  |--~5DCF.cab
+|  |  |  |--~5DE9.cab
+|  |  |  |--~5FD1.cab
+|  |  |  |--~611F.cab
+|  |  |  |--~62BF.cab
+|  |  |  |--~6520.cab
+|  |  |  |--~665D.cab
+|  |  |  |--~6A59.cab
+|  |  |  |--~6B00.cab
+|  |  |  |--~6B87.cab
+|  |  |  |--~6FD1.cab
+|  |  |  |--~70F0.cab
+|  |  |  |--~7140.cab
+|  |  |  |--~720C.cab
+|  |  |  |--~7301.cab
+|  |  |  |--~743E.cab
+|  |  |  |--~7484.cab
+|  |  |  |--~7B9A.cab
+|  |  |  |--~7D2C.cab
+|  |  |  |--~7D54.cab
+|  |  |  |--~808A.cab
+|  |  |  |--~80D1.cab
+|  |  |  |--~82B.cab
+|  |  |  |--~8A84.cab
+|  |  |  |--~8B02.cab
+|  |  |  |--~8BE3.cab
+|  |  |  |--~8C1E.cab
+|  |  |  |--~8DB5.cab
+|  |  |  |--~8E1.cab
+|  |  |  |--~8F3C.cab
+|  |  |  |--~90B1.cab
+|  |  |  |--~90CD.cab
+|  |  |  |--~9515.cab
+|  |  |  |--~99C8.cab
+|  |  |  |--~9B2D.cab
+|  |  |  |--~9DD5.cab
+|  |  |  |--~A028.cab
+|  |  |  |--~A03D.cab
+|  |  |  |--~A388.cab
+|  |  |  |--~A465.cab
+|  |  |  |--~A4DA.cab
+|  |  |  |--~A944.cab
+|  |  |  |--~A98D.cab
+|  |  |  |--~A9B0.cab
+|  |  |  |--~AC28.cab
+|  |  |  |--~B175.cab
+|  |  |  |--~B391.cab
+|  |  |  |--~B669.cab
+|  |  |  |--~B7D5.cab
+|  |  |  |--~BA79.cab
+|  |  |  |--~BB2E.cab
+|  |  |  |--~BE2D.cab
+|  |  |  |--~BE7D.cab
+|  |  |  |--~C257.cab
+|  |  |  |--~C826.cab
+|  |  |  |--~C886.cab
+|  |  |  |--~C8B.cab
+|  |  |  |--~C8DC.cab
+|  |  |  |--~C943.cab
+|  |  |  |--~CC8D.cab
+|  |  |  |--~D120.cab
+|  |  |  |--~D52D.cab
+|  |  |  |--~D55B.cab
+|  |  |  |--~D681.cab
+|  |  |  |--~DDB9.cab
+|  |  |  |--~DE41.cab
+|  |  |  |--~DE5A.cab
+|  |  |  |--~E2F8.cab
+|  |  |  |--~E592.cab
+|  |  |  |--~E64B.cab
+|  |  |  |--~E8B6.cab
+|  |  |  |--~EE0C.cab
+|  |  |  |--~EE25.cab.~p2s
+|  |  |  |--~EE72.cab
+|  |  |  |--~EE94.cab
+|  |  |  |--~F10.cab
+|  |  |  |--~F4B5.cab
+|  |  |  |--~F676.cab
+|  |  |  |--~F6A2.cab
+|  |  |  |--~F709.cab
+|  |  |  |--~F9C4.cab
+|  |  |  |--~FA42.cab
+|  |  |  |--~FACA.cab
+|  |  |  |--~FB64.cab
+|  |  |  |--~FC57.cab
+|  |  |  |--~FEC8.cab
+|  |  |  |--~FFDA.cab
+|  |  |--update.exe
+|  |  |--updatecache.dat
+|  |  |--updatecfg.ini
+|  |  |--UserSchemeLib.dat
+|  |  |--Utils
+|  |  |  |--360Ini.dll
+|  |  |  |--7z.dll
+|  |  |  |--ComputerZ12.dll
+|  |  |  |--ComputerZ12_x64.dll
+|  |  |  |--D3DCompiler_43.dll
+|  |  |  |--d3dx11_43.dll
+|  |  |  |--D3DX9_43.dll
+|  |  |  |--Down.exe
+|  |  |  |--LdsDrvInst32.exe
+|  |  |  |--LdsDrvInst64.exe
+|  |  |  |--LuDaShiHelper.dll
+|  |  |  |--LudashiPreview.exe
+|  |  |  |--LuDaShiPreview.ui
+|  |  |  |--LuDaShiPreview.xml
+|  |  |  |--mininews.exe
+|  |  |  |--Pop.dll
+|  |  |  |--PopSafe.exe
+|  |  |--wifiassist.log
+|  |  |--WifiAssistDll.dll

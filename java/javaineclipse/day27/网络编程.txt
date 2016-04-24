@@ -1,0 +1,23 @@
+最常见的客户端：
+         浏览器：IE。
+最常见的服务端:
+   服务器：Tomcat.
+   
+为了了解其原理：
+
+1，
+自定义服务端。
+使用已有的客户端IE，了解一下客户端给服务端发了什么请求？
+
+发送的请求是：
+
+GET / HTTP/1.1   请求行 请求方式/myweb/1.html 请求的资源路径http协议版本。
+Accept: text/html, application/xhtml+xml, */*
+Accept-Language: zh-CN
+User-Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; WOW64; Trident/6.0)
+Accept-Encoding: gzip, deflate
+Host: 127.0.0.1:9090
+DNT: 1
+Connection: Keep-Alive
+//空行
+//请求体

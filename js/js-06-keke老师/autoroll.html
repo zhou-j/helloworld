@@ -1,0 +1,104 @@
+
+<!doctype html>
+<html>
+    <head>
+       <meta charset="utf-8" />
+       <title>自定义滚动条-keke老师</title>
+       <style type="text/css">
+            .box{width:640px;height:400px;border:1px solid red;margin:20px auto;overflow:hidden;position:relative;}
+            .box .bar{position:absolute;width:10px;height:100%;background:#111;right:0px;z-index:1;}
+            .box .bar .sbar{width:10px;height:10px;background:red;position:absolute;top:0px;right:0px;z-index:2;border-radius:2px;}
+            .box .cnt{position:relative;padding:20px;}
+            
+
+       </style>
+    </head>
+    <body> 
+    	<div class="box">
+             <div class="bar">
+                 <div class="sbar"></div>
+             </div>
+             <div class="cnt"><!--文字和边框和padding组成-->
+                 1呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵<br/>2呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵<br/>
+                 3呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵<br/>4呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵<br/>5呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵<br/>6呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵<br/>7呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵<br/>8呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵<br/>9呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵<br/>10呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵<br/>
+                 11呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵<br/>
+                 12呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵<br/>
+                 13呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵<br/>
+                 14呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵<br/>15呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵<br/>16呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵<br/>
+                 17呵呵呵呵呵呵<br/>
+                 18呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵<br/>
+                 19呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵<br/>
+                 20呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵<br/>呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵
+                 呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵
+                 呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵
+                 呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵
+                 呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵
+             </div>
+    	</div>
+    	<script type="text/javascript" src="jquery-1.11.2.min.js"></script>
+        <script type="text/javascript">
+           //自定义滚动条
+           //改变:cnt的top位置,怎么改变？
+           //首先获取整个跑道
+           //层拖拽三要素:position(absolte/fixed),left,top
+           //height innerHeight outerHeight
+           //height  文本真实高度
+             $(function(){
+                 var mark = false;
+                 $(".sbar").mousedown(function(e){
+                     var $this = $(this);
+                     var y1 = e.clientY;
+                     var top = $this.position().top;
+                     var h = $this.parents(".box").height();
+                     var contentHeight = $(".cnt").outerHeight(true)-h;
+                     var mh =h - 10;
+                     mark = true;
+                     tm_forbiddenSelect();
+                     $(document).mousemove(function(e){
+                         if(mark){
+                         	var y2 = e.clientY;
+                         	var nt = y2- y1 +top;
+                         	if(nt<=0)nt=0;
+                         	if(nt>=mh)nt= mh;
+                         	var p = nt/h;
+                         	$(".cnt").css("top",p*contentHeight*-1);
+                            $this.css("top",nt);      
+                         }
+                     }).mouseup(function(){
+                     	mark = false;
+                     });
+                 });
+             });
+                /**
+             * 禁止窗体选中
+             */
+            function tm_forbiddenSelect() {
+                $(document).bind("selectstart", function() {
+                    return false;
+                });
+                document.onselectstart = new Function("event.returnValue=false;");
+                $("*").css({
+                    "-moz-user-select" : "none"
+                });
+            }
+
+            /* 窗体允许选中 */
+            function tm_autoSelect() {
+                $(document).bind("selectstart", function() {
+                    return true;
+                });
+                document.onselectstart = new Function("event.returnValue=true;");
+                $("*").css({
+                    "-moz-user-select" : ""
+                });
+            }
+
+        </script>
+    </body>
+
+
+
+
+
+
+</html>

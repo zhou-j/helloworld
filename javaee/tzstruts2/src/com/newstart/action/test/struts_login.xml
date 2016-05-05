@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+          "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <!-- 更改配置文件不需要重新启动 -->
+    <constant name="struts.devMode" value="true"></constant>
+    <!-- 更改默认编码 -->  
+    <constant name="struts.i18n.encoding" value="UTF-8"></constant> 
+    <package name="strutsdefault3" extends="tm-common-defaults" namespace="/keke">
+         <!-- result的name如果不指明默认值是:success type的默认值是:dispatcher -->
+         <!-- action就是对应得类name login com.keke.login.LoginAction对应的类 -->
+         <!-- 根据ActionMapping{name='Login', namespace='/', method='null', extension='action', params=null, result=null} 进入对应的业务处理类！-->
+         <action name="Login_*" method="{1}" class="com.newstart.login.LoginAction" >
+             <!-- 返回值不写默认是success ,在同一个结果集里面不允许有相同的result-->
+             <result name="success">/loginSuccess.jsp</result>
+             <result name="fail">/login.jsp</result>
+             <!-- 返回页面源代码 -->
+             <result name="plainText" type="plainText">/login.jsp</result>
+             <!-- 重定向会造成值的丢失 -->
+<!--         <result name="redirect" type="redirect">/loginSuccess.jsp?username=${username}&amp;password=${password}</result> -->
+             <result name="redirectAction" type="redirectAction">Login_update.action</result>             
+             <!-- 链表结构 -->
+             <!-- 如果是重定向action的时候是不需要斜线,如果是chain是不需要加.action -->
+             <result name="chain" type="chain">Login_update</result>
+         </action>
+    </package>
+    <package name="login-struts" extends="strutsdefault2">
+         <action name="login_*" method="{1}" class="com.newstart.action.test.ResultTestAction">
+             <!-- 如果全局结果集和局部的结果集相同则返回局部的结果集 -->
+             <result name="login">login2.jsp</result>
+         </action>
+         <action name="main" method="main" class="com.newstart.action.test.ResultTestAction">
+             <!-- 如果全局结果集和局部的结果集相同则返回局部的结果集 -->
+             <result name="login">login2.jsp</result>
+         </action>
+    </package>
+</struts>

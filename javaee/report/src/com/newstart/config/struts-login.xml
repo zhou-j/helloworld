@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+          "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <!-- 更改配置文件不需要重新启动 -->
+    <constant name="struts.devMode" value="true"></constant>
+    <!-- 更改默认编码 -->  
+    <constant name="struts.i18n.encoding" value="UTF-8"></constant>    
+    <package name="struts2" extends="default">
+         <!-- 跳转到登录页面 -->
+         <action name="Login" method="login" class="com.newstart.action.login.LoginAction"></action>
+         <!-- 登录处理的业务逻辑方法 -->
+         <action name="logined" method="logined" class="com.newstart.action.login.LoginAction"></action>
+         <!-- 统计报表action注册 -->
+         <action name="main" method="main" class="com.newstart.action.main.ReportAction"></action>
+    </package> 
+</struts>

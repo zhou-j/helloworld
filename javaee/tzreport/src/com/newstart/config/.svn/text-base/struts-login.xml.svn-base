@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+          "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <!-- 更改配置文件不需要重新启动 -->
+    <constant name="struts.devMode" value="true"></constant>
+    <!-- 更改默认编码 -->  
+    <constant name="struts.i18n.encoding" value="UTF-8"></constant>    
+    <package name="Loginstruts" extends="default">
+         <!-- 跳转到登录页面 -->
+         <action name="login" method="login" class="com.newstart.action.login.LoginAction"></action>
+         <!-- 登录处理的业务逻辑方法 -->
+         <action name="logined" method="logined" class="com.newstart.action.login.LoginAction">
+             <result name="Ajaxsuccess" type="json">
+                 <!-- 这个属性表示去除空数据 -->
+                 <param name="excludeNullProperties">true</param>             
+             </result>
+         </action>
+    </package> 
+</struts>

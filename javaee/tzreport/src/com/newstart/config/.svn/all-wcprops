@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/MyRepository/!svn/ver/34/tzreport/src/com/newstart/config
+END
+struts-defaults.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/MyRepository/!svn/ver/36/tzreport/src/com/newstart/config/struts-defaults.xml
+END
+struts-login.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/MyRepository/!svn/ver/35/tzreport/src/com/newstart/config/struts-login.xml
+END

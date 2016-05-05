@@ -1,0 +1,22 @@
+1:Filter拦截器作用和使用的规则.
+作用就是去拦截所有用户发送的请求和资源文件(servlet/jpg/.js/.css)
+
+通过web.xml指明的url-patter进入的
+/*:代表拦截所有的请求,
+1:filter的init()方法:是根据web.xml顺序执行的,weblogic容器启动的时候并不会去加载filte的init()方法.调用的时候加载
+2:拦截器执行的顺序是根据你在web.xml里面配置的<filter-mapping>的位置决定的
+a:统一处理请求的字符集编码的问题
+b:权限控制
+c:日记管理拦截
+d:敏感关键词过滤
+
+
+1:有些需要拦截--
+2:有些不需要拦截----登陆
+
+
+
+你是打算每一个请求里面都是放一次 request.setAttribute();-----用于处理每一种业务的时候
+还是放一次每个请求共享 session.setAttribute();
+
+2:开发项目实战的留言薄功能.

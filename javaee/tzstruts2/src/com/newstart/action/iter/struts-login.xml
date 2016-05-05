@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+          "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <!-- 更改配置文件不需要重新启动 -->
+    <constant name="struts.devMode" value="true"></constant>
+    <!-- 更改默认编码 -->  
+    <constant name="struts.i18n.encoding" value="UTF-8"></constant> 
+    <package name="defaultnewstart" extends="tm-common-defaults">
+         <!-- 拦截器栈集 -->
+         <interceptors>
+             <!-- 登录拦截器 -->
+             <interceptor name="loginInterceptor" class="com.newstart.action.iter.LoginInterceptor"></interceptor>
+             <interceptor name="logInterceptor" class="com.newstart.action.iter.LogInterceptor"></interceptor>
+             <!-- 这就是拦截器栈 -->
+             <interceptor-stack name="loginStack">
+                    <interceptor-ref name="loginInterceptor"></interceptor-ref><!-- 覆盖了默认的拦截器栈 -->
+                    <interceptor-ref name="defaultStack"></interceptor-ref> <!-- 引入默认的拦截器栈 -->
+             </interceptor-stack>
+             <interceptor-stack name="logStack">
+                    <interceptor-ref name="loginInterceptor"></interceptor-ref><!-- 覆盖了默认的拦截器栈 -->
+                    <interceptor-ref name="logInterceptor"></interceptor-ref><!-- 覆盖了默认的拦截器栈 -->
+                    <interceptor-ref name="defaultStack"></interceptor-ref> <!-- 引入默认的拦截器栈 -->
+             </interceptor-stack>
+         </interceptors>
+         <!-- 课程action -->
+         <action name="course/*" method="{1}" class="com.newstart.action.iter.CourseAction">
+             <result name="success">/success.jsp</result>           
+             <interceptor-ref name="logStack"></interceptor-ref>
+         </action>
+         <!-- 资源action -->
+         <action name="resource/*" method="{1}" class="com.newstart.action.iter.ResourceAction">
+             <result name="success">/success.jsp</result>
+             <interceptor-ref name="loginStack"></interceptor-ref>
+         </action>
+    </package>
+</struts>

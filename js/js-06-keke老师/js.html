@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset = "utf-8" />
+      <title>数据类型</title>
+   </head>
+   <body>
+  <form>
+	 用户名：<input type="text" id="username">
+	 密码：<input type="text" id="password">
+	 验证码：<input type="text" id="code">
+	 <input type="button" onclick="sub()" value="提交"/>
+  </form>
+      <script type="text/javascript">
+          function sub(){
+          	//验证：校检数据的和方形和有效性
+          	//1:拿到需要验证的值
+            valicator();
+          	if (v){
+          		//请求服务器
+          	}
+          }
+       
+
+
+         /*
+            String:toLowercase toUpperCase indexOf lastIndexOf substring slice split replace charAt
+            Number:isNaN parseInt ParseFloat toFixed
+            Boolean:falsy("",undefined,false,0,null)---逻辑判断
+            Date:
+            Math:ceil(最大) floor(最小) random()随机数;
+            function
+           
+            undefined:如果访问一个不存在的变量的时候都是undefine typeof undefine === undefined
+            null:代表有值null值，一般都是代表意见赋值了。数组，日期，正则，object(json)
+            typeof null == object
+         */
+
+         //function/对象
+         /*
+             所有的变量和方法名的：以字母，$,_开头，其他随便。
+             格式：function 函数名称(变量的定义规则)(){
+	               //函数体
+             }
+             注意1：不允许使用关键字定义变量和方法的名称。
+             注意2：把function当做一个数据类型,"不要当做一个方法"。当做你定义一个变量一样来看待它。
+
+             总结：
+             1.如果函数没有返回值，返回就是undefined
+             2.函数是一种数据类型，
+             3.执行函数就是：函数名称();
+             4.参数列表，分为形参和实参
+         */
+          function $(id){
+          	  return document.getElementById(id);
+          };
+
+/*        function isEmpty(cnt){
+          	  if(cnt="" || cnt.length==0){
+          	  	return false;
+          	  }
+          	  return true;
+          }*/
+          function valicator(){
+          	//验证：校检数据的和方形和有效性
+          	//1:拿到需要验证的值
+          	var username = $("username").value;
+          	var password = $("password").value; 
+          	var code = $("code").value;
+          	if(!username){//!false
+                alert("请输入用户名...");
+                $("username").focus();
+                return false;
+          	}
+            //判断元素是否为空
+            function isEmpty(cnt){
+              if(cnt==""||cnt.length==0){
+                 return false;
+              }
+              return false;
+            };
+
+            function isNotEmpty(cnt){//cnt="keke"
+              return !isEmpty(cnt);//!false=true
+            };
+            var t = isNotEmpty("keke");
+            alert(t);
+
+          	if(!password){//!false
+                alert("请输入密码...");
+                $("password").focus();
+                return false;
+          	}
+
+          	if(!code){//!false
+                alert("请输入验证码...");
+                $("code").focus();
+                return false;
+          	}
+            
+            return true;        	          	         	          	          	
+          }
+      </script>
+   </body>
+</html>

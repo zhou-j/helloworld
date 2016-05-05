@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+          "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+<!--优先集顺序(后面的覆盖前面的) -->
+<!--struts-default.xml===struts.xml===struts.properties===xml... -->
+    <constant name="struts.action.extension" value="xxx,zhe,shanchen"></constant>
+    <!-- 更改配置文件不需要重新启动 -->
+    <constant name="struts.devMode" value="true"></constant>
+    <!-- 更改默认编码 -->  
+    <constant name="struts.i18n.encoding" value="UTF-8"></constant> 
+    <!-- 通用配置拦截器，拦截器栈，全局返回结果集，全局result-type:默认返回值的指明result-types -->    
+<!--     <result-types> -->
+<!--         <result-type name="" class=""></result-type> -->
+<!--     </result-types> -->
+    <package name="tm-common-defaults" extends="struts-default" abstract="true">
+         <!-- 全局返回页面的置顶 404页面login.html,首页错误业务，退出页面 -->
+         <global-results>
+             <result name="login" type="redirect">/login.jsp</result>
+             <result name="index">/index.jsp</result>
+         </global-results>
+    </package>
+</struts>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset = 'utf-8' />
+      <title>对象-keke老师</title>
+   </head>
+   <body>
+      <div id="box"></div>
+      <script type="text/javascript">
+          //对象：职责调用属性，调用方法
+          //var obj = {}；//对象(开发中一般采用这种)
+          //var obj = new Object();//创建对象
+          //var obj = Object.create(); //创建对象
+          var obj = {};
+          //形态是由一个键值对的存在，json
+          var obj = {username:"keke"};
+          //对象的增删改查
+          //添加值
+          obj.age = 30;
+          obj.address = "湖南长沙";
+          alert(obj.age);
+
+          //修改值
+          obj.username = "小king";
+          obj.age = 20;
+          alert("添加"+obj.username+"===="+obj.age+"===="+obj.address);
+          //伤除值
+          delete obj.age;
+          alert("添加"+obj.username+"===="+obj.age+"===="+obj.address);
+          delete obj;
+          alert(obj);
+          alert("添加"+obj.username+"===="+obj.age+"===="+obj.address);
+          //删除整个对象
+          obj = null;
+
+          //对象的职责是调用属性和调用方法key:value;
+          var data = {username:"keke"};//{'username':"keke"},{"username":"keke"}
+          //取值有两种
+          alert(data.username+"===="+data["username"]);
+          //取值有两种方式
+          //第一种方式：对象.属性
+          //第二种方式：对象["属性名"]          
+          
+          //$("#box").css("background","red");
+          function css(id,key,value){
+            var boxDom = document.getElementById(id);
+            boxDom.style[key] = value;
+          };
+
+          css("box","width","200px");
+          css("box","height","200px");
+          css("box","border","2px solid red");
+
+          /*
+            var obj = {"username":"keke"}
+            var obj = {username:"keke"};
+            var obj = {'username':'keke'};
+
+             
+            var obj = {"username":}
+          */
+          var html = "<div class='name'><li id='keke'></li></div>"
+          var html = "<div class=\"name\"><li id=\"keke\"></li></div>"          
+             
+      </script>
+   </body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+   <head>
+   	  <meta charset = "utf-8" />
+      <title></title>
+      <style type="text/css">
+         a{text-decoration:none;color:pink;padding:10px 20px;cursor:pointer;border:1px solid #d8d8d8;margin:200px 250px;display:inline-block;border-radius:3px;}
+      </style>
+   </head>
+   <body>
+      <a href="javascript:void(0);" onclick = "tzMusic.play()">播放</a>
+   	  <a href="javascript:void(0);" onclick = "tzMusic.stop()">暂停</a>
+      <script type="text/javascript">
+
+          //music.js Moduble 模式
+          var tzMusic = (function(){
+          var v = 5;
+          function play(){
+              alert("周娟都比");
+          };          
+          function stop(){
+              alert("musicstop");
+          };
+
+          function next(){
+
+          };
+
+          function prev(){
+
+          };
+
+          function main(){
+          	   //播放上一首下一首
+          };
+   
+          return{
+          	  play : play,
+          	  stop : stop,
+          	  next : next
+          };
+         })();
+
+
+
+
+      </script>
+   </body>
+</html>

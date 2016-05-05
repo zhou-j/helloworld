@@ -1,0 +1,63 @@
+
+<!doctype html>
+<html>
+   <head>
+      <meta charset = "utf-8" />
+      <title>object-keke老师</title>
+   </head>
+   <body>
+   	  <div id="box"></div>
+      <script type="text/javascript">
+         //写一个jquery框架 8年
+         //第一段：$("#box")  第二段:css("background","red");
+         //第一段：$("#box")  第二段:html();
+         //单属性可以加双引号也可以不加，双属性一定要加双引号。
+
+         //对象循环
+/*         var json ={
+         	"username":"keke",
+         	"age":20,
+         	test:function(){
+         		alert("11111");
+         	}
+         };
+
+         //for in
+         for(var key in json){
+         	alert(key+"==="+json[key]);
+         };*/
+         var $ = function(id){
+         	if(id.indexOf("#")!=-1)id = id.replace("#","");
+         	var dom = document.getElementById(id);
+         	return{
+         		css:function(key,value){
+         			if(typeof key==="object"){
+         				 for(var k in key){
+         				 	 var value = key[k];
+         				 	 if(typeof value ==="number"){
+                                 value = value +"px";
+         				 	 }
+                              dom["style"][k]=value;
+         				 	 }
+         				 }else{
+         				 	 if(typeof value ==="number"){
+                                  value = value +"px";
+         				 	 }
+         				 	 dom["style"][key] = value;
+         				 }
+         			}
+         		}
+         };
+         
+         $("#box").css({
+             width:200,
+             height:200,
+             border:"1px solid red",
+             background:"red",
+             padding:30,
+             margin:30
+         })
+
+      </script>
+   </body>
+</html>

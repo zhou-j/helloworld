@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+          "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <!-- 更改配置文件不需要重新启动 -->
+    <constant name="struts.devMode" value="true"></constant>
+    <!-- 更改默认编码 -->  
+    <constant name="struts.i18n.encoding" value="UTF-8"></constant>
+    
+    <package name="default" extends="json-default">  
+         <global-results>
+             <!-- 登录页面跳转 -->
+             <result name="login">/login.jsp</result>
+             <!-- 登录Action跳转 -->
+             <result name="loginRedirect" type="redirect">/login</result>
+             <!--地址栏的重定向  -->
+             <result name="main" type="redirect">profit/list</result>
+         </global-results>
+    </package>
+    <!-- ajax注册 -->
+    <package name="jsonstruts" extends="json-default" namespace="/json">
+         <action name="*/*" method="{1}" class="com.newstart.action.TmprofitAction">
+             <param name="id">{2}</param>
+             <result name="Ajaxsuccess" type="json">
+                 <!-- 这个属性表示去除空数据 -->
+                 <param name="excludeNullProperties">true</param>
+             </result>
+             <result name="error">/error.jsp</result>
+         </action>
+<!--     <action name="delete" method="delete" class="com.newstart.action.TmprofitAction"> -->
+<!--         <result name="Ajaxsuccess" type="json"> -->
+             <!-- 这个属性表示去除空数据 -->
+<!--             <param name="excludeNullProperties">true</param> -->
+<!--         </result> -->
+<!--         <result name="error">/error.jsp</result> -->
+<!--     </action> -->
+    </package>
+    <!-- 普通的Action注册 -->
+    <package name="profitstruts2" extends="default">
+         <!-- 注册拦截器  -->
+         <interceptors>
+              <interceptor name="logInterceptor" class="com.newstart.core.LogInterceptor"></interceptor>
+              <interceptor-stack name="loginStack">
+                   <interceptor-ref name="logInterceptor"></interceptor-ref>
+                   <interceptor-ref name="defaultStack"></interceptor-ref>
+              </interceptor-stack>
+         </interceptors>      
+         <action name="profit/*/*" method="{1}" class="com.newstart.action.TmprofitAction">
+             <param name="id">{2}</param>
+             <result>/profit/{1}.jsp</result>
+             <result name="error">/error.jsp</result>
+             <interceptor-ref name="loginStack"></interceptor-ref>             
+         </action>
+    </package>
+</struts>

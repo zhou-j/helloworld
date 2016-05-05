@@ -1,0 +1,39 @@
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset = "utf-8" />
+        <title>数组的操作-珂珂老师</title>
+    </head>
+    <body>
+       <script tpye="text/javascript">
+          /*数组的操作：
+             查询：
+             添加：
+             删除：
+             修改：
+             */
+          var arr = [];
+          //添加是push
+          arr.push("小户");
+          arr.push("小钟");
+          arr.push("array");
+          //打印：toString();以逗号分隔；
+          //修改元素的分隔符
+          //var cstr = arr.join("$").toString();//小白$小钟$array
+          //var carr = cstr.split("$");
+          //alert(arr.length);//3
+          //alert(arr[0]);
+
+          //修改
+          arr[0] = "keke";
+          alert(arr[0]);
+
+          //删除，数组的长度是不会发生变化
+          delete arr[0];
+
+          alert(arr.length);
+
+       </script>
+    </body>
+</html>

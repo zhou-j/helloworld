@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+   <head>
+       <!--声明当前页面编码集 （中文编码<gbk,gb2312>,国际编码<utf-8>) -->
+	   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	   <!--声明当前页面的三要素-->
+	   <title> js中的变量-keke老师</title>
+	   <meta name="keyworld" content="关键词，关键词">
+	   <meta name="description"content="">
+	   <!--css/js-->
+	   <style type ="text/css" >
+	    
+		*{margin:0 ;padding:0;}
+	   </style>
+
+   </head>
+  <body>
+     <h1 id="timer"></h1>
+     <script type="text/javascript">
+	     //变量是以字符串，下划线，美元符号开头的.
+		 var _123 = 10;
+		 //但是在开发过程中：尽量是使用英文定义变量名
+		 var num = 123;
+
+		 //什么数据类型，它们决定变量什么，告诉我们什么
+		 //var弱类型，在语言中
+		 //定义一个变量的格式：var变量名 = 字面值；
+		 //定义字符串的时候字面值一定用单引号和双引号进行包裹
+
+		 //JavaScript的数据类型有哪些呢：数字类型，字符串，数组，boolean类型,日期[Date]undefined都是函数(function)对象[object]
+
+
+
+		 //数字-number
+		 var num = 10;
+		 var money = 12.5;
+		 var pi = 3.1415926;
+		 //反射======typeof变量名称
+		 console.log("当前num的数据类型是:"+(typeof num));
+		 console.log("当前money的数据类型是:"+(typeof money));
+		 console.log("当前pi的数据类型是:"+(typeof pi));
+		 //字符串---string
+		 var c="A";
+		 var cc='A';
+		 var s = "我爱你们字符串";
+		 var ss = "今天心情不错字符串";
+		 console.log("当前c的数据类型是:"+(typeof c));
+		 console.log("当前cc的数据类型是:"+(typeof cc));
+		 console.log("当前s的数据类型是:"+(typeof s));
+		 console.log("当前ss的数据类型是:"+(typeof ss));
+
+		 //日期类型:date
+		 var date = new Date();
+		 console.log("q日期类型===="+typeof date);
+		 var timerDom = document.getElementById("timer");
+		 setInterval(function(){
+		    var d = new Date();
+			timerDom.innerHTML = d.toLocaleString();
+		 
+		 },1000);
+
+		 //布尔类型 是与非 条件判断 就用到boolean类型 true/false
+		 var b = true;
+		 var c = false;
+		 console.log("当前b的数据类型是："+typeof b);
+		 console.log("当前c的数据类型是："+typeof c);
+
+		 //数组-周四课程
+		 var arr = [];
+		 console.log("当前arr的数据类型是："+typeof arr);
+		 
+		 //函数数据类型
+		 var fn = function(){
+		 
+		 };
+		 console.log("当前arr的数据类型是："+typeof fn);
+		 //undefined
+		 var c = undefined;
+		 console.log(""+typeof c);
+         //null
+		 var cc = null;
+		 console.log("当前c的数据类型是："+typeof cc);
+         /*
+		   总结：
+		   1.什么是变量：以字母，美元符号,下划线开头，其他随便,(不能定义关键字)
+		   2.javascript有类型:
+		     a:数值型number 数字,小数,整数十六进制比如10 100 12.59 #1234
+			 b:字符型string一篇文件,一个人的名字,一句话它是引号引起的字面值比如：var name ="keke"；
+			 var numStr = "10";var f = "true";var cc="10"；
+			 c:函数类型function类型
+			 d:布尔型 boolean，只有两个值true/false比如var f = false;var t = true;
+			 用于条件逻辑判断中和循环中
+			 e:object类型:date/数组/object/null
+			 f:undefine类型 一个知识
+
+			 变量定义的格式:
+			 var 变量名 = 字面值;
+			 var c = 10;
+			 var c = 10;
+		 
+		 */
+   
+
+
+	  
+	 
+	 
+	 </script>
+  </body>
+
+
+</html>
+

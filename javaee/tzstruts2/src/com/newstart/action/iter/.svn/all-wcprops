@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/MyRepository/!svn/ver/32/tzstruts2/src/com/newstart/action/iter
+END
+LoginInterceptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/MyRepository/!svn/ver/32/tzstruts2/src/com/newstart/action/iter/LoginInterceptor.java
+END
+struts-login.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/MyRepository/!svn/ver/32/tzstruts2/src/com/newstart/action/iter/struts-login.xml
+END
+ResourceAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/MyRepository/!svn/ver/32/tzstruts2/src/com/newstart/action/iter/ResourceAction.java
+END
+CourseAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/MyRepository/!svn/ver/32/tzstruts2/src/com/newstart/action/iter/CourseAction.java
+END
+LogInterceptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/MyRepository/!svn/ver/32/tzstruts2/src/com/newstart/action/iter/LogInterceptor.java
+END

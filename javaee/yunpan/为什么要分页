@@ -1,0 +1,12 @@
+1：为什么要分页；能够解决什么问题
+
+1：从数据库加载数据集合时-----耗时
+2：从集合获取放在页面中：c:foreach--耗时
+3：服务器的带宽-----耗时
+
+//查询从零开始后的两条数据。
+ELECT * from tm_resource LIMIT 0,2;
+//查询从2开始后的两条数据。
+SELECT * from tm_resource LIMIT 2,2;
+//查询从4开始后的两条数据。
+SELECT * from tm_resource LIMIT 4,2;

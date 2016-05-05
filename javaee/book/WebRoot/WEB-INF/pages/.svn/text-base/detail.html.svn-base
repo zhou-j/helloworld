@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>详情页</title>
+<link href="css/sg.css" rel="stylesheet" type="text/css" />
+<link href="css/teacher.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="header">
+     <div class="wth1100">
+          <div class="teac_pic"><a href="#"><img src="images/peple.jpg" alt=""/></a></div>
+          <div class="teac_nr">
+               <div class="teac_bt"><span>老师姓名</span></div>
+               <div class="teac_zi">中共党员，本科学历，小学高级教师。长沙市小学语文优秀教师。<br />
+               1995年参加湖南省小学语文教学比武，荣获一等奖的第一名，同年10月代表湖南省参加全国语文教学比武再获二等奖。<br />
+               2005年——2007年多次代表学校担任省级，国家级观摩课的执教任务，并获得各级领导及专家们的一致好评。<br />
+               2006年10月，作为语文学科带头人被学校派往昆明进行课题骨干培训，使自己的专业水平得以提升。撰写的经验论文多次获国家、省、市级一、二等奖。<br />
+               2001年编写了《轻轻松松学作文》系列丛书，2003年参与编写《教学兵法》一书。<br />
+               2008年担任《金典》多册练习册主编。所带班级班风正，学风浓，2007年被评为长沙市"红旗中队"。辅导学生习作参加各级各类比赛多次获特等奖及一、二等奖。</div>
+          </div>
+          <div class="clearfix"></div>
+     </div>     
+</div>
+<div id="container">
+     <div class="detail_con">
+          <div class="det_bt">关于中秋的那点事</div>
+          <div class="det_sm">
+               <div class="fl"><span>发表于：2014-8-28 23:56:03  作者：moon老师</span></div>
+               <div class="fr"><a href="#"><i class="discuss teac_icon"></i><span>评论</span></a><a href="#"><i class="forward teac_icon"></i><span>转发</span></a><a href="#"><i class="praise teac_icon"></i><span>点赞</span></a></div>
+               <div class="clearfix"></div>
+          </div>
+          <div class="det_nr">一直想跟大家总结一下网站推广八大技巧，今天总算找到时间。以下八大技巧综合网站推广的8个不同的大型的推广计划，而类似友情链接推广、签名推广、论坛帖子推广等小型推广技巧没有罗列
+在类，以下任何一种方法都能帮助网站获取大量流量，详细介绍如下：<br><br>
+
+一、软文推广<br>
+主要是软文投稿的方式，投稿的平台有很多，主要选择行业内知名度高的平台投稿。比如SEO行业知名度比较高的有A5、Chinaz、SEOwhy、和SEO研究中心，而能在这些网站投稿成功的文章会被其他的同行业平台大量转载，转载的文章就会把你留在投稿文章的链接迅速的扩大。而扩大的这些网站又会有一些受众和粉丝，这些网站又会去阅读和扩展你的网站，所以这是一个病毒式的传播。<br>
+例如：我们在站长之家投稿的一篇文章“浅谈2014年SEO的趋势”，当你搜索标题会发现很多网站都转载了这篇文章，并且大部分是没有删掉文章的出处链接的。那么如果别人删除了怎么办呢？当然我们可以使用更加高级的营销方法，比如在文章中加入的类似引导用户进入网站的话语。这些营销不需要你加一个链接，只需要你稍微运用智慧，用户一定会跟着你的思路搜索点击网站。而大家都知道网站关键词在只要进入百度前20名就会有点击权重，点击越多排名越靠前。
+<br><br>
+二、QQ群推广<br>
+关于QQ群推广有太多内容和步骤要讲，详细步骤可以参考：怎么利用QQ群推广网站。我在这里主要讲在QQ群里的推广方法：<br>
+1、在群里建立威信的方法引导用户在网站点击。比如羊羊论坛（yangyangbbs.com）就建立了很多个养羊交流群，然后群主在群里偶尔帮大家解答一两个问题，大家觉得群主非常厉害，会非常的
+信任他。然后下一次一旦有人问到什么问题，只要在论坛有这个内容，他就会把链接发出来给大家。这一点非常厉害，很多人就会去点击阅读，特别是这个行业的新手。<br>
+另外，不仅如此他还能获取一些行业的内幕，比如那个地区羊病非常厉害，不能过去买羊等等，就把这些信息放到网站上推广给大家。因为有内部资源，所以能获得更多人来网站地啊你。这个论
+坛在建立后2个月就能主关键词到首页，而且很少去外链，外链只有几十个，现在推广比较少，所以排名稍有下降。<br>
+2、运用QQ群把用户圈起来，偶尔提供小礼品。见过的非常牛的一个化妆品销售淘宝店铺，店铺里面的每一款产品卖到几十万件。而从推广至今大部分购买了产品的人都会加入他们的QQ群，大概
+超过上百个QQ群，每个群500人，就有好几万的粉丝量，更何况很多群都是1000人呢？<br>
+     把人圈起来以后让大家做一个登记，比如年龄、性别、生日。每个人生日那一天都可以免费领取一个小礼品，并且QQ群会定期搞一些小活动赠送礼品。这样大家的积极性非常高，因为每个
+地方都有那么一群人成天盯着免费活动领取小礼品的，他们在群里聊天、抢礼品或者通过QQ空间做活动抢礼品，能带动很大一群人的活跃。很多人领了礼品还会购买一些其他的产品，因为护肤永
+远都是很多东西搭配使用的，所以这又是一次促销。<br>
+    不仅活动，群里的美容专家会帮大家解决一些平时遇到的护肤问题，帮他们推荐店铺的产品，这又能促进再次消费。<br>
+3、QQ群推广还可以结合QQ空间推广和QQ邮件推广，上面我讲到的两个案例都结合使用。比如羊羊吧的案例，那位群主的QQ空间坚持每天更新三篇文章已经2年多时间，每天空间的访问量达到上千
+，多的时候将近2000的访问量。而每篇文章都有论坛文章的推广，还有群邮件，后台统计很多四分之一的用户来自于群邮件。再比如化妆品的案例，再一次QQ空间抢楼活动中，文章的转发量和评
+论量达到几十万，并且这几十万个用户转发到自己的空间又会有更多的人看到，这岂不是一次成功的病毒式传播？</div>
+          <div id="message">
+                <div class="mes_nr">
+                     <textarea name="" cols="" rows="" class="text_area"></textarea>
+                     <div class="tongbu"><span>同步到：</span><a href="#" class="teac_icon xinlang"></a><a href="#" class="teac_icon tengxun"></a><a href="#" class="teac_icon renren"></a></div>
+                     <div class="fabiao"><input name="" type="button" class="submit" value="发表评论" /><span>还可以输入140字</span></div>
+                     <div class="clearfix"></div>
+                </div>
+                <div class="mes_list">
+                     <div class="sort"><a href="#" class="current">按时间</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">按热门</a></div>
+                     <div class="disc_list">
+                          <div class="pic"><a href="#"><img src="images/pic.jpg" width="43" height="43" /></a></div>
+                          <div class="liuyan1">
+                               <dl>
+                                   <dt>天上的星星</dt>
+                                   <dd>推荐你们去看一部电影，叫代理人，其实未来的世界就是那样的！</dd>                                   
+                               </dl>
+                               <div class="pubdata">
+                                    <span>发表于：2014-9-05 19:13:48 |</span>
+                                    <a href="#" class="fl">只看该作者</a>
+                                    <a href="#" class="fr"><span class="nolike teac_icon"></span><p>不喜欢(21)</p></a>
+                                    <a href="#" class="fr"><span class="onlike teac_icon"></span><p>喜欢(123)</p></a>
+                               </div>
+                          </div>
+                          <div class="clearfix"></div>
+                     </div>
+                     <div class="disc_list">
+                          <div class="pic"><a href="#"><img src="images/img1.jpg" width="43" height="43" /></a></div>
+                          <div class="liuyan1">
+                               <dl>
+                                   <dt>未来世界</dt>
+                                   <dd>推荐你们去看一部电影，叫代理人，其实未来的世界就是那样的！推荐你们去看一部电影，叫代理人，其实未来的世界就是那样的！推荐你们去看一部电影，叫代理人，其实未来的世界就是那样的！推荐你们去看一部电影，叫代理人，其实未来的世界就是那样的！</dd>
+                               </dl>
+                               <div class="pubdata">
+                                    <span>发表于：2014-9-05 19:13:48 |</span>
+                                    <a href="#" class="fl">只看该作者</a>
+                                    <a href="#" class="fr"><span class="nolike teac_icon"></span><p>不喜欢(3)</p></a>
+                                    <a href="#" class="fr"><span class="onlike teac_icon"></span><p>喜欢(234)</p></a>
+                               </div>
+                          </div>
+                          <div class="clearfix"></div>
+                     </div>
+                     
+                     <div class="pagesize">
+                          <ul>
+                              <li><span>跳转到：</span><input name="" type="text" class="text_box" /><input name="" type="button" value="GO" class="text_btn" /></li>
+                              <li><a href="#">下一页</a></li>
+                              <li><a href="#">上一页</a></li>
+                          </ul>                              
+                     </div>
+                     <div class="clearfix"></div>
+                </div>
+           </div>
+     </div>
+</div>
+<div id="footer"><p>Copyright © 2013-2014 www.mooncollege.cn All Rights Reserved版权所有：湖南潭州教育咨询有限公司 备案号：备13016338号</p></div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset = "utf-8" />
+      <title>this,call,apply-keke老师</title>
+      <style type="text/css">
+          *{padding:0;margin:0;}
+          body{font-size:14px;font-family:"微软雅黑";}
+          fieldset{padding:30px 50px;}
+          p{margin:20px 0;}
+          /*input中的字体元素要单独控制。*/
+          input{font-family:"微软雅黑";}
+          textarea{vertical-align:top;width:500px;height:200px;}
+      </style>
+   </head>
+   <body>
+      <fieldset>
+         <legend>表单验证</legend>
+          <!--form-->
+          <form id="form" method = "post/get" action = "请求的服务器地址">
+              <p>用户名:<input type="text" value ="用户名"></p> 
+              <p>密码:<input type="password" value="密码"></p>
+              <p>自我介绍:<textarea>减肥的技术副科快递放假款到即发快递费</textarea></p>
+              <p>自我介绍:
+                <select>
+                  <option>请选择</option>
+                  <option>湖南省</option>
+                  <option>长沙市</option>
+                  <option>车站</option>         
+                </select>
+              </p>                    
+              <p>
+                  性别:
+                  <input type="radio" value="0" name="male" />男
+                  <input type="radio" value="0" name="male" />女
+                  <input type="radio" value="0" name="male" />保密
+              </p>
+              <p>
+                  兴趣爱好:
+                  <input type="checkbox" checked ="checked" value="0" name="male" />游泳
+                  <input type="checkbox" value="1" name="male" />爬山
+                  <input type="checkbox" value="3" name="male" />看书
+              </p> 
+              <p><input type="file" /></p>
+              <p><input type="hidden" value="我是一个隐藏的元素哦！"></p>
+
+              <p>禁止输入:<input type="text" readonly="readonly"></p>
+              <p>完全禁止:<input type="text" disabled="disabled"></p>
+              
+              <p>html5表单元素：但是很多的浏览器实现标准都不一样。</p>
+              <br>
+              <p>邮箱元素：<input type = "email" /></p>
+              <p>日期元素：<input type = "date" />date/datetime/time</p>
+              <p>URL元素：<input type = "url" /></p>
+              <p>range元素：<input type = "range" /></p>
+              <p>color元素：<input type = "color" /></p>
+              <input type="submit" value="提交数据" />
+              <input type="button" value="提交数据" />
+              <input type="reset" value="重置" />       
+          </form> 
+      </fieldset>
+      <script type="text/javascript">
+           // form是用来传递数据给服务器端，比如登录，注册。
+           // 输入框，text password textarea
+           // 选择类：select radio checkbox
+           // 上传类:file
+           // 按钮类:submit reset button
+           // 隐藏类：hidden
+
+           // 重要属性：
+           // selected 对selected option使用
+           // checked 对checkbox radio使用
+
+           // 禁止属性:(通用)disabled(忽略不会把数据提交服务器) readonly(它会把数据提交给后台)
+
+           // html5新增一些form元素
+
+
+      </script>
+   </body>
+</html>

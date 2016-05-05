@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>yunpan</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <!-- 处理字符串编码的拦截器 -->
+  <filter>
+     <filter-name>characterEncodingFilter</filter-name>
+     <filter-class>com.yunpan.core.CharacterEncodingFilter</filter-class>
+  </filter>
+  <filter-mapping>
+     <filter-name>characterEncodingFilter</filter-name>
+     <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <!--  权限拦截  -->
+      <filter>
+          <filter-name>permissionFilter</filter-name> 
+          <filter-class>com.yunpan.core.PermissionFilter</filter-class> 
+          <init-param> 
+          <param-name>filterUrl</param-name> 
+          <param-value>loginout.jsp,search.jsp,template.jsp,adduser.jsp</param-value> 
+          </init-param> 
+       </filter> 
+       <filter-mapping> 
+          <filter-name>permissionFilter</filter-name> 
+          <url-pattern>*.jsp</url-pattern> 
+      </filter-mapping> 
+  <!-- 登录拦截 -->
+  <filter>
+     <filter-name>loginFilter</filter-name>
+     <filter-class>com.yunpan.core.LoginFilter</filter-class>
+     <init-param>
+     <param-name>filterUrl</param-name>
+     <param-value>loginout.jsp</param-value>
+     </init-param>
+  </filter>
+  <filter-mapping>
+     <filter-name>loginFilter</filter-name>
+     <url-pattern>*.jsp</url-pattern>
+  </filter-mapping>
+</web-app>

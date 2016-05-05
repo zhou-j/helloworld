@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset = "utf-8" />
+      <title>闭包-keke老师</title>
+   </head>
+   <body>
+      <script type="text/javascript">
+/*      var a = 5;
+        var c = "keke"+a;
+
+        var a = 5;
+        var b = 6;
+        var k = "keke";
+        var c = "keke" + a + "keke" +b;*/
+        
+/*        function test(){
+            var a = 100;
+            var b = 200;
+            return a + b;
+        };
+        test();*/
+        //属性和函数的外调(生命周期延伸，属性函数不会被回收);
+        //闭包：一个内部函数里变量作用域生命周期的延续。直接访问一个函数里面的私有属性。
+        //function 是一种数据类型
+/*      function sum(){
+        	var a =100;
+        	//内部函数
+        	function get(){
+        		return a;
+        	}
+        	return get;
+        };
+        var fn = sum();
+        alert(typeof(fn));
+        var fn = sum();//function
+        var a = fn();
+        alert(fn);*/
+        //回调函数
+        function sum(a,b,fn){
+        	var c = 100;
+        	fn(c);
+        	return a + b;
+        };
+
+        //function 是一种数据类型
+        function test(b){
+        	alert("我是一个回调函数哦！！！"+b);
+        };
+        sum(1,100,test);
+      </script>
+   </body>
+
+
+</html>

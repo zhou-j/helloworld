@@ -1,0 +1,20 @@
+1：web tomcat:默认是ISO8859-1--不支持中文的
+--- UTF-8 支持中文
+
+2：出现乱码的原因是什么？
+ a:项目的编码不统一
+ 	get乱码处理--浏览器的内部转换()----web容器--utf-8
+ 	1:tomcat的配置文件server.xml加上一个属性URIEncoding="UTF-8"
+ 	2:String usernameString = new String(username.getBytes("ISO-8859-1"),"UTF-8");
+ 	3:URL转换 
+ 	
+ 	get有几种方式:3种
+ 	1:浏览器访问
+ 	2:<a href="">
+ 	3:<form method="get">
+ 	
+ 	
+ 	post乱码处理---web容器tomcat:默认是ISO8859-1(英文，数字，标点符号)---
+ 	UTF-8包括ISO----
+ 	
+ b:数据库乱码 --utf-8

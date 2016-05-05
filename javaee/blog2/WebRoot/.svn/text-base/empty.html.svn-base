@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+     <meta charset = "utf-8" />
+     <title>登陆失败</title>
+     <style type="text/css">
+
+     </style>
+  </head>
+  <body>
+     <div style = "text-shadow:3px 3px 3px #666;margin:100px 500px;font-size:30px;">亲，你输入的用户名或密码不正确，请重新输入！</div>
+     <script type="text/javascript">
+      
+     </script>
+  </body>
+</html>

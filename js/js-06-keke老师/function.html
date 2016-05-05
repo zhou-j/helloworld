@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset = "utf-8" />
+      <title></title>
+   </head>
+   <body>
+      <script type="text/javascript">
+           /*
+              function:起到封装的作用，把变量保护起来。
+              封装不用刻意,不是一开始做的事。
+           */
+           //a,b这个形参，1和8是实参
+           function sum(){
+           	  var args = arguments;//参数链
+           	  var result = 0;
+           	  for(var i=0;i<args.length;i++){
+           	  	  result += args[i];
+           	  }
+           	  alert(result);
+           	  var c = a + b;
+           }
+           sum(1,2,3);
+
+      </script>
+   </body>
+
+
+</html>

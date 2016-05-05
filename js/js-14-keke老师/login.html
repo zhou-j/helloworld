@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+     <meta charset = "utf-8" />
+     <title>登录页面</title>
+     <style type="text/css">
+         *{margin:0;padding:0;}
+         body{font-size:18px;font-family:"微软雅黑";color:#fff;overflow:hidden;}
+         #container{width:100%;height:680px;}
+         #container .header{width:100%;height:33%;background:#267169;position:relative;}
+         .header .logo{position:absolute;bottom:18px;left:43%;}
+         #container .main{width:100%;height:67%;background:#008EFF;}
+         #container .foot{padding-top:0px;text-align:center;}
+         p{padding:30px 0 0;}
+         #container .main .loginform{width:300px;height:300px;margin-left:40%;padding-top:39px;}
+         #container .main .loginform .username,.password{width:180px;height:23px;}
+         #container .main .loginform .btn{width:80px;height:28px;outline:none;border:none;color:#666;font-family:"微软雅黑";margin-top:12px;}
+         .loginbtn{margin-left:1px;}
+         .regbtn{margin-left:91px;}
+     </style>
+  </head> 
+  <body>
+   <div id="container">
+     <div class="header">
+          <div class="logo"><img src="images/logo.png" width="189" height="43"></div>
+     </div>
+     <div class="main">
+      <form class="loginform">
+        <p>用户名：<input type="text" class="username" placeholder="请输入用户名" /></p>
+        <p>密码：&nbsp;&nbsp;&nbsp;<input type="password" class="password" placeholder="请输入密码"/></p>
+        <p><input type="button" class="btn loginbtn" value="登录" /><input type="button" class="btn regbtn" value="注册" /></p> 
+      </form>
+      <p class="foot">Copyright &copy;2016 newstart All Rights Reserved</p>          
+     </div>     
+   </div>  
+     <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>     
+     <script type="text/javascript">
+       $("#container").find(".loginbtn").click(function(){
+            var $username = $("#container").find(".username");
+            var $password = $("#container").find(".password");
+            var username = $username.val();
+            var password = $password.val();
+            //alert(text);
+            if(username==""){
+               alert("请输入用户名！");
+               $username.focus();
+            }else if(password==""){
+               alert("请输入密码！");
+               $password.focus();
+            }
+       });   
+     </script>
+  </body>
+</html>

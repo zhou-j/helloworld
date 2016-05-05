@@ -1,0 +1,22 @@
+为什么做cookie登陆:
+cookie----是通过response输入到客户端浏览器存储的值--不安全
+
+注意点:cookie不要存储机密的数据和密码?
+
+时间设置:setMaxAge(单位:second(秒))  1*60*60*24(一天)
+
+Cookie
+---观看记录
+---------购物车
+
+例子:用户登陆session
+session---问题:---时间限制---web.xml --如果你不登陆以后.不操作(不发起任何的请求)--时间超过了30分钟,
+那么存储在session中作用域的值就是自动清空.默认时间是:30.
+<session-config>
+	<session-timeout>30</session-timeout>
+</session-config>
+
+
+效果:如果session失效了---就用cookie中存储的值--0--如果cookie都没值了--登陆
+
+

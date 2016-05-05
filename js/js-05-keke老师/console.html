@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+    <head>
+       <meta charset = "utf-8" />
+       <title></title>
+    </head>
+    <body>
+    	<div id="console" style="width:400px;height:100%;border:1px solid red;text-align:center;float:left;"></div>
+        <script type="text/javascript">
+           //色卡、打印、倒计时
+           //打印：for字符串（slice,substring,com,setTimeout）
+           //打印控制台
+           //charAt
+           var consoleDom = document.getElementById("console");           
+           var str = "我爱珂珂老师，我也爱你们！";
+           var str2 = "今天心情不错！";
+           var len = str.length;
+            
+           //第一个版本
+           // for(var i = 0;i<len;i++){
+           //     consoleDom.innerHTML += "<b>"+str.charAt(i)+"</b>";
+           // } 
+  
+           //第二个版本           
+           //递归：就是for的变体
+/*         var i = 0;
+           function start(){
+           	   if(i==len){
+           	   	  return false;
+           	   }
+           	   consoleDom.innerHTML += "<b>"+str.charAt(i)+"</b>";
+           	   i++;
+           	   setTimeout(start,500);
+           };
+           start();*/
+
+           //第三个版本           
+           var arr = [];
+           arr.push(str);
+           arr.push(str2);
+           arr.push("会计暗示了对方快乐的减  法拉第健康！会计暗示了对方快乐的减  法拉第健康！会计暗示了对方快乐的减  法拉第健康！会计暗示了对方快乐的减  法拉第健康！会计暗示了对方快乐的减  法拉第健康！会计暗示了对方快乐的减  法拉第健康！会计暗示了对方快乐的减  法拉第健康！会计暗示了对方快乐的减  法拉第健康！会计暗示了对方快乐的减  法拉第健康！会计暗示了对方快乐的减  法拉第健康！");
+           var i =0;
+           var index = 0;
+           var alen = arr.length;
+           function start(){
+           	   var str = arr[index];
+               consoleDom.innerHTML +="<b style='color:"+randomColor2()+"'>"+arr[index].charAt(i)+"</b>";
+               if (i==str.length){
+                   index++;
+                   i = 0;
+                   if(index<alen){
+                   	  setTimeout(start,500);
+                   } 
+
+               }else{
+               	   //是不是当前str的长度等于i的时候就index++
+                 console.log(i);
+	               i++;
+	               setTimeout(start,500);
+               }
+           }
+           start();
+
+/*         var index = 0;
+           var alen = arr.length;
+           var c = "";
+           var row = 0;
+           function start(){
+               var str = arr[index];
+               var len = str.length;
+               while(row < index){
+                   c+=arr[row++]+"\r";
+               }
+
+               if(i<len){
+                   consoleDom.innerText = c+str.slice(0,i)+"_";
+                   //是不是当前str的长度等于i的时候就index++;
+                   i++;
+                   setTimeout(start,100);
+               }else{
+                   index++;
+                   i = 0;
+                   if(index < alen){
+                       setTimeout(start,100);
+                   }else{
+                       consoleDom.innerText = consoleDom.innerText.replace("_","");
+                   }
+               }
+           }
+           start();*/
+          function randomColor2(){
+            //0-255
+            var r = random(255).toString(16);
+            var g = random(255).toString(16);
+            var b = random(255).toString(16);
+            //255的数字转换成十六进制数
+            if(r.length<2)r = "0"+r;
+            if(g.length<2)g = "0"+g;
+            if(g.length<2)b = "0"+b;
+            return "#"+r+g+b;
+          } 
+          function random(num){
+             return Math.floor(Math.random()*(num+1));
+          }                    
+           //色卡(Math(随机数random floor 进制转换))；
+
+        </script>
+    </body>
+</html>

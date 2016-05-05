@@ -1,0 +1,28 @@
+jsp知识点总结:
+JSP---静态部分和动态部分
+静态部分：-----HTML/CSS---javascript/jquery
+动态部分:-----脚本，指令，声明，动作，标签。
+<%@page/include/taglib
+JSP九大隐式对象
+application session request pageContext
+reponse out 
+config
+page
+exception
+EL---
+${empty username} 判断字符串是否为空，返回值是：boolean
+${empty username?"为空的值":"不为空的值"}
+${!empty hit ? 0:hits}
+函数自定义标签
+TagSupport doStartTag doAfterBody doEndTag release() init
+--BodySupport extends TagSuppert setJspBody doInitBody doStartTag doAfterBody doEndTag release() init
+//doStartTag只允许有两个返回值
+EVAL_BODY_INCLUDE
+
+
+
+
+
+
+
+ 

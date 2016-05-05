@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+          "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <!-- 更改配置文件不需要重新启动 -->
+    <constant name="struts.devMode" value="true"></constant>
+    <!-- 更改默认编码 -->  
+    <constant name="struts.i18n.encoding" value="UTF-8"></constant>
+    <!-- 全局的xml配置  -->
+    <include file="com/newstart/config/struts-defaults.xml"></include>    
+    <!-- 登录配置文件 -->
+    <include file="com/newstart/config/struts-login.xml"></include>
+    <!-- 文件上传 -->
+    <include file="com/newstart/config/struts-upload.xml"></include>
+    <!-- ajax提交 -->
+    <include file="com/newstart/config/struts-ajax.xml"></include>
+</struts>

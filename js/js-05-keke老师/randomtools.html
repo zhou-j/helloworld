@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset = "utf-8" />
+      <title>randomtools-keke老师</title>
+   </head>
+   <body>
+      <script type="text/javascript">
+          function randomColor(){
+          	  var r = random(255);
+          	  var g = random(255);
+          	  var b = random(255);
+          	  return "rgb("+r+","+g+","+b+")";//IE7不支持rgb
+          }          
+
+          function randomColor2(){
+          	//0-255
+          	var r = random(255).toString(16);
+          	var g = random(255).toString(16);
+          	var b = random(255).toString(16);
+          	//255的数字转换成十六进制数
+          	if(r.length<2)r = "0"+r;
+          	if(g.length<2)g = "0"+g;
+          	if(g.length<2)b = "0"+b;
+          	return "#"+r+g+b;
+          }
+          
+          /*0-num的随机数*/
+          function random(num){
+          	 return Math.floor(Math.random()*(num+1));
+          }
+
+          /*start-end的范围随机数*/
+          function rangeRandom(start,end){
+          	 return Math.floor(Math.random()*(end-start+1))+start;
+          }
+      </script>
+   </body>
+
+
+
+</html>

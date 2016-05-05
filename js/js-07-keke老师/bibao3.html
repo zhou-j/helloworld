@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+   <head>
+   	  <meta charset = "utf-8" />
+      <title></title>
+   </head>
+   <body>
+   	  <script type="text/javascript" src="index.js"></script>
+      <script type="text/javascript">
+          //闭包：解决一个全局变量互相牵引或者约束的行为
+          //定义变量，难免会重名 如果在引入别人的index.js里面定义了var a = 100;
+          //在卡发万不得已的情况是不允许使用全局变量的，名字特殊
+          //闭包：解决变量作用域延续的问题，同时解决全局变量冲突的问题。(即时函数：即写即调用！);
+          var a = 100;
+          (function(b){
+              var a = 200;
+              alert(a);
+          })(1000);
+
+
+      </script>
+   </body>
+</html>

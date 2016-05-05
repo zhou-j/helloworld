@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+   <head>
+       <!--声明当前页面编码集 （中文编码<gbk,gb2312>,国际编码<utf-8>) -->
+	   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	   <!--声明当前页面的三要素-->
+	   <title> HTML模版</title>
+	   <meta name="keyworld" content="关键词，关键词">
+	   <meta name="description"content="">
+	   <!--css/js-->
+	   <style type ="text/css" >
+	    
+		*{margin:0 ;padding:0;}
+           
+	   </style>
+
+   </head>
+  <body style="background:#333">
+     <fieldset>
+		<legend>一个简单的计算器</legend>
+		<p>
+		<input type="text" id="aa" value="100" />+
+		<input type="text" id="ab" value="100" />
+		<input type="button" onclick="result('a','+')" value="结果">
+		<span id="result"></span>
+		</p>
+		<p>
+		<input type="text" id="ca" value="100" /> -
+		<input type="text" id="cb" value="100" />
+		<input type="button" onclick="result('c','-')" value="结果">
+		<span id="result"></span>
+		</p>
+		<p>
+		<input type="text" id="da" value="100" />*
+		<input type="text" id="db" value="100" />
+		<input type="button" onclick="result('d','*')" value="结果">
+		<span id="result"></span>
+		</p>
+		<p>
+		<input type="text" id="ea" value="100" /> /
+		<input type="text" id="eb" value="100" />
+		<input type="button" onclick="result('e','/')" value="结果">
+		<span id="result"></span>
+		</p>
+		<p>
+		<input type="text" id="fa" value="100" /> %
+		<input type="text" id="fb" value="100" />
+		<input type="button" onclick="result('f','%')" value="结果">
+		<span id="result"></span>
+		</p>	 
+	 </fieldset>
+
+     <script type="text/javascript">
+	     //最简单的计算器--掌握算术运算符
+		 function $(id){
+		     return document.getElementById(id); 
+		 }
+		 function result(m,op){
+			 var a =$(m+"a").value*1;
+			 var b =$(m+"b").value*1;
+			 $("result").innerHTML =eval(a+op+b);
+		 }
+		/*
+		 function keke(){
+			 var a =$("a").value*1;
+			 var b =$("b").value*1;
+			 $("result").innerHTML =eval(a+b);
+		 } 
+		 function keke2(){
+			var a =$("a").value*1;
+			var b =$("b").value*1;
+			$("result").innerHTML = eval(a-b);
+		 } 
+		 function keke3(){
+			var a =$("a").value*1;
+			var b =$("b").value*1;
+			$("result").innerHTML = eval(a*b);
+		 } 
+		 function keke4(){
+			var a =$("a").value*1;
+			var b =$("b").value*1;
+			$("result").innerHTML = eval(a/b);
+		 } 
+		 function keke5(){
+			var a =$("a").value*1;
+			var b =$("b").value*1;
+			$("result").innerHTML = eval(a%b);
+		 }
+		 */
+	 </script>
+  </body>  
+
+
+</html>
+

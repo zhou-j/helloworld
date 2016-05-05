@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+          "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <!-- 更改配置文件不需要重新启动 -->
+    <constant name="struts.devMode" value="true"></constant>
+    <!-- 更改默认编码 -->  
+    <constant name="struts.i18n.encoding" value="UTF-8"></constant> 
+    
+    <!-- page包：是可以继承的structs-default,获取struts2的默认功能 -->
+    <!-- 默认命名空间是不需要指明的  namespace="/" -->
+    <!-- 
+        namespace="keke" 
+                        注意点：在一个命名空间下面是不允许配置两个相同的Action的name,不同的命名空间下面是可以允许有同名的Action的name.
+                        为什么这样做？
+        1:业务更加清晰明了.
+        2:开始一些组件应用，它脱离于业务开发比如：文件上传，文件下载，验证码。
+        
+                        在浏览器中访问http://localhost/tzstruts2/keke/reg_save;访问登录成功 
+                        说明继承一个包后就可以继承这个包的默认功能。   
+    -->
+    <package name="struts_user" extends="struts-default">
+   
+    </package>
+    
+    <!-- 
+	        注册到我们struts2.xml文件中file="xml路径"
+	        指明的是classPath下面文件
+	        和引入的顺序无关
+	   1:分包:可以将大量的Action的配置包包含在其他文件中,让程序和业务逻辑变得跟加清晰明了.
+	   2:低耦合，高内聚.
+       <include file="struts_user.xml"></include>
+     -->
+</struts>

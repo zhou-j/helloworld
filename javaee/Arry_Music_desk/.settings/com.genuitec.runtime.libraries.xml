@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project>
+  <container path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/MyEclipse Tomcat v7.0">
+    <jar-attrs id="lib//jasper.jar">
+      <attribute name="javadoc_location"/>
+      <attribute name="source-path-root"/>
+      <attribute name="source-path" value="C:\Program Files\Java\jdk1.8.0_05\jre"/>
+    </jar-attrs>
+  </container>
+</project>

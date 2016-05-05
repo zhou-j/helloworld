@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+    <head>
+       <meta charset = "utf-8" />
+       <title>dialog-keke老师</title>
+       <style type="text/css">
+           *{padding:0;margin:0;}
+           #dialog{width:360px;height:220px;position:fixed;top:10px;left:20px;border:5px solid #111;z-index:2;}
+           #dialog .close{position:absolute;right:10px;top:2px;color:#fff;font-size:18px;text-decoration:none;font-family:inherit;}
+           #dialog .close:hover{color:red;}
+           #dialog .header .title{background:#111;color:#fff;height:42px;line-height:42px;padding-left:5px;}
+           #dialog .content{height:140px;width:100%;background:#fff;}
+           #dialog .buttons{background:#111;height:38px;text-align:center;line-height:38px;}
+           #dialog .buttons .btns{text-decoration:none;color:#fff;}
+           #dialog .buttons .sure{background:green;padding:4px 12px;}
+           #dialog .buttons .cancle{background:red;padding:4px 12px;}
+           .overlay{position:fixed;width:100%;height:100%;top:0;left:0;background-color:#141414;filter:alpha(opacity=.58);-moz-opacity:.58;-khtml-opacity:.58;opacity:.58;z-index:1;}
+       </style>
+    </head>
+    <body>
+
+       <div id="dialog" style="display:none">
+          <div class="header">
+          	  <h1 class="title">我是一个弹出层哦！</h1>
+          </div>
+          <a href="javascript:void(0)" class="close">X</a>
+          <div class="content">
+                 
+          </div>
+          <div class="buttons">
+               <a href="javascript:void(0)" class="btns sure">确定</a>
+               <a href="javascript:void(0)" class="btns cancle">取消</a>
+          </div>
+       </div>
+       <div class="overlay" style="display:none">
+       </div>
+       <a onclick="tzAlert()" style="cursor:pointer">弹出</a>
+       <script type="text/javascript">
+/*            插件名称：弹出层
+              描述：封装一个弹出层
+              弹出层的三要素：定位(position:fixed) left top
+              掌握的知识:dom的添加和事件，参数的传递规则
+              延伸技术：闭包,回调函数this,call,apply
+              call(this,1,2,3,4)
+              apply(this,[1,2,3,4])
+              动态扩展：传递对象*/
+
+              var tzDialog = (function(){
+                 
+                 var dialog = {
+                 	 defaults:{
+                 	 	title:"标题",
+                 	 	content:"我是内容哦！",
+                 	 	color:"#11111",
+                 	 	sure:"确定",
+                 	 	cancle:"取消"
+                 	 },
+                 	 template:function(title,content,sureText,cancleText){
+                 	 	//追加弹出层到dom节点中
+                 	 	var bodyDom = document.body;
+                 	 	var dialogDom = document.createElement("div");
+                 	 	dialogDom.id = "dialog";
+                 	 	dialogDom.innerHTML  = "	<div class='header'>"+
+						"		  <h1 class='title'>"+title+"</h1>"+
+						"	</div>"+
+						"	<a href='javascript:void(0)' class='close'>X</a>"+
+						"	<div class='content'>"+content+
+							     
+						"	</div>"+
+						"	<div class='buttons'>"+
+						"	   <a href='javascript:void(0)' class='btns sure'>"+sureText+"</a>"+
+						"	   <a href='javascript:void(0)' class='btns cancle'>"+cancleText+"</a>"+
+						"	</div>"+
+						"	</div>"+
+						"	<div class='overlay'>"+
+						"	</div>"
+						bodyDom.appendChild(dialogDom);
+						return dialogDom;
+                 	 },
+                 	 alert:function(title,content,sureText,cancleText){
+                 	 	//this.template(title,content);
+                 	 	var dialogDom = this.template(title,content,sureText,cancleText);
+                 	 	var buttonDom = dialogDom.getElementsByClassName("buttons")[0];
+                 	 	var cancleDom = buttonDom.getElementsByClassName("cancle")[0];
+                 	 	buttonDom.removeChild(cancleDom);
+                 	 },
+                 	 conform:function(title,content,sureText,cancleText){
+                 	 	//this.template(title,content);
+                 	 	var dialogDom = this.template(title,content,sureText,cancleText);
+                 	 }                 	 
+                 };
+                 return dialog;
+                
+              })();
+
+              function tzAlert(){
+              	var opts = {
+              		title:"标题",
+              		content:"请输入内容",
+              		sure:"确定",
+              		cancle:"取消",
+              		color:"#4684b2"
+              	}
+              	 tzDialog.conform('标题','内容','保存','取消');
+              }
+
+              //对象的合并
+              var defaults = {
+                 	 	title:"标题",
+                 	 	content:"我是内容哦！",
+                 	 	color:"#11111",
+                 	 	sure:"确定",
+                 	 	cancle:"取消"
+                 	 };
+               var userParams = {
+                  title:"我的标题最大",
+                  callback:function(){
+
+                  }
+               };
+
+               function extend(target,source){
+               	   for(var key in source){
+               	   	  target[key] = source[key];
+               	   }
+               	   return target;
+               }
+               
+               var njson = extend(defaults,userParams);
+               console.log(njson);
+       </script>
+    </body>
+</html>

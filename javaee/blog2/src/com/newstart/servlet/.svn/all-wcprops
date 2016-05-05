@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/MyRepository/!svn/ver/13/blog2/src/com/newstart/servlet
+END
+ForwardServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/MyRepository/!svn/ver/13/blog2/src/com/newstart/servlet/ForwardServlet.java
+END
+LoginServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/MyRepository/!svn/ver/15/blog2/src/com/newstart/servlet/LoginServlet.java
+END
+RegisterServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/MyRepository/!svn/ver/13/blog2/src/com/newstart/servlet/RegisterServlet.java
+END
+CookieServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/MyRepository/!svn/ver/15/blog2/src/com/newstart/servlet/CookieServlet.java
+END

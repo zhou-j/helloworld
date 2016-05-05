@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset = "utf-8" />
+      <title>通过dom元素动态操作表格元素-keke老师</title>
+      <style type = "text/css">
+          body{font-size:14px;font-family:"微软雅黑";color:#666;}
+          a{text-decoration:none;}
+          .c_table{border:1;border-collapse:collapse;margin:100px auto;}/*border-spacing:10px;border-collapse:collapse;两个不能同时用*/
+          td,th{width:180px;height:45px;text-align:center;line-height:30px;border:1px solid red;}
+          /*用户体验*/
+          .c_table tr:hover{background:#d8d8d8;transition:all 1s ease-in-out;}
+/*        .c_table tr td:nth-child(1){background:yellow;}
+          .c_table tr td:nth-last-child(1){background:#111;}*/
+/*        .c_table tr td:nth-of-type(1){background:yellow;}
+          .c_table tr td:nth-last-of-type(1){background:#111;}*/
+          /*第二个:单双行渐变*/
+/*        .c_table tbody tr:nth-child(odd){background:red;}
+          .c_table tbody tr:nth-child(even){background:green;} */ 
+/*        .c_table tbody tr:nth-child(2n+1){background:red;}
+          .c_table tbody tr:nth-child(2n){background:green;}*/
+          .c_table tbody tr:nth-child(3n+1){background:green;}
+          .c_table td:hover{background:#111;transition:all 1s ease-in-out;} 
+      </style>
+   </head>
+   <body>
+
+   	  <table class="c_table">
+   	  	  <a href="javascript:void(0)" onclick="add(this)" style="text-decoration:none;padding:20px;color:red;font-size:18px">添加行</a>
+   	  	  <a href="javascript:void(0)"style="text-decoration:none;padding:20px;color:red;font-size:18px">删除行</a>
+   	      <caption style="font-size:2em;font-weight:800;margin:20px 0">2015年统计报表</caption>  
+          <thead>
+          	<tr>
+          	 <th>姓名</th>
+          	 <th>性别</th>
+          	 <th>年龄</th>
+          	 <th>操作</th>
+          	</tr>
+          </thead>
+          <tbody id= "tbody">
+          	<tr>
+          	 <td>小众</td>
+          	 <td>男</td>
+          	 <td>18</td>
+          	 <td><a href="javascript:void(0);" onclick="del(this)">删除</a></td>
+          	</tr>
+          	<tr>
+          	 <td>小众</td>
+          	 <td>男</td>
+          	 <td>18</td>
+          	 <td><a href="javascript:void(0);" onclick="del(this)">删除</a></td>
+          	</tr>
+          	<tr>
+          	 <td>小众</td>
+          	 <td>男</td>
+          	 <td>18</td>
+          	 <td><a href="javascript:void(0);" onclick="del(this)">删除</a></td>
+          	</tr>
+          	<tr>
+          	 <td>小众</td>
+          	 <td>男</td>
+          	 <td>18</td>
+          	 <td><a href="javascript:void(0);" onclick="del(this)">删除</a></td>
+          	</tr>
+          	<tr>
+          	 <td>小众</td>
+          	 <td>男</td>
+          	 <td>18</td>
+          	 <td><a href="javascript:void(0);" onclick="del(this)">删除</a></td>
+          	</tr>          	                 	
+          </tbody>
+          <tfoot>
+
+          </tfoot>
+   	  </table>
+      <script type = "text/javascript">
+
+          var arr = [];
+          var data1 = {id:1,name:"首页",mode1:"首页",time:"2015-06-06 19:05:54"};
+          var data2 = {id:2,name:"java",mode1:"首页",time:"2015-06-06 19:05:54"};
+          var data3 = {id:3,name:"音乐",mode1:"首页",time:"2015-06-06 19:05:54"};
+          arr.push(data1);
+          arr.push(data2);
+          arr.push(data3);                     
+          function add(obj){
+          	 var tbodyDom = document.getElementById("tbody");
+          	 //第一种方式
+/*           var html = "<tr>"+
+          	 "<td>小众</td>"+
+          	 "<td>男</td>"+
+          	 "<td>18</td>"+
+          	 "<td>删除</td>"+
+          	"</tr>";
+          	tbodyDom.innerHTML += html;*/
+
+          	//第二种方式:创建tr
+/*          var trDom = document.createElement("tr");
+          	var tdDom = document.createElement("td");
+          	tdDom.innerHTML = "小杰";
+          	trDom.appendChild(tdDom);          	
+          	var tdDom = document.createElement("td");
+          	tdDom.innerHTML = "男";
+          	trDom.appendChild(tdDom);          	        
+          	var tdDom = document.createElement("td");
+          	tdDom.innerHTML = "14";
+          	trDom.appendChild(tdDom);          	   
+          	var tdDom = document.createElement("td");
+          	tdDom.innerHTML = "删除";      
+
+          	//将td添加到行元素中去
+          	trDom.appendChild(tdDom);
+          	//将tr添加到body中去
+          	tbodyDom.appendChild(trDom);*/
+
+          	//第三种方式
+          	arr.forEach(function(element){
+                var trDom = document.createElement("tr");
+                for(var key in element){
+                	var tdDom = document.createElement("td");
+                	tdDom.innerHTML = element[key];
+                	trDom.appendChild(tdDom);;
+                }
+                tbodyDom.appendChild(trDom);
+          	}); 
+          }
+
+          function del(obj){
+             var trDom = obj.parentElement.parentElement;
+             trDom.parentElement.removeChild(trDom);
+          } 
+      </script>
+   </body>
+</html>

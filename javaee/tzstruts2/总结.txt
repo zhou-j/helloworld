@@ -1,0 +1,27 @@
+1:如果配置struts2搭建一个struts2的框架项目,可以完成定义一个action然后通过浏览器请求进入到Action的某个方法
+2：package namespace
+3:为什么使用命名空间：
+第一：便于我们的项目组件的开发和便于维护，比如我在项目开发过程如果在同一个命名空间下面就会有大量的action注册。
+第二：让我们的业务逻辑跟家清晰明了，也同时减少耦合度。
+
+注意点：
+在同一个命名空间下面不允许有相同的action、name
+
+3:include包：
+拆分业务逻辑配置，用户管理模块，资源管理，统计管理，
+注意点：一定要在struts.xml注册，先后顺序无关。
+
+5:struts.properties
+常用常量和设置，是控制项目里面业务开发的一组件参数，为了能和你的业务逻辑的开发
+
+6：package abstract=true
+<result-type></result>//jsp开发------>freemaker
+<global-results>
+</global>
+
+怎么学习：把简单容易理解和掌握的先消化掉。
+freemaker---了解一下，不要深入学习。
+
+
+
+

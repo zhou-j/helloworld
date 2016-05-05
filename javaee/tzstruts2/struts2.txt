@@ -1,0 +1,40 @@
+
+1:struts2是apache的开源框架：http://struts.apache.org/
+引入jar
+struts2-core-2.3.16.3.jar
+xwork-core-2.3.16.3.jar
+freemarker 2.3.19.jar  jsp
+commons-fileupload 1.3.1.jar  文件上传包
+commons-io-2.2.jar-----处理io流
+commons-lang3-3.1.jar
+commons-logging-1.1.3.jar---处理日志
+
+2：核心拦截器web.xml 心脏部位  配置拦截器,servlet  拦截请求的监听器作用域
+<!-- struts2的核心拦截器,本质：就是实现Filter--》
+<!-- strut2的核心拦截器：本质就是实现Filter -->
+<filter>
+   <filter-name>struts2</filter-name>
+   <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+</filter>
+<filter-mapping>
+   <filter-name>struts2</filter-name>
+   <url-pattern>/*</url-pattern>
+</filter-mapping>
+
+3.struts.xml---一定要放在src目录下
+
+4:总结一句话：根据url找到struts.xml如果有name,就找到对应的类调用方法。
+
+1:配置文件struts-defalt.xml
+2:命名空间namespace
+3:struts2--->struts.properties
+4:struts2图片水印和文字水印。
+
+每增加一层  学习的成本就越来越大，出错的几率也会越来越大--技术
+
+<!--重定向和转发-->
+<!--
+  99%业务都是用转发
+
+
+ -->

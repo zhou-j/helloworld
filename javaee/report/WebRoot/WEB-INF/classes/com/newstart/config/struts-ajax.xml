@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+          "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>  
+    <package name="ajaxStruts" namespace="/json" extends="json-default">
+         <!-- 注册拦截器  -->
+         <interceptors>
+              <interceptor name="logInterceptor" class="com.newstart.action.core.LogInterceptor"></interceptor>
+         </interceptors>
+         <action name="*" method="{1}" class="com.newstart.action.core.AjaxAction">
+              <!-- 引用拦截器 -->
+              <interceptor-ref name="logInterceptor"></interceptor-ref>
+              <!-- 为什么要引入这个默认的拦截器栈？我们需要Struts2提供的默认的拦截器功能，自定义了拦截器之后如果不引入默认的拦截器栈的话就不能使用Struts2提供的默认的拦截器功能 -->
+              <interceptor-ref name="defaultStack"></interceptor-ref>
+			  <!-- 第二步：结果的返回是type="json",你的业务的返回是以json的格式传输给浏览器，并且是一种无状态的请求方式 -->              
+              <result name="ajaxSuccess" type="json">
+                  <!-- result是action中设置的变量名 ，也是页面需要返回的数据，该变量必须有setter和getter方法 -->              
+                  <param name="root">result</param>  
+            	  <param name="excludeNullProperties">true</param><!-- 这个属性表示去除空数据 -->                              
+              </result>
+         </action>
+    </package>
+</struts>

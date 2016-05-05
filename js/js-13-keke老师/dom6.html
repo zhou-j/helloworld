@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset = "utf-8" />
+      <title>dom操作-keke老师</title>
+      <style type="text/css">
+         #box{width:300px;height:200px;}
+      </style>
+   </head>
+   <body>
+   	  <div id = "box">
+         000
+         <span>1</span>
+         <span>2</span>
+         <span>3</span>
+         111
+   	  </div>
+      <script type="text/javascript">
+          //tagName
+          //children
+
+          var boxDom = document.getElementById("box");
+          //alert(boxDom.tagName.toLowerCase());
+          //alert(boxDom.children.length)
+
+          //自带属性和自定义属性
+          //attributes获取一个元素上的所有属性和属性值
+          // var attrs = boxDom.attributes;
+          // for(var key in attrs){
+	         // if(attrs.hasOwnProperty(attrs[key].name)){
+	         //     alert(attrs[key].name+"===="+attrs[key].value);
+	         // }
+          // }
+          // //添加setAttribute("money",1000);
+          //  boxDom.setAttribute("money",100);
+          // //获取getAttribute(key)
+          // var money = boxDom.getAttribute("money");
+          // alert(money);
+          // boxDom.removeAttribute("money");
+          // var money = boxDom.getAttribute("money");
+          // alert("删除后的money"+money);
+
+          //attr方法 jquery   attr和removeAttr原理
+          //attr肩负了get和set两个职责
+          var kekeDom = function(id){
+          	  var dom = document.getElementById(id);
+          	  return{
+          	  	attr:function(){
+                  //把集合转换成数组
+          	  		var args = Array.prototype.slice.call(arguments);
+                  //argument是一个类数组
+                  var p = args[0];
+          	  		if(args.length==1 && typeof p ==="string"){
+          	  			return dom.getAttribute(p);
+          	  		}else if(args.length==1 && typeof p === "object"){
+                    for(var k in p){
+                         dom.setAttribute(k,p[k]);
+                    }
+                    return dom;
+          	  		}else{
+                    dom.setAttribute(args[0],args[1]);  
+                    return dom;           
+                  }
+          	  	},
+                removeAttr:function(key){
+                    var keys = key.split(",");
+                    for(var i=0;i<keys.length;i++){
+                       dom.removeAttribute(keys[i]);
+                    }
+                },
+          	  	html:function(){
+          	  		var args = Array.prototype.slice.call(arguments);
+          	  		if(args.length==0){
+          	  			return dom.innerHTML;
+          	  		}else{
+          	  			dom.innerHTML = args[0];
+          	  		}
+          	  	},
+          	  	text:function(){
+          	  		var args = Array.prototype.slice.call(arguments);
+          	  		if(args.length==0){
+          	  			return dom.innerText;
+          	  		}else{
+          	  			dom.innerText = args[0];
+          	  		}
+          	  	},          	  	          	  	
+          	  }
+          };
+          
+          //kekeDom("box").attr("name","value");
+         //var arr1 = [1,2,3,4,5,6,7,8];
+          kekeDom("box").html("<b>kekek</b>");
+          var html = kekeDom("box").html();
+          alert(html);
+          kekeDom("box").attr("style","border:1px solid red");
+          var attr1  = kekeDom("box").attr("style");
+          alert(attr1);
+          kekeDom("box").removeAttr("style,id");
+/*        Array.prototype.slice = function(start,end){
+          	var len = this.length;
+          	var arr = [];
+          	for(var i=start;i<end;i++){
+          		arr.push(this[i]);
+          	}
+          	return arr;
+          }
+
+          var a = arr1.slice(2,5);
+          alert(a);*/
+
+      </script>
+   </body>
+
+</html>

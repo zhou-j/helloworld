@@ -1,0 +1,83 @@
+
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8" />
+      <title>关于函数的作用域-keke老师</title>
+   </head>
+   <body>
+      <script type="text/javascript">
+           //关于函数的作用域
+           //最新学了：变量，运算符，逻辑判断，数据类型，条件。
+           /*循环(双重for和switch case/break)打印九九乘法表，*/
+           //for循环服务于谁：数组/集合(dom)
+           //jquery--dom封装(设计模式)
+           //你知道如何定义函数，获取返回的返回值。
+           //关于作用域
+           
+           /*
+              10 + 10 = 20
+              程序--CPU--内存条()
+              //为什么语言都会选择内存条?
+              javascritp java PHP p c++
+              内存里面--成--缓存数据-让CPU
+
+              数据库+mysql oracle
+              存储 磁盘(文件)
+              下部---缓冲区溢出 
+
+              电脑：磁盘--1t--IO寻道(磁盘)
+           */
+
+           //每一个浏览器都提供一个
+           //js引擎:负责编译和运行
+           //变译
+           //作用域
+           //关于作用域
+           /*
+             var a = 10;
+             function test(){
+                 var a = 100;
+             };
+
+             test().a 
+             var c = test();//undefine没有返回值的函数是undefine。
+             alert(c.a);
+           */
+           //两个a分别定义在不同的作用域，不相互影响。
+           var a = 10;//在全局的作用域里。
+           function test(){
+               var a = 20; //在局部的作用域里。
+               return {a:a};//返回对象就可以调用属性。
+           };
+           alert(test().a);//a=10;
+
+           //只有对象才能调用属性和方法。
+           //function是一个数据类型。
+          
+           //test():重新编译的过程的，重整理函数体里面变量的过程。
+
+           //属于变量的提升 答案：undefined
+ /*        var a = 100;
+           function test(){
+           	   alert(a);//undefined
+           	   var a = 200;
+               alert(a);
+           	   var b = 100;
+           };
+           test();
+           alert(a);*/
+           //a++ ++a如果是仅仅一种递增和递减是没有任何区别
+           /*var a = 1;
+           ++a;
+           alert(a);
+           a++是先执行在运算的
+           ++a先运算在执行
+           */
+           var a  = a++;
+           if(++a == 2){
+             alert("相等");
+           };
+      </script>
+   </body>
+</html>

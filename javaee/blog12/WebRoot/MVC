@@ -1,0 +1,10 @@
+MVC 
+Model:模型层---javaBean---一个bean就是一张对应的数据表---HashMap---二维表格
+View:视图层：JSP/HTML
+Control:控制层-----Servlet
+
+List<Content>---hibernate
+List<HashMap>---MyHibats
+
+一个Javabean就是一张表，一个条记录就对应一个JavaBean对象
+多条记录就对应一个List<JavaBean>

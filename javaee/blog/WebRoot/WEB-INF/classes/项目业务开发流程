@@ -1,0 +1,8 @@
+//1:确认需求 :查询用户发表的日记
+//2:建立数据连接类:ConnectionUtil.java 引入mysql的驱动包
+//3:建立一个BookServlet的类在web.xml进行注册
+//4:在BookServlet中调用查询用户发表的日记 findLogs()
+//5:将查询出来的日记信息放入到作用域中request.setAttribute()
+//6:定义一个book.jsp页面。解析请求中存放的作用域的值
+?怎么解析？通过jstl--el表达式---专门去获取作用域中的值。它的格式是
+${作用域的key}

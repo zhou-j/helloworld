@@ -1,0 +1,19 @@
+javabean 重点
+就是一个普普通通的java类
+JavaBean定义规范
+1:你的类是public类的首字母必须大写
+2:必须有一个无参数的构造方法。
+3:属性私有化，通过属性生成(getter/setter)公有化
+4:定义的属性不能够有大写字母开头的属性如：Sname这种错误的写法
+5：建议大家在定义属性的时候尽量使用同一的数据类型，采用封装数据类型，不要采用基础数据类型。
+因为子在开发过程中，都是使用泛型
+char byte short int long float double boolean
+Character Byte Short Integer Long Float Double Boolean
+
+vo pojo bean model
+
+jsp:include
+jsp:useBean
+错误页面的定义 重点
+统计报表 重点
+密码加密 重点

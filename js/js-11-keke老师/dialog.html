@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset = "utf-8" />
+      <title>tzdoalog-keke老师</title>
+      <style type="text/css">
+           body{font-size:2em;font-family:"微软雅黑";}
+           .box{width:500px;height:200px;border:1px solid red;}
+           a{text-decoration:none;color:#666;} 
+
+     
+      </style>
+   </head>
+   <body>
+   	  <div id = "dialog" onclick="test()">
+           <a href = "#" >元素1</a>
+           <a href = "#">元素2</a>
+           <a href = "#">元素3</a>
+   	  </div>
+      <div class="box"></div>
+      <div onclick = "tzmove()" style="cursor:pointer">移动</div>
+      <script type= "text/javascript">
+           /*
+
+
+              写插件----动态把元素添加到dom结点中去
+              dom:innerHTML appendChild removeChild insertBefore
+           */
+            
+
+            //获取元素的几种方法，做一个增删查改
+            //dom对象可以调用方法给属性赋值----
+            //body添加元素 innerHTML innerText ==
+            //outerHTML textContent
+            //获取dom的几种方式
+            //id获取方式，获取单个对象
+            // var dialogDom = document.getElementById("dialog");
+            //在ie6 7 8是不支持
+            // var dialogDom2 = document.querySelector("#dilog");
+            // alert(dialogDom = dialogDom2);
+
+            //获取多个元素对象的几种方法：
+            //在没有ES3.x版本中值提供一个获取多个元素的方法
+            // var dialogDom = document.getElementById("dialog");
+            // var adoms = dialogDom.getElementByTageName("a");
+            // for(var i = 0;i<adoms.length;i++){
+            // 	alert(adoms[i].innerHTML);
+            // }
+            //获取第一个元素adoms[0]
+            //长度：adoms.length
+            //在es5中提供两种获取多个元素对象的方法:getElementsByClassName和querySelectorAll
+
+            //var adoms = document.getElementsByClassName("items");//ie7不支持
+            //var adoms = document.querySelectorAll(".items");//ie6 7 8不支持
+            // for(var i=0;i<adoms.length;i++){
+            // 	//adoms[i]
+            // 	alert(adoms[i].innerHTML);
+            // 	alert(adoms[i].innerHTML);
+            // }
+
+            //var bodyDom = document.body;
+
+            //怎么对象里面文本内容，html格式内容   innerHTML innerText  outHTML textContent
+            //操作一个对象的属性和方法，获取一个对象内容
+            //三部曲
+            //1.获取操作对象
+            // var dialogDom = document.getElementById("dialog");
+
+            //2.对象属性或者调用方法
+            //alert("innerHTML===="+dialogDom.innerHTML);获取带有html标签格式
+            //alert("innerText===="+dialogDom.innerText);获取纯文本内容，这个属性在firefox不支持不保留格式
+            //alert("texContext====="dialogDom.textContent);//都是文本内容，提出标签，保留格式
+            //alert("outerHTML===="+dialogDom.outerHTML);把整个根节点全部都返回
+
+            //3.操作对象
+
+            function tzmove(){
+               var dialogDom = document.getElementById("dialog");
+               var boxDom = document.getElementsByClassName("box")[0];
+               //var boxDom = document.getElementByClassName("box")[0]
+               //等价于boxDoms集合变量
+               //var boxDoms = document.getElementsByClassName("box");
+               //var boxDom = boxDoms[0];
+               boxDom.innerHTML= dialogDom.outerHTML;//动态绑定时会丢失事件。
+               document.body.removeChild(dialogDom);
+               //boxDom.appendChild(dialogDom);//append方法
+               //目标元素.insertBefore(要插入对象,目标)，如果没有目标，它和appendChild()效果一样
+               boxDom.insertBefore(dialogDom,boxDom.children[i++]);
+               //lastChild()包含:element和文本
+               //lasteElementChild//只包含元素
+            };
+            
+            function test(){
+              alert(1);
+            }
+            //删除 removeChild()和移动 appendChild/insertBefore
+            //var dialogDom = document.getElementById("dialogs");
+            //document.body.removeChild(dialogDom);
+
+      </script>
+   </body>
+</html>

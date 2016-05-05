@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/MyRepository/!svn/ver/24/yunpan/WebRoot/service
+END
+updateResource.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/MyRepository/!svn/ver/24/yunpan/WebRoot/service/updateResource.jsp
+END
+search.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/MyRepository/!svn/ver/27/yunpan/WebRoot/service/search.jsp
+END
+deleteResource.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/MyRepository/!svn/ver/24/yunpan/WebRoot/service/deleteResource.jsp
+END
+deleteResources.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/MyRepository/!svn/ver/24/yunpan/WebRoot/service/deleteResources.jsp
+END
+template.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/MyRepository/!svn/ver/27/yunpan/WebRoot/service/template.jsp
+END
+adduser.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/MyRepository/!svn/ver/29/yunpan/WebRoot/service/adduser.jsp
+END
+模板技术之前的search.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/MyRepository/!svn/ver/28/yunpan/WebRoot/service/%E6%A8%A1%E6%9D%BF%E6%8A%80%E6%9C%AF%E4%B9%8B%E5%89%8D%E7%9A%84search.jsp
+END
+resource.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/MyRepository/!svn/ver/24/yunpan/WebRoot/service/resource.jsp
+END
+searchUser.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/MyRepository/!svn/ver/26/yunpan/WebRoot/service/searchUser.jsp
+END
+loginout.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/MyRepository/!svn/ver/26/yunpan/WebRoot/service/loginout.jsp
+END

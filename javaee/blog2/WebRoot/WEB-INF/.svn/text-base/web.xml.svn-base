@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>blog2</display-name>
+  
+  <filter>
+      <!-- 过滤器的标志名 -->
+      <filter-name>characterEncodingFilter</filter-name>
+      <!-- 过滤器的对应的实现类 -->
+      <filter-class>com.newstart.filter.CharacterEncodingFilter</filter-class>
+  </filter>
+  <filter-mapping>
+      <!-- 过滤器的标志名 -->
+      <filter-name>characterEncodingFilter</filter-name>
+      <!-- 过滤器的URL匹配模式 -->
+      <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <!-- 指明工程的访问的首页文件 -->
+  <welcome-file-list>
+          <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <!-- 设置会话的时效1分钟 ，会话启动以后，你没有进行任何请求的时候如果时间超过1分钟，session自动清理，清理你存放在session中的数据。 -->
+  <session-config>
+          <session-timeout>1</session-timeout>
+  </session-config>
+  <!-- 全局参数，所有的Servlet都通用 -->
+  <context-param>
+       <param-name>keke</param-name>
+       <param-value>kekeke</param-value>
+  </context-param>
+  <!-- 注册ForwardServlet -->
+  <servlet>
+       <!-- 给servlet签名 -->
+       <servlet-name>forwardServlet</servlet-name>
+       <servlet-class>com.newstart.servlet.ForwardServlet</servlet-class>
+  </servlet>
+  <!-- servlet映射 -->
+  <servlet-mapping>
+       <servlet-name>forwardServlet</servlet-name>
+       <url-pattern>/forward</url-pattern>
+  </servlet-mapping>
+  <!-- 注册RegisterServlet -->
+  <servlet>
+      <!-- 给Servlet签名 -->
+      <servlet-name>registerServlet</servlet-name>
+      <servlet-class>com.newstart.servlet.RegisterServlet</servlet-class>
+      <!-- 局部参数，只给某一个Servlet类使用 -->
+      <init-param>
+           <param-name>username</param-name>
+           <param-value>小山羊</param-value>          
+      </init-param>
+      <init-param>
+           <param-name>password</param-name>
+           <param-value>123456</param-value>          
+      </init-param>      
+  </servlet>
+  <!-- servlet映射 -->
+  <servlet-mapping>
+      <servlet-name>registerServlet</servlet-name>
+      <url-pattern>/reg</url-pattern>
+  </servlet-mapping>
+  <!-- 注册LoginServlet -->
+  <servlet>
+      <!-- 给Servlet签名 -->
+      <servlet-name>loginServlet</servlet-name>
+      <!-- 指定要注册的类 -->
+      <servlet-class>com.newstart.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <!-- servlet映射 -->
+  <servlet-mapping>
+        <!-- 此servlet签名必须和某个servlet的签名一致 -->
+        <servlet-name>loginServlet</servlet-name>
+        <!-- 浏览器截获的请求地址 -->
+        <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <!-- 注册TestServlet -->
+  <servlet>
+       <servlet-name>testServlet</servlet-name>
+       <servlet-class>com.newstart.servlet.areaexam.TestServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+       <servlet-name>testServlet</servlet-name>
+       <url-pattern>/test</url-pattern>
+  </servlet-mapping>
+  <!-- 注册RequestServlet -->
+  <servlet>
+       <servlet-name>requestServlet</servlet-name>
+       <servlet-class>com.newstart.servlet.areaexam.RequestServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+       <servlet-name>requestServlet</servlet-name>
+       <url-pattern>/req</url-pattern>
+  </servlet-mapping>
+  <!-- 注册RequestServlet的测试类 -->
+  <servlet>
+       <servlet-name>requestTestServlet</servlet-name>
+       <servlet-class>com.newstart.servlet.areaexam.RequestTestServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+       <servlet-name>requestTestServlet</servlet-name>
+       <url-pattern>/test1</url-pattern>
+  </servlet-mapping>
+  <!-- 注册SessionServlet -->
+  <servlet>
+       <servlet-name>sessionServlet</servlet-name>
+       <servlet-class>com.newstart.servlet.areaexam.SessionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+       <servlet-name>sessionServlet</servlet-name>
+       <url-pattern>/ses</url-pattern>
+  </servlet-mapping>
+  <!-- 注册SessionServlet的测试类 -->
+    <servlet>
+       <servlet-name>sessionTestServlet</servlet-name>
+       <servlet-class>com.newstart.servlet.areaexam.SessionTestServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+       <servlet-name>sessionTestServlet</servlet-name>
+       <url-pattern>/test2</url-pattern>
+  </servlet-mapping>
+  <!-- 注册ApplicationServlet -->
+  <servlet>
+       <servlet-name>applicationServlet</servlet-name>
+       <servlet-class>com.newstart.servlet.areaexam.ApplicationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+       <servlet-name>applicationServlet</servlet-name>
+       <url-pattern>/app</url-pattern>
+  </servlet-mapping>
+  <!-- 注册applicationServlet的测试类 -->
+  <servlet>
+       <servlet-name>applicationTestServlet</servlet-name>
+       <servlet-class>com.newstart.servlet.areaexam.ApplicationTestServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+       <servlet-name>applicationTestServlet</servlet-name>
+       <url-pattern>/test3</url-pattern>
+  </servlet-mapping>
+  <!-- 注册cookieServlet -->
+  <servlet>
+       <servlet-name>cookieServlet</servlet-name>
+       <servlet-class>com.newstart.servlet.CookieServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+       <servlet-name>cookieServlet</servlet-name>
+       <url-pattern>/coo</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

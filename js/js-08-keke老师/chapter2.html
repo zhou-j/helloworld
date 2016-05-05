@@ -1,0 +1,53 @@
+
+<!doctype html>
+<html>
+   <head>
+      <meta charset = "utf-8" />
+      <title></title>
+   </head>
+   <body>
+      <script type="text/javascript">
+           //作业写一个js的选择和冒泡排序。
+/*           var arr = [0,1,2,3,4,5,6];
+           var arr2 = [7,8,9];
+           var arr3 = [10,11,12];
+           arr = arr.concat(arr2).concat(arr3);
+           alert(arr.toString().join("#"));*/
+         
+           //函数是一种数据类型，定义方式有两种：函数声明和函数表达式。
+           //函数声明：以function开头，函数名。
+/*         function sum(){
+           	alert(1111);
+           };
+           sum();
+           //函数表达式
+           var sum = function(){
+               alert(1111);
+           }; 
+           sum();*/
+           
+/*           function sum(){
+           	  alert("1======");
+           }
+           
+           function s um(a,b){
+           	alert("2====="+a+b);
+           };
+
+           function sum(a,b,c,d){
+           	alert("3====="+(a+b));
+           }
+
+           sum(50,500);*/
+
+           //javascript没有重载，为什么？//方法名相同的话会覆盖掉。只执行最后一个函数。
+           //怎么看上去javascript弱类型语言，没有看见所谓的创建对象
+           var sums = new Function("a,b","alert(a+b);return a+b");
+           var t = sums(1,5);
+           alert(t);
+
+           //虽然没有看见对象的创建，但是并不代表js内部没有
+
+      </script>
+   </body>
+</html>

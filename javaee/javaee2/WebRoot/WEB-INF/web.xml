@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>javaee2</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+      <servlet-name>TestServlet</servlet-name>
+      <servlet-class>com.jgsu.dao.TestServlet</servlet-class>
+      <init-param>
+           <param-name>driver</param-name>
+           <param-value>com.mysql.jdbc.Driver</param-value>
+      </init-param>
+      <init-param>
+           <param-name>url</param-name>
+           <param-value>jdbc:mysql://127.0.0.1:3306/northwind</param-value>
+      </init-param>
+      <init-param>
+           <param-name>user</param-name>
+           <param-value>root</param-value>
+      </init-param>
+      <init-param>
+           <param-name>password</param-name>
+           <param-value>password</param-value>
+      </init-param>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>TestServlet</servlet-name>
+      <url-pattern>/test</url-pattern>
+  </servlet-mapping>
+  <!-- 验证码servlet -->
+  <servlet>
+      <servlet-name>checkCodeGet</servlet-name>
+      <servlet-class>com.jgsu.codeget.CheckCodeGet</servlet-class>     
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>checkCodeGet</servlet-name>
+      <url-pattern>/CheckCodeGet</url-pattern>  
+  </servlet-mapping>
+  <!-- 登录的servlet -->
+  <servlet>
+      <servlet-name>loginAction</servlet-name>
+      <servlet-class>com.jgsu.codeget.LoginAction</servlet-class>
+      <init-param>
+           <param-name>driver</param-name>
+           <param-value>com.mysql.jdbc.Driver</param-value>
+      </init-param>
+      <init-param>
+           <param-name>url</param-name>
+           <param-value>jdbc:mysql://127.0.0.1:3306/northwind</param-value>
+      </init-param>       
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>loginAction</servlet-name>
+      <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+</web-app>

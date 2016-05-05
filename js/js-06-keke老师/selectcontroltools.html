@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8" />
+      <title>控制选中的js代码-keke老师</title>
+   </head>
+   <body>
+      <script type="text/javascript">
+            function tm_forbiddenSelect() {
+                $(document).bind("selectstart", function() {
+                    return false;
+                });
+                document.onselectstart = new Function("event.returnValue=false;");
+                $("*").css({
+                    "-moz-user-select" : "none"
+                });
+            }
+
+            /* 窗体允许选中 */
+            function tm_autoSelect() {
+                $(document).bind("selectstart", function() {
+                    return true;
+                });
+                document.onselectstart = new Function("event.returnValue=true;");
+                $("*").css({
+                    "-moz-user-select" : ""
+                });
+            }
+      </script>
+   </body>
+</html>
+

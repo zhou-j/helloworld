@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+     <meta charset = "utf-8" />
+     <title>时钟-keke老师</title>
+     <style type="text/css">
+         body{font-size:14px;font-family:"微软雅黑";background:#989898;}
+         .box{width:200px;height:200px;border-radius:50%;margin:100px auto;position:relative;}
+         .box .radius{width:16px;height:16px;position:absolute;top:92px;left:92px;background:#666;}
+         /*时分秒针*/
+         #hour{width:8px;height:45px;background:#111;position:absolute;top:55px;left:96px;transform-origin:bottom;}
+         #min{width:4px;height:55px;background:green;position:absolute;top:45px;left:98px;transform-origin:bottom;} 
+         #sec{width:2px;height:65px;position:absolute;top:35px;left:99px;transform-origin:bottom;background-color:red;}
+         /*刻度*/
+         #kedu li{position:absolute;width:2px;height:8px;background:#111;left:99px;top:0px;list-style:none;transform-origin:center 100px;}
+         #kedu li:nth-child(5n+1){height:16px;}
+                                                                                
+
+     </style>
+  </head>
+  <body>
+     <div class="box">
+         <ul id="kedu">                                                  
+         </ul>
+         <div id="hour"></div>
+         <div id="min"></div>
+         <div id="sec"></div>
+         <div class="radius"></div>
+     </div>
+     <script type="text/javascript">
+          /*
+            @description 时钟和时区
+            @date:2016-1-25
+            @author:xindekaishi
+            知识点:
+                 a:javascript 闭包
+                 b:css3圆心和旋转
+                 c:border-radius
+                 d:定位position
+            辅助知识点:Date类
+
+            实现步骤:
+            1:如何画圆
+            2:如何产生时分秒
+            3:如何产生刻度
+            4:如何让时分秒指针进行旋转
+            5:时区时间的计算
+            6:如何封装
+          */
+        (function(){
+            var keduDom = document.getElementById("kedu");
+            //产生刻度值
+            var html = "";
+            for(var i=0;i<60;i++){
+                html +="<li style='transform:rotate("+(i*6)+"deg)'></li>";
+            };
+            keduDom.innerHTML = html;
+        })();
+        (function(){
+            var hourDom = document.getElementById("hour");
+            var minDom = document.getElementById("min");
+            var secDom = document.getElementById("sec");
+            function drawDate(){
+                var date = new Date();
+                //获取时分秒
+                var sec = date.getSeconds();
+                var min = date.getMinutes()+sec/60;
+                var hour = date.getHours()+min/60;
+
+                secDom.style.transform = "rotate("+(6*sec)+"deg)";
+                minDom.style.transform = "rotate("+(6*min)+"deg)";
+                hourDom.style.transform = "rotate("+(30*hour)+"deg)";
+            }
+            
+            setInterval(drawDate,1000);
+        })();
+     </script>
+  </body>
+</html>

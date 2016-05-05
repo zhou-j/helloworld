@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset = "utf-8" />
+      <title>对象-keke老师</title>
+   </head>
+   <body>
+      <script type="text/javascript">
+          var json = {username:"keke"};
+          //两种获取值得方式
+          //json.username
+          //json["username"]
+
+          //删除对象
+          //json = null
+          //删除属性
+          //delete json.username或者json["username"]
+
+          //对象 call apply 拷贝和深度覆盖
+          //dom
+          //弹出层
+          //封装 弹出层 
+
+          //判别一个对象属性是否是在某个对象
+          //in是用于查找某个属性是否存在于对象中，他会把这个对象里面所有的内置方法全部都返回出来
+          //alert("username" in json);
+          //alert("valueOf" in json);
+          //alert("toString" in json);
+          //alert("json.constructor");//构造器：区分对象的具体类型
+          
+          var date = new Date();
+          var arr = [];
+          var obj = {};
+          var regex = new RegExp();
+          //alert(date.constructor);
+          //alert(regex.constructor);
+          //alert(arr.constructor);
+          //alert(obj.constructor);
+
+          /*
+            for(var key in json){
+	             sonsole.log(key+"====="+json[key]);
+            };
+          */
+
+          /*判断是否为一个数组*/
+          // function isArray(obj){
+          // 	if(obj&&typeof obj==="object"){
+          // 		var con = obj.constructor.toString();
+          // 		return con.indexOf("Array")!=-1?true:false;
+          // 	}
+          // 	return false;
+          // };
+
+          // alert(isArray(obj));
+
+          //sort slice length
+          // function isArray(obj){
+          // 	  return typeof obj.sort === "function";
+          // };
+          
+          //length splice join
+          // function isArray(obj){
+          // 	return obj!=null && typeof obj ==="object"&&"pop" in obj && "join" in obj && obj && "length" in obj;
+          // };          
+          
+          // function isArray(obj){
+          //    return obj instanceof Array;
+          // };
+
+          // function isNumber(obj){
+          //    var num = new Number(obj);
+          //    return typeof obj === "number"&&!("isNaN" in num);
+          // };
+
+          // function isNull(obj){
+          //    return obj===null;
+          // };
+
+          // function isUndefined(obj){
+          //   return obj ===0;
+          // };
+
+          // function isDate(obj){
+          //  if(obj&&typeof obj==="object"){
+          //    var con = obj.constructor.toString();
+          //    return con.indexOf("Date")!=-1?true:false;
+          //  }
+          //  return false;
+          // };
+          // var date = new Date();
+          // alert(isDate(date));
+
+          //ie6789不支持 es5.indexOf lastIndexOf就可以判断这个数组是否存在着个元素
+          //var arr = {};
+          //alert(Array.isArray(arr));
+          //所有的内置对象和自定义的函数都有prototype方法
+          //Number
+          //Function
+          //Array
+          //Object
+          //Regex
+          //Date
+          // Array.prototype.isArray = function(){
+          //      return this instanceof Array;
+          // };
+          // var arr = [0,1,2,3,4,5,6,7,8,9];
+          // alert(arr.isArray());
+
+          String.prototype.startWith= function(key){
+              return this.charAt(0)==key;
+          };
+
+          String.prototype.endWith= function(key){
+              return this.charAt(this.length-1)==key;
+          };
+
+          var arr = ["adfsak","245645","54545","246545"];
+          for(var i=0;i<arr.length;i++){
+              var str = arr[i];
+              if(str.startWith("2")){
+                alert(str);
+              }
+          };
+      </script>
+   </body>
+</html>

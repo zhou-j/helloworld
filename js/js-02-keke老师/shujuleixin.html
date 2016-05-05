@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+   <head>
+       <!--声明当前页面编码集 （中文编码<gbk,gb2312>,国际编码<utf-8>) -->
+	   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	   <!--声明当前页面的三要素-->
+	   <title> HTML模版</title>
+	   <meta name="keyworld" content="关键词，关键词">
+	   <meta name="description"content="">
+	   <!--css/js-->
+	   <style type ="text/css" >
+	    
+		*{margin:0 ;padding:0;}
+           
+	   </style>
+
+   </head>
+  <body>
+     <script type="text/javascript">
+	       //什么是数据类型，为什么会有数据类型定义阶段只有一个var
+		   //篮子(内存空间就取决于你当前的数据类型)a=苹果;
+		   //js 数据类型转换。
+		   var a = "10";
+		   println(typeof a);
+		   var b = 10;
+		   println(b==a);
+		   println(b===a);
+	      //运算（算术运算符 赋值运算符 逻辑运算符，条件运算符（if elseif else/switch case））
+		  //赋值运算符：等号=，+=，-=，*=，/=
+		  //算术运算符：+，-，*，/,%,++,--
+		  //逻辑运算符：大于(>)等于（==)小于（<=）大于等于(>=)，不等于(!=)true/false;
+		  //加号除了是算术运算符外还是一个连接符。
+		  var a = "10";//小k
+		  var b = 10;//keke
+		  println(a+b);
+		  alert(a*1+b);//变量和数字相乘结果依然数字
+		  println(a-b);
+		  //数据类型转换--parseInt(str)--number
+		  var c = parseInt(a);
+		  println("c加b等于"+(c+b));
+		  println("c乘以b的于="+(c*b));
+		  println("c除以b等于="+(c+b));
+		  println(c+b);
+		  //只要是牵涉到算术运算的时候一定是数字就可以。“10”；
+          
+		  var a = 3;
+		  var b = 4;
+		  println(a/b);//java 0 javascript运算的返回值就是浮点型。
+          println(a%b)//取模(余)运算，除不尽的数字直接返回被除数a
+
+		  var k = 100%101;//100
+		  var f = 10%3;//1
+		  var g = 20%3;//2
+		  var kk = 10%1.25;
+          
+		  println("100%101="+(k));
+		  println("10%3="+(f));
+		  println("20%3="+(g));
+		  println("10%1.25="+(kk));
+
+		  //递增和递减运算符
+		  var a = 10;
+		  a++;//11
+		  a++;//12
+		  a++;//13
+		  ++a;//14
+		  --a;//13
+		  alert(a);
+		  function println(message){
+		     console.log(message);
+		  }
+
+
+	 
+	 
+	 </script>
+  </body>
+
+
+</html>
+

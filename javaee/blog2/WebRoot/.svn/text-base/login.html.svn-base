@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>潭州学院登陆页面-JavaWeb学习</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<!-- 样式优先 脚本滞后 -->
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+<!-----start-main---->
+<div class="main">
+<div class="login-form">
+	<h1>KeKe个人博客登陆</h1>
+		<div class="head">
+			<img src="images/user.png" alt=""/>
+		</div>
+		<div id="message" style="color: red;text-align: center;height: 25px;"></div>
+		<form method="post" action="login" onsubmit="return tm_submit();">
+			
+			<input type="text" name="username" autocomplete="off"  id="username"  class="text" placeholder="请输入用户名" maxLength="16">
+			<input type="password" name="password" id="password"  placeholder="请输入密码" maxLength="16">
+			<select name="coursename">
+				<option value="Java">Java</option>
+				<option value="PHP">PHP</option>
+				<option value="C++">C++</option>
+			</select>
+			<div class="submit">
+				<input type="submit"  value="登陆" >
+			</div>	
+			<p><a href="#">忘记密码 ?</a></p>
+		</form>
+	</div>
+	<!--//End-login-form-->
+	 <!-----start-copyright---->
+		<div class="copy-right">
+		<p>Copyright &copy; 2014.Company 潭州学院 All rights reserved.</p> 
+	</div>
+	<!-----//end-copyright---->
+</div>
+<!-----//end-main---->
+<script type="text/javascript">
+	//js操作dom元素，一定要dom元素初始化完毕以后才能进行操作
+	$(function(){
+		//js写法
+		//document.getElementById("username").focus();
+		//jquery 写法
+		$("#username").focus();
+	});
+	
+	function tm_submit(){
+		var username = $("#username").val();
+		var password = $("#password").val();
+		if(username=="" || username.length==0){
+			tm_showMessage("username","请输入用户名!");
+			return false;
+		}
+		
+		if(username.length>10){
+			tm_showMessage("username","您输入的用户名称不能超过10位!");
+			$("#username").select();
+			return false;
+		}
+		
+		if(password=="" || password.length==0){
+			tm_showMessage("password","请输入密码名!");
+			return false;
+		}
+		
+		return true;
+	}
+	
+	function tm_showMessage(id,message){
+		$("#"+id).css("border","1px solid red").focus();
+		$("#message").show().html(message).fadeOut(3000,function(){
+			$(this).empty();//清空
+			$("#"+id).css("border","none");
+		});
+	};
+</script>
+</body>
+</html>

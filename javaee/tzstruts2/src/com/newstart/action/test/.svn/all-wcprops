@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/MyRepository/!svn/ver/32/tzstruts2/src/com/newstart/action/test
+END
+struts-value.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/MyRepository/!svn/ver/32/tzstruts2/src/com/newstart/action/test/struts-value.xml
+END
+struts_login.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/MyRepository/!svn/ver/32/tzstruts2/src/com/newstart/action/test/struts_login.xml
+END
+ValueAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/MyRepository/!svn/ver/32/tzstruts2/src/com/newstart/action/test/ValueAction.java
+END
+ResultTestAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/MyRepository/!svn/ver/32/tzstruts2/src/com/newstart/action/test/ResultTestAction.java
+END

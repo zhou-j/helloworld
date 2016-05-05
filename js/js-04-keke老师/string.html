@@ -1,0 +1,84 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>javascript数据类型</title>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <script type="text/javascript">
+           //javascript的数据类型
+           //undefined/null
+
+           //Null代表是有值
+           //undefined--js引擎编译的为每一个变量方法提供的默认值
+           // var a ;//undefined
+           // var b = null;//null对象--object;
+
+           // alert(typeof a);//undefined
+           // alert(typeof b);//object
+
+           // var a =1;
+           // function test(){
+           //    var ccc= 200;
+           //    window.bbb = 100;
+           // };
+           // test();
+           // alert(typeof(ccc));
+           // alert(typeof(bbb));
+           // dddd = 1000;
+           // alert(dddd);
+           // alert(typeof(e));
+           // function 他是一个数据类型，和var a =100;是一样的，如果你执行他函数就必须调用它；
+           // 2.字符串
+           // String，用“双引号或者单引号引起”来的一切数据都是字符串。
+           // var num = "null";
+           // var str1 = "undefined";
+           // var str2 = "123"
+           // var str3 = "keke"
+           // var str4 = "贷款纠纷拉屎附录爱上了"；
+           // var str5 = "";
+
+           //内置方法的学习keke是一个编辑人员，
+
+           //将小写字母转换成大写字母-toUpperCase();
+           // var cc = c.toUpperCase();
+           // alert(cc)
+           // var ccc = cc.toLowerCase();
+           // alert(ccc);
+           
+           //replace替换
+           //c.replace(把什么，替换成什么)；
+           //c.replace(regex对象，替换成什么)；
+           // var c = "i love You,everybody";
+           // var cc = "112233";
+           // var str = "操蛋收到凡事都操蛋";           
+           // var d = c.replace("Your","you");
+           // alert(d);
+           // var nregex = new RegExp("2","g"); 
+           // var dd = cc.replace(nregex,"4");
+           // alert(dd);
+           // var cregex = new RegExp("操蛋","g");
+           // var ddd = str.replace(cregex,"***");
+           // alert(ddd);
+
+           // var f = "dfsdjsdfsd SDFSD FSDSDFSD";
+           // var r = new RegExp('d',"ig");
+           // var ff = f.replace(r,"娟");
+           // alert(ff);
+
+           // var str = "aaabc111";
+           // var st = str.replace(/([a-z]*)(\d+)/,"$1,$2");
+           // alert(st);
+
+           //substring(start,end);
+           //从start所指的位置开始（包括start）截取end-start的长度的字符串。如果end比start小，把end的值和start的值调换一下。
+           var string = "1234567890";
+           var str = string.substring(5,3);
+           alert(str);
+        </script>
+    </body>
+
+
+
+
+</html>

@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+       <meta charset="utf-8" />
+       <title>date2日期-keke老师</title>
+    </head>
+    <body>
+       <script type="text/javascript">
+           // var date = new Date();
+           //google对日期 年/月/日
+           var dateString = "2015-12-12 12:12:12";
+           //中文只能用正则表达式的对象方法
+           //英文还可以用/-/g的方法。串
+           // var rex = new RegExp("操蛋");
+           // var rex = new RegExp("-","g");
+           var date = new Date(dateString.replace(/-/g,"/"));
+           alert(date.getFullYear()+"---"+(date.getMonth()+1));
+
+       </script>
+    </body>
+</html>

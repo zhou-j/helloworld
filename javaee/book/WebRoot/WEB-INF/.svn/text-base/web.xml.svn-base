@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>book</display-name>
+
+  <!-- 欢迎页面 -->
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!-- 过滤器的实现 -->
+  <filter>
+      <!-- 过滤器的标志名 -->
+      <filter-name>characterEncodingFilter</filter-name>
+      <!-- 过滤器的对应的实现类 -->
+      <filter-class>com.tanzhou.filter.CharacterEncodingFilter</filter-class>
+  </filter>
+  <filter-mapping>
+      <!-- 过滤器的标志名 -->
+      <filter-name>characterEncodingFilter</filter-name>
+      <!-- 过滤器的URL匹配模式 -->
+      <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <!-- 登录拦截 -->
+  <filter>
+      <filter-name>loginFilter</filter-name>
+      <filter-class>com.tanzhou.filter.LoginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+      <filter-name>loginFilter</filter-name>
+      <!-- servlet加路径 -->
+      <url-pattern>/page/*</url-pattern>
+      <!-- 页面拦截 -->
+      <url-pattern>/pages/*</url-pattern>
+      <!-- 第二种页面存放在web-inf下 -->
+  </filter-mapping>
+  <!-- 注册CookieServlet -->
+  <servlet>
+       <servlet-name>cookieServlet</servlet-name>
+       <servlet-class>com.tanzhou.server.CookieServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+       <servlet-name>cookieServlet</servlet-name>
+       <url-pattern>/coo</url-pattern>
+  </servlet-mapping>
+  <!-- 注册LoginServlet -->
+  <servlet>
+       <servlet-name>loginServlet</servlet-name>
+       <servlet-class>com.tanzhou.server.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+       <servlet-name>loginServlet</servlet-name>
+       <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <!-- 注册BookServlet -->
+  <servlet>
+       <servlet-name>bookServlet</servlet-name>
+       <servlet-class>com.tanzhou.server.BookServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+       <servlet-name>bookServlet</servlet-name>
+       <url-pattern>/page/boo</url-pattern>
+  </servlet-mapping>
+  <!-- 注册LogoutServlet -->
+  <servlet>
+       <servlet-name>logoutServlet</servlet-name>
+       <servlet-class>com.tanzhou.server.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+       <servlet-name>logoutServlet</servlet-name>
+       <url-pattern>/out</url-pattern>
+  </servlet-mapping>  
+  <!-- 注册CommentServlet -->
+  <servlet>
+       <servlet-name>commentServlet</servlet-name>
+       <servlet-class>com.tanzhou.server.CommentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+       <servlet-name>commentServlet</servlet-name>
+       <url-pattern>/page/comment</url-pattern>
+  </servlet-mapping> 
+  <!-- 注册CommentSavaServlet -->
+  <servlet>
+       <servlet-name>commentSaveServlet</servlet-name>
+       <servlet-class>com.tanzhou.server.CommentSaveServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+       <servlet-name>commentSaveServlet</servlet-name>
+       <url-pattern>/page/commentsave</url-pattern>
+  </servlet-mapping>
+</web-app>

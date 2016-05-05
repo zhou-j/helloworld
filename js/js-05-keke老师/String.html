@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+   <head>
+       <meta charset = "utf-8" />
+       <title>String-珂珂老师</title>
+   </head>
+   <body>
+      <script type="text/javascript">
+           // var str = "0123456789";
+/*           var len = str.length;
+           alert("字符串的总长度是"+len);
+           alert(str[0]);
+           alert("第一个值："+str.charAt(0));
+           alert("最后一个值："+str.charAt(len-1));*/
+           // var s = str.substring(2,-5)
+           // var s = str.slice(5,-2);//如果正常的时候等价于substring如果第二个参数end是负数，那么end = len+end;
+
+           // alert(s);
+/*         
+           toUpperCase();//转换大写
+           toLowerCase();//转换小写
+           substring();
+           replace();
+           slice();
+           split
+           concat
+           charAt
+           */
+           //字符串的拼接
+           // var str="012";
+           // str = str.concat("345");
+           // str = str.concat("678");
+           // alert(str) 
+           
+           上交成绩：小明95.5||小中85||小白89
+           object ---array date regex object null
+           var string = "小明95.5||小中85||小白89";
+           var arr = string.split("\|\|");//分割字符串,正则表达式转义字符\|\|;
+           for (var i = arr.length - 1; i >= 0; i--) {
+           	alert(arr[i]);
+           };
+           
+           //数组：在JavaScript中基础数据类型中，array也是一种数据结构，它是一种存储数据的列表。
+/*           定义格式：
+           var arr = [];
+           var arr = new Array();//这个不准使用
+           var arr = [1,2,3]//可以翻任何数据类型
+           var arr = ["11","22","33"];
+           var arr = [{username:"keke"}];
+           var arr = [test,test2,test3];
+           function test(){
+
+           }
+           function test2(){
+
+           } 
+           function test3(){
+
+           } */  
+
+/*         数组常用的使用方法：
+           属性length定义的是数组的长度
+           下标是从:0开始
+           获取第一个元素：arr[0];
+
+           获取最后元素：arr[arr.length-1]
+           */
+
+           var arr = [0,1,2,3,4,5,6,7,8,9];
+/*         alert(arr.length);
+           var index = 0;
+           var f = arr[index];
+           index++;
+           var s = arr[index];
+           index++;
+           var t = arr[index];
+*/
+           //循环---for
+           /*for(定义变量的(一次性)1；逻辑判断2;运算符3){
+	               //循环体4
+           }
+           */
+
+/*         var i = arr.length - 1;
+           for ( ;i >= 0; i--) {
+                console.log(arr[i]);
+            }; //不科学的写法，会不断的获取arr.length;
+            var i=0;len = arr.length;
+            for(;i<len;i+=1){
+            	console.log(arr[i]);
+            }//循环 */  
+
+                       
+      </script>
+   </body>
+</html>

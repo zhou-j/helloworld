@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+     <meta charset = "utf-8" />
+     <title></title>
+     <style type="text/css">
+
+     </style>
+  </head>
+  <body>
+     <div id="box" class="red fw fz">发动机盖款到即发观看了东风股</div>
+     <script type="text/javascript">
+         var boxDom = document.getElementById("box");
+         //类列表，专门为元素动态添加样式----classList.
+         //类名称：className ie678支持
+
+         console.log("classList=======>"+typeof boxDom.classList){0=red,1=fw,2=fz} 
+         console.log("className=======>"+typeof boxDom.className);//red fw fz
+
+         //boxDom.className +=" bg"
+         boxDom.classList.add("bg");
+         boxDom.classList.add("br");
+         boxDom.classList.remove("bg");
+     </script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+   <head>
+   	  <meta charset = "utf-8" />
+      <title>回调函数-keke老师</title>
+   </head>
+   <body>
+   	  <input type = "button" id ="button1" value="点击按钮"/>
+   	  <input type = "button" id ="button2" value="点击按钮"/>
+   	  <input type = "button" id ="button3" value="点击按钮"/>
+      <script type="text/javascript">
+/*          function  tzEvent(id,event,callback){
+          	var title = "我是一个窗口哦！";
+          	document.getElementById(id)[event] = function(){
+          		if(callback)callback(title);
+          	};
+          };
+
+          tzEvent("button1","onclick",function(){
+               alert("buttno1按钮！！！");
+          });
+          tzEvent("button2","onmouseover",function(){
+               alert("buttno1按钮移进！！！");
+          });
+          tzEvent("button3","onmouseleave",function(){
+               alert("buttno1按钮移出！！！");
+          });*/
+          //funciton是一个函数类型，函数体里面的内容
+
+          //function 是一种数据类型，在调用()的时候再编译函数体的内容
+          function test(){
+          	var arr = [];
+          	for(var i=0;i<3;i++){
+          		arr[i] = function(n){
+          			return n;
+          		}(i);
+          	}
+          	return arr;
+          }
+
+          var arr = test();
+/*        var a = arr[0]();//3
+          var b = arr[1]();//3
+          var c = arr[2]();//3*/
+          var a = arr[0];//0
+          var b = arr[1];//1
+          var c = arr[2];//2          
+          alert("a==="+a+"b==="+b+"c==="+c);
+      </script>
+   </body>
+</html>

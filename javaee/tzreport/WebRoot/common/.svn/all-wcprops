@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/MyRepository/!svn/ver/34/tzreport/WebRoot/common
+END
+common.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/MyRepository/!svn/ver/35/tzreport/WebRoot/common/common.jsp
+END
+footer.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/MyRepository/!svn/ver/34/tzreport/WebRoot/common/footer.jsp
+END
+taglib.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/MyRepository/!svn/ver/35/tzreport/WebRoot/common/taglib.jsp
+END
+header.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/MyRepository/!svn/ver/34/tzreport/WebRoot/common/header.jsp
+END

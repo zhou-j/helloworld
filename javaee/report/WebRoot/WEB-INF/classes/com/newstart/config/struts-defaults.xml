@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+          "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <!-- 更改配置文件不需要重新启动 -->
+    <constant name="struts.devMode" value="true"></constant>
+    <!-- 更改默认编码 -->  
+    <constant name="struts.i18n.encoding" value="UTF-8"></constant>
+    
+    <package name="default" extends="struts-default">
+         <global-results>
+             <result name="login">login.jsp</result>
+             <!--地址栏的重定向  -->
+             <result name="main" type="redirect">/main</result>
+             <!--页面的转发  -->
+             <result name="mainPage">main.jsp</result>
+         </global-results>
+    </package>
+    <package name="downloadStruts" namespace="/download" extends="default">
+        <!-- 如果action没有指明method,进入的Action的默认方法：execute方法 -->
+        <action name="file" class="com.newstart.action.core.DownLoadAction">
+            <result type="stream">
+                <!-- 下载的类型 -->
+<!--            <param name="contentType">image/jpg;image/png</param> -->
+                <!-- 下载指明的方法 -->
+                <param name="inputName">inputStream</param>
+                <!-- 下载的内容的位置 -->
+                <param name="contentDisposition">attachment;filename=${fileName}</param>
+                <!-- 以多少字节开始下载 -->
+                <param name="bufferSize">2048</param>
+            </result>
+            <result name="error">/error.jsp</result>
+        </action>
+    </package>
+</struts>

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/MyRepository/!svn/ver/17/book/src/com/tanzhou/server
+END
+LoginServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/MyRepository/!svn/ver/18/book/src/com/tanzhou/server/LoginServlet.java
+END
+BookServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/MyRepository/!svn/ver/20/book/src/com/tanzhou/server/BookServlet.java
+END
+LogoutServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/MyRepository/!svn/ver/19/book/src/com/tanzhou/server/LogoutServlet.java
+END
+CommentSaveServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/MyRepository/!svn/ver/20/book/src/com/tanzhou/server/CommentSaveServlet.java
+END
+CommentServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/MyRepository/!svn/ver/20/book/src/com/tanzhou/server/CommentServlet.java
+END
+CookieServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/MyRepository/!svn/ver/17/book/src/com/tanzhou/server/CookieServlet.java
+END

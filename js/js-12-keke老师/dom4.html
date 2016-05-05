@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset = "utf-8" />
+      <title>dom讲解-keke老师</title>
+   </head>
+   <body>
+   	  <ul id = "list">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>                        
+   	  </ul>   	
+   	  <i id="elem">最近</i>
+   	  <!--结果:<span>您好</span><span>落叶同学</span><i>最近</i><span>怎么样</span><span>？</span>-->
+      <script type = "text/javascript">
+          var elemDom = document.getElementById("elem");
+          //inserAdjacentElement(插入的位置，对象)
+          //inserAdjacentHTML(插入位置，"html内容")
+          //inserAdjacentText(出入的位置，"文本内容")
+
+          elemDom.insertAdjacentHTML("beforebegin","<span>您好</span>");
+          elemDom.insertAdjacentHTML("afterbegin","<span>落叶同学</span>");
+          elemDom.insertAdjacentHTML("beforeend","<span>怎么样</span>");
+          elemDom.insertAdjacentHTML("afterend","<span>?</span>");
+
+          //elemDom.insertAdjacentText("beforebegin","你好！");
+
+          var spanDom = document.createElement("span");
+          spanDom.innerHTML = "keke";
+          elemDom.insertAdjacentElement("beforebegin",spanDom);
+
+          //jquery append,prepend after before appendTo prependTo
+
+/*         获取节点:(包含元素，文本和注释) 
+           parentNode 
+           nextSibling 
+           previouSibling
+           firstChild
+           lastChild
+           childNodes*/
+
+          /*元素(只包含元素)
+            children
+            parentElement
+            firstElementChild
+            lastElementChild
+            nextElementSibling
+            previousElementSibling
+           */
+            function $(id){
+            	return document.getElementById(id);
+            }
+
+            var listDom = $("list");
+            //alert(listDom.parentNode);//body
+            //alert(listDom.parentElement);//body
+            //alert(listDom.firstChild);//text
+            //alert(listDom.firstElementChild);//li 
+            // listDom.firstElementChild.style.background = "red";
+            // listDom.lastElementChild.style.background = "green";
+
+            // var firstDom = listDom.firstElementChild;
+            // var nextDom = firstDom.nextElementSibling;
+            // nextDom.style.background = "pink";
+            // nextDom.nextElementSibling["style"]["background"] = "green";
+
+            // var lastDom = listDom.lastElementChild;
+            // var prevDom = lastDom.previousElementSibling;
+            // prevDom.style.background = "red";
+            
+            var firstDom = eq(listDom.children,0);
+            alert(firstDom.innerHTML);
+            var sdoms = siblings(firstDom);
+            alert(sdoms.length);
+            sdoms.forEach(function(i){
+                 alert(i.innerHTML);
+            });
+
+            function eq(doms,index){
+            	return doms[index];
+            }
+
+            function siblings(doms){
+            	var pdoms = doms.parentElement;
+            	var cdoms = pdoms.children;
+            	var len = cdoms.length;
+            	var arr = [];
+            	for(var i=0;i<len;i+=1){
+            		if(cdoms[i] != doms){
+            			 arr.push(cdoms[i]);
+            		}
+            	}
+            	return arr;
+            }
+
+
+      </script>
+   </body>
+</html>

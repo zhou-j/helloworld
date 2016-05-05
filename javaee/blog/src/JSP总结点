@@ -1,0 +1,23 @@
+JSP-=--静态部分和动态部分
+静态部分:----HTML/CSS--javascript/jquery
+动态部分---脚本，指令，申明，动作,注释，标签.
+<%@page/include/tagblig
+JSP九大隐士对象--
+application session request pageContext
+reponse out
+config
+page 
+exception
+EL--
+${empty username}===判断字符串是否为空==返回值是:boolean
+${empty username ? "为空的值":"不为空的值"}
+${!empty hits ? 0 : hits}
+--函数自定定义标签 
+--TagSupport--doStartTag doAfterBody doEndTag release()  init
+  
+  doStartTag SKIP_BODY EVAL_ 
+
+--BodySupport extends TagSupport setJspBody doInitBody doStartTag doAfterBody doEndTag release()  init 
+
+
+ 

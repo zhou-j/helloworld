@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset = "utf-8" />
+      <title>call,this,apply-keke老师</title>
+      <style type="text/css">
+          .box{width:200px;height:100px;text-align:center;background:red;margin-top:20px;}
+
+      </style>
+   </head>
+   <body>
+   	  <div class="box" id="boxid" onclick="window.clickme(this)">111</div>
+   	  <div class="box" id="boxid2" onclick="window.clickme(this)">222</div>
+   	  <div class="box" id="boxid3" onclick="window.clickme(this)">333</div>
+      <script type="text/javascript">
+         var json = {
+         	name:"keke"
+         };
+          
+         function test(fn){
+         	if(fn)fn.call(json);
+         };
+         
+         test(function(){
+         	alert(this.name);
+         })
+/*         function tzevent(id,callback){
+         	document.getElementById(id).onclick = function(){
+         		if(callback)callback.call(this,1,2);
+         	};
+         };
+          
+         function sum(a,b){
+         	this.style.border = "10px solid #666";
+         	alert(a+b);
+         };
+
+         tzevent("boxid",sum);*/
+
+/*			
+          function tzevent(id,callback){
+    				  document.getElementById(id).onclick = function(){
+    				  	if(callback)callback.call(this);
+    				  	//fn类型.call(对象，参数1，参数2，参数3);
+    				  	//fn类型.apply(对象，[参数1，参数2，参数3]);				  	
+    				  };
+    				  //document.getElementById(id).onclick = callback;//this被延续的。
+    			}
+    			tzevent("boxid",function(){
+    				alert(this.innerHTML);
+    			});
+
+    			tzevent("boxid2",function(){
+    				 alert(this.innerHTML);
+    			}); 
+
+*/ 
+
+/*          
+          function tzevent(id,callback){
+          	  document.getElementById(id).onclick = function(){
+          	  	if(callback)callback(this);
+          	  };
+          	  //document.getElementById(id).onclick = callback;//this被延续的。
+          }
+          tzevent("boxid",function(obj){
+          	alert(obj.innerHTML);
+          });
+
+          tzevent("boxid2",function(obj){
+          	 alert(obj.innerHTML);
+          });*/
+
+/*          function clickme(obj){
+          	 alert(obj===document.getElementById("boxid"));
+          };
+          //事件其实就是硬件驱动软件的回调函数
+*/
+           /*this,call,apply*/
+/*           function tzevent(className,event,callback){
+           	//var doms = document.querySelectorAll(".box");
+           	//var doms = document.getElementsByClassName("box");
+           	//if(document.querySelectorAll)
+               var doms = null;
+               var mark = false;
+               if(document.querySelectoAll){
+               	doms = document.querySelectoAll(".box");
+               	mark = true;
+               }else if(document.getElementByClassName){
+               	  doms= document.getElementByClassName("box");
+               	  mark = true;
+               }else{
+                  doms = document.body.getElementsByTagName("*"); 
+               }
+                var arr = []; 
+               	for(var i=0,len=doms.length;i<len;i++){
+               		if(mark){
+                    	arr.push(doms[i]);
+               		}else{
+	                    var classname = doms[i].className;
+	                    if(classname.indexOf(className)!=-1){
+	                    	arr.push(doms[i]);
+	                    }               			
+               		}
+
+               	}
+               	return arr;       
+           };
+           var arr = tzevent("box");
+           Array.prototype.each = function(callback){
+           	   var len = this.length;
+           	   for(var i = 0;i<len;i++){
+           	   	   if(callback)callback.call(this[i],i);
+           	   }
+           }
+           tzevent("box").each(function(){
+           	 alert(this.innerHTML);
+           });*/
+/*          var document = {
+           	querySelectorAll:function(){
+
+           	}
+           }
+           
+
+           var json ={};
+           alert(json.name);
+           function tzevent(id,event,callback){
+           	var doms = null;
+           	if(document.querySelectorAll){
+           		 doms = document.
+           	}
+           }
+*/
+
+      </script>
+   </body>
+</html>

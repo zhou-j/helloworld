@@ -1,0 +1,213 @@
+package com.newstart.action;
+
+import java.util.HashMap;
+import java.util.List;
+
+import com.newstart.dao.ProfitDao;
+import com.newstart.entity.ProfitBean;
+
+/**
+ * 
+ * 类名: TmprofitAction
+ * 描述: 收入的处理业务类。
+ * 创建人: zhoujuan
+ * 时间: 2016年4月17日 下午2:16:18
+ * @version: V1.0
+ */
+public class TmprofitAction {
+    private List<ProfitBean> profitBeans;
+    private ProfitBean profitBean;
+    private Integer id;
+    private int isDelete;
+    private String result;
+    private List<HashMap<String,Object>> maps;
+    private Integer PageNo=0;
+    private Integer PageSize=5;
+    private Integer typeId;
+    private Integer minMoney;
+    private Integer maxMoney;
+    public String execute(){
+    	return "error";
+    }
+	//查询收入处理，保存在作用域中，然后在跳转到的jsp页面中获取。
+    public String list(){
+    	result = String.valueOf(ProfitDao.countProfit(typeId,maxMoney,minMoney));
+    	maps = ProfitDao.findProfitTypes();
+		profitBeans = ProfitDao.findProfits(typeId,maxMoney,minMoney,PageNo,PageSize);
+		return "success";
+	}
+    /**
+     * 
+     * 方法名: listTemplate
+     * 描述: 加载模板数据。
+     * 创建人: zhoujuan
+     * 时间: 2016年4月23日 下午5:39:20
+     * @return
+     * @return: String
+     * @since: V1.0
+     */
+    public String listTemplate(){
+    	result = String.valueOf(ProfitDao.countProfit(typeId,maxMoney,minMoney));    	
+    	profitBeans = ProfitDao.findProfits(typeId,maxMoney,minMoney,PageNo,PageSize);
+    	return "success";
+    }
+    //添加收入
+    public String add(){        
+    	maps = ProfitDao.findProfitTypes();
+    	if(id!=null){
+    		profitBean = ProfitDao.getProfitBean(id);
+    	}
+    	return "success";
+    }
+    //添加收入
+    public String save(){
+    	profitBean.setStatus(1);
+    	profitBean.setIsDelete(0);
+		boolean flag = ProfitDao.saveProfit(profitBean);    	
+        if(flag){
+        	result="success";
+        }else{
+        	result="fail";
+        }
+    	return "Ajaxsuccess";
+    }
+    
+    public String update(){
+    	//修改数据保存到数据库中
+    	boolean flag = ProfitDao.updateProfit(profitBean);
+        if(flag){
+        	result="success";
+        }else{
+        	result="fail";
+        }
+    	return "Ajaxsuccess";    	
+    }
+    /**
+     * 
+     * 方法名: delete
+     * 描述: 删除收入记录
+     * 创建人: zhoujuan
+     * 时间: 2016年4月18日 上午9:57:41
+     * @return
+     * @return: String
+     * @since: V1.0
+     */
+    public String delete(){
+        boolean flag = ProfitDao.updateProfit(1, id);
+        if(flag){
+           result = "success";
+           return "Ajaxsuccess";
+        }
+        result = "fail";
+        return "error";
+    }
+    /**
+     * 
+     * 方法名: back
+     * 描述: 还原收入记录。
+     * 创建人: zhoujuan
+     * 时间: 2016年4月18日 上午9:58:15
+     * @return
+     * @return: String
+     * @since: V1.0
+     */
+    public String back(){
+    	boolean flag = ProfitDao.updateProfit(0, id);
+    	if(flag){
+    		result = "success";
+    		return "Ajaxsuccess";
+    	}
+    	result = "fail";
+    	return "error";                             
+    }
+    
+	public List<ProfitBean> getProfitBeans() {
+		return profitBeans;
+	}
+
+	public void setProfitBeans(List<ProfitBean> profitBeans) {
+		this.profitBeans = profitBeans;
+	}
+    	
+	public Integer getId() {
+		return id;
+	}
+	
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	
+	public int getIsDelete() {
+		return isDelete;
+	}
+
+	public void setIsDelete(int isDelete) {
+		this.isDelete = isDelete;
+	}
+
+	public String getResult() {
+		return result;
+	}
+
+	public void setResult(String result) {
+		this.result = result;
+	}
+	
+	public List<HashMap<String, Object>> getMaps() {
+		return maps;
+	}
+	
+	public void setMaps(List<HashMap<String, Object>> maps) {
+		this.maps = maps;
+	}
+
+	public ProfitBean getProfitBean() {
+		return profitBean;
+	}
+
+	public void setProfitBean(ProfitBean profitBean) {
+		this.profitBean = profitBean;
+	}
+
+	public Integer getPageNo() {
+		return PageNo;
+	}
+
+	public void setPageNo(Integer pageNo) {
+		PageNo = pageNo;
+	}
+
+	public Integer getPageSize() {
+		return PageSize;
+	}
+
+	public void setPageSize(Integer pageSize) {
+		PageSize = pageSize;
+	}
+	
+	public Integer getTypeId() {
+		return typeId;
+	}
+	
+	public void setTypeId(Integer typeId) {
+		this.typeId = typeId;
+	}
+
+	public Integer getMinMoney() {
+		return minMoney;
+	}
+
+	public void setMinMoney(Integer minMoney) {
+		this.minMoney = minMoney;
+	}
+
+	public Integer getMaxMoney() {
+		return maxMoney;
+	}
+
+	public void setMaxMoney(Integer maxMoney) {
+		this.maxMoney = maxMoney;
+	}
+    
+	
+}

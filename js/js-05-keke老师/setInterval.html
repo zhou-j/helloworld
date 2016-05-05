@@ -1,0 +1,43 @@
+
+<!doctype html>
+<html>
+   <head>
+      <meta charset = "utf-8" />
+      <title>倒计时-keke老师</title>
+   </head>
+   <body>
+   	  <h2>距离下一个元旦还有：</h2>
+   	  <h2 id="timer"></h2>
+   	  <script type="text/javascript">
+          
+         //今天距离下一个元旦还有多少
+         function backtime(){
+         	 //今天的时间
+	         var now = new Date();
+	         //洗衣歌元旦的日期
+	         var end = new Date(now.getFullYear()+1,0,1);
+	         //两个时间的差
+	         var time = end.getTime() - now.getTime();
+	         //转成秒
+	         
+	         var sec = time / 1000;
+	         //转成天
+	         var day = Math.floor(sec / (60*60*24));
+            
+	         //得到剩余还有多少秒---今天还剩下多少时间
+
+	         //小时
+	         var hour = Math.floor(sec / (60*60));
+	         //分
+	         var min =sec/60
+	         //转换成剩余时分秒
+	         var lsec = sec %60;
+	         var lmin = min %60;
+	         var lhour = hour %24;
+             document.getElementById("timer").innerText = day +"天  "+Math.floor(lhour)+"时  "+Math.floor(lmin)+"分  "+Math.floor(lsec)+"秒";
+         }
+         setInterval(backtime,1000);
+
+   	  </script>
+   </body>
+</html>

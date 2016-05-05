@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/MyRepository/!svn/ver/24/yunpan/src/com/yunpan/dao
+END
+ConnectionUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/MyRepository/!svn/ver/24/yunpan/src/com/yunpan/dao/ConnectionUtil.java
+END
+UserDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/MyRepository/!svn/ver/28/yunpan/src/com/yunpan/dao/UserDao.java
+END
+ResourceDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/MyRepository/!svn/ver/27/yunpan/src/com/yunpan/dao/ResourceDao.java
+END

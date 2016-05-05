@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset = "utf-8" />
+      <title>object-keke老师</title>
+      <style type="text/css">
+         #mycanvas{border:1px solid red;margin:100px 150px;background:#666;}
+ 
+
+      </style>
+   </head>
+   <body>
+   	  <input type = "button" value="添加圆点" onclick = "ball.addBall()" />
+   	  <canvas id="mycanvas" width="960" height = "300">你当前的浏览器不支持canvas......</canvas>
+      <script type="text/javascript">
+          //第一节课：你们对象的理解是什么。写jquery css html text attr width height
+          //js面向对象 封装 继承 多态
+          //小球(人物会非常多)4000 jing(20) ren(100)场景(20)道具(1000)
+ 
+          var ball = (function(){
+	          var balls = [];          	
+	            //把canvas当做phtoshop，建立
+	          var canvas = document.getElementById("mycanvas");
+	          //上下文
+
+	          var context = canvas.getContext("2d");
+	          //准备画布
+	          context.beginPath();
+	          //画一个圆形，直线moveTo(x,y)lineTo(x,y);
+/*	          context.moveTo(10,10);
+	          context.lineTo(435,160);
+	          context.lineWith = 5;
+	          context.strokeStyle = "red";
+	          context.stroke();//把线喷到画板中
+
+	          context.beginPath();//开启另一个元素。
+	          //(x,y 在画布确定圆心radius半径 context.arc(x,y,radius,start,end));
+	          context.strokeStyle = "green";
+	          context.lineWith = 10;
+	          context.arc(200,200,50,0,90);
+	          context.stroke();//把线喷到画板中。*/
+
+
+	          function Ball(x,y,radius){
+	          	 this.x = x;
+	          	 this.y = y;
+	          	 this.radius = radius;
+	          };
+	          function addBall(){
+	          	 var x = random(canvas.width);
+	          	 var y = random(canvas.height);
+	          	 var r = 2;
+	             var ball = new Ball(x,y,r);
+	             balls.push(ball);
+	          };   
+	          function drawBall(){
+	          	//清除画布
+	          	context.clearRect(0,0,canvas.width,canvas.height);
+	          	//开始绘制图片
+	          	context.beginPath();
+	          	var len = balls.length;
+	          	for(var i=0;i<len;i++){
+	          		var ball = balls[i];
+	          		context.beginPath();//开始重新绘制
+                    context.arc(ball.x,ball.y,ball.radius,0,Math.PI*2);
+	          		context.fillStyle = "#fff";
+	          		context.fill();
+	          		context.strokeStyle=randomColor(); 
+	          		context.stroke();
+	          		context.beginPath();
+	          		context.moveTo(ball.x,ball.y);
+	          		try{
+	          			context.lineTo(balls[i-1].x,balls[i-1].y);
+	          		}catch(e){
+	          			context.lineTo(ball.x,ball.y);
+	          		}
+	          		context.lineWitdth = 1;
+	          		context.strokeStyle = "#fff";
+	          		context.stroke();
+	          	}
+                setTimeout(drawBall,20);
+	          };
+			  function randomColor(){
+				//0-255	
+				var r = Math.floor(Math.random()*256);
+				var g = Math.floor(Math.random()*256);
+				var b = Math.floor(Math.random()*256);
+				return "rgb("+r+","+g+","+b+")";
+			  };
+
+			  /*0-num的随机数*/
+			  function random(num){
+				return Math.floor(Math.random()*(num+1));
+			  };
+
+			  /*start -end的范围随机数 5-11 */
+			  function rangeRandom(start,end){
+				return Math.floor(Math.random()*(end-start+1))+start;
+			  };
+			  setTimeout(drawBall,20);
+			  return{
+			  	  addBall:addBall
+			  }
+	          
+          })();
+    
+
+      </script>
+   </body>
+
+</html>

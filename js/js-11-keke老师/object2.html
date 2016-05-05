@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset = "utf-8" />
+      <title>object-keke老师</title>       
+   </head>
+   <body>
+      <script type="text/javascript">
+         //判断对象类型 isArray isDate isNull isNumber
+         //属性是否存在对象中是用 in,它会把所有对象内置的函数全部拿出来比较
+
+         // var json = {"username":"keke",
+         //              say:function(){
+
+         //              }
+         //          };
+         //  Object.prototype.keys = function(json){
+         //  	   var arr = [];
+         //  	   for(var key in this){
+         //  	   	arr.push(key);
+         //  	   }
+         //  	   return arr;
+         //  }
+
+         //  var keys = Object.keys(json);
+         //  alert(keys);
+         //toString是为所有对象(Date Number Array Object)
+         //alert("username" in json);//ture
+         //alert("toString" in json);//true
+         //alert("valueOf" in json);//true
+         //alert("constuctor" in json);//true
+        
+         // alert(json.hasOwnProperty("username"));
+         // alert(json.hasOwnProperty("toString"));
+
+         function test(){
+         	alert (this.username);
+         }
+         var json = {username:"keke"};
+         test.call(json);
+      </script>
+   </body>
+</html>

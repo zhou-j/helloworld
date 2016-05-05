@@ -1,0 +1,47 @@
+10
+
+dir
+32
+https://hp/svn/MyRepository/tzstruts2/src/com/newstart
+https://hp/svn/MyRepository
+
+
+
+2016-04-12T14:14:17.994336Z
+32
+newstart
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+e4fc290d-784b-6c4b-ac63-bb96ca9548bf
+
+
+
+
+
+
+0
+
+action
+dir
+
+login
+dir
+
+util
+dir
+
+utilImage
+dir
+

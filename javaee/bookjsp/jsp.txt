@@ -1,0 +1,4 @@
+jsp:
+1.如何去掉项目名称：将项目放在webapps的ROOT目录下，就可以不通过项目名称直接访问。
+2.如何去掉8080端口：将conf/server.xml中的port = "8080"改为port = "80"。
+3.如何修改localhost域名：在C:\Windows\System32\Drivers\etc目录下的hosts文件中添加	127.0.0.1       www.book.com。

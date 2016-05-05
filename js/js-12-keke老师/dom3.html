@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+   <head>
+       <meta charset = "utf-8" />
+       <title>dom操作-keke老师</title>
+   </head>
+   <body>
+   	  <ul id = "list" onclick = "tclick()">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>                        
+   	  </ul>
+      <ul id = "list2"></ul>
+   	  <div id ="div1">小伙</div>
+   	  <div id ="div2">你太帅了！！！</div>
+      <script type="text/javascript">
+          //node:是包含元素和textNode
+          //Element:只包含标签元素
+          //节点属性
+/*            childNodes
+            firstChild
+            lastChild
+            nextSibling
+            nodeName
+            nodeType
+            nodeValue
+            parentNode
+            prevousSibling
+          //节点方法
+            appendChild
+            insertBefore
+            contains//判断容器是否包含某个对象
+            hasChildNodes
+            removeChild
+            replaceChild
+            cloneNode
+          //文档方法
+            createElement
+            createTextNode
+          //属性(element)方法
+            innerHTML
+            outerHTML
+            textContent
+            innerText
+            firstElementChild
+            lastElementChild
+            parentElement
+            insertAdjacentElement*/
+
+/*            
+            var listDom = document.getElementById("list");
+            console.log(listDom.childNodes);
+            
+            //hasChildNodes判断一个父元素是否存在子元素。如果存在返回true,否则:false
+            alert(listDom.hasChildNodes());
+            Array.prototype.forEach.call(listDom.childNodes,function(dom){
+            	 alert(dom.nodeName);
+            })
+
+            Array.prototype.kfor = function(callback){
+            	var length = this.length;
+            	for(var i=0;i<length;i++){
+            		 if(callback)callback(this[i]);
+            	}
+            }*/
+
+            //替换节点:replaceChild(target,source)的用法；是替换元素的节点
+            //target代表要替换的dom对象
+            //source代表是被替换dom对象
+            //和删除removeChild
+            // var div1Dom = document.getElementById("div1");
+            // var spanDom = document.createElement("span");
+            // spanDom.innerHTML = "美妞";
+            // div1Dom.parentNode.replaceChild(spanDom,div1Dom);
+            // var div2Dom = document.getElementById("div2");
+            // var span2Dom = document.createElement("span");
+            // span2Dom.innerHTML = "太漂亮了！";
+            // div2Dom.parentNode.replaceChild(span2Dom,div2Dom);
+
+            //复制节点:cloneNode(p1),p1是一个boolean,true代表深度克隆
+            //cloneNode(true),它会把一个元素的属性及所有的值包括内联事件都会复制过去，但是通过addEventListener或者node.onclick方式事件是不会被复制的.
+            var listDom = document.getElementById("list"); 
+/*            listDom.onclick = function(){
+            	alert(1);
+            }*/
+            // function tclick(){
+            // 	alert(1);
+            // }
+            // var listClone = listDom.cloneNode(true);
+            // listClone.id = "kekeke";
+            // var targetDom = document.getElementById("list2");
+            // targetDom.appendChild(listClone);
+
+            //childElements
+            alert(listDom.children.lenght);
+            foreach(listDom.children,function(dom){
+            	alert(dom.tagName);
+            })
+            
+            Array.foreach.
+
+
+      </script>
+   </body>
+</html>

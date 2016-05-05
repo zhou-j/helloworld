@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+  <head>
+     <meta charset = "utf-8" />
+     <title>代码实时编辑器-keke老师</title>
+     <style type="text/css">
+          #editor{width:100%;height:300px;}
+     </style>
+     
+    <link rel="stylesheet" href="css/codemirror.css">
+    <link rel="stylesheet" href="css/ambiance.css">     
+  </head>
+  <body>
+      <iframe id="preview" style="width:700px;height:300px;border:1px dashed red;overflow:hidden;">
+
+      </iframe>
+      <textarea id="htmleditor">
+          <!doctype html>
+          <html>
+            <head>
+               <meta charset = "utf-8" />
+               <title></title>
+               <style type="text/css">
+
+               </style>
+            </head>
+            <body>
+               <h1>hehehhehehhhehe</h1>
+               <script type="text/javascript">
+               </script>
+            </body>
+          </html>        
+      </textarea>
+      <br />
+      <textarea id="csseditor">
+        
+      </textarea>
+      <br />
+      <textarea id="jseditor">
+        
+      </textarea>            
+      <!-- Create a simple CodeMirror instance -->
+      <script src="js/codemirror.js"></script>
+      <script src="js/javascript.js"></script>
+      <script src="js/css.js"></script>
+      <script src="js/xml.js"></script>            
+      <script type="text/javascript">
+         window.onload = function(){
+            htmlMirror.on("change",function(){
+                setPreview();
+                setEdited();
+            });
+            cssMirror.on("change",function(){
+                setPreview();
+                setEdited();
+            });
+            if(window.localStorage){
+                var htmlDom =  localStorage.getItem("html-item");
+                var jsDom =  localStorage.getItem("js-item");
+                var cssDom =  localStorage.getItem("css-item");
+                htmlMirror.setValue(htmlDom);
+                jsMirror.setValue(jsDom);
+                cssMirror.setValue(cssDom);
+            }                        
+         }      
+         var htmlDom = document.getElementById("htmleditor");
+         var htmlMirror = CodeMirror.fromTextArea(htmlDom,{
+             mode:"xml",
+             lineNumbers:true,
+             theme:"ambiance",
+             tabSize:4
+         });
+         var cssDom = document.getElementById("csseditor");
+         var cssMirror = CodeMirror.fromTextArea(cssDom,{
+             mode:"css",
+             lineNumbers:true,
+             theme:"ambiance",
+             tabSize:4
+         });
+         var jsDom = document.getElementById("jseditor");
+         var jsMirror = CodeMirror.fromTextArea(jsDom,{
+             mode:"javascript",
+             lineNumbers:true,
+             theme:"ambiance",
+             tabSize:4
+         });
+         
+         function setPreview(){
+             var htmlSource = htmlMirror.getValue();
+             var jsSource = jsMirror.getValue();
+             var cssSource = cssMirror.getValue();          
+             var iframe = window.frames["preview"];
+             preview.document.open();
+             preview.document.write(htmlSource);
+             preview.document.write(jsSource);
+             preview.document.write(cssSource);
+             preview.document.close();
+         };
+         function setEdited(){
+             var htmlSource = htmlMirror.getValue();
+             var jsSource = jsMirror.getValue();
+             var cssSource = cssMirror.getValue();
+             if(window.localStorage){
+                 localStorage.setItem("html-item",htmlSource);
+                 localStorage.setItem("js-item",jsSource);
+                 localStorage.setItem("css-item",cssSource);
+             }          
+
+         }
+      </script>
+  </body>
+</html>

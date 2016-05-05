@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+   <head>
+       <!--声明当前页面编码集 （中文编码<gbk,gb2312>,国际编码<utf-8>) -->
+	   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	   <!--声明当前页面的三要素-->
+	   <title> audio音乐播放器-keke老师</title>
+	   <meta name="keyworld" content="关键词，关键词">
+	   <meta name="description"content="">
+	   <!--css/js-->
+	   <style type ="text/css" >
+	    
+		*{margin:0 ;padding:0;}
+		body{background:url(images/8.jpg)no-repeat;font-family:"微软雅黑";}
+         .btn{padding:8px 10px;background:#DAC7C0;color:#fff;text-align:center;transition:background 1s ease;text-decoration:none;}
+		 .btn:hover{background:#999;transition:background 1s ease;}
+		 
+	   </style>
+
+   </head>
+  <body>
+    
+	 <a href="javascript:void(0)" onclick = tz_play() class="btn">播放</a>
+	 <a href="javascript:void(0)" onclick = tz_stop() class="btn">暂停</a>
+	 <span id="timer">00:00</span><span>/</span><span id="timer2">00:00</span>
+     <!--html5ie678不兼容-->
+	 <!--<audio src="08.mp3" controls="controls">你当前的浏览器不支持audio标签</audio>-->
+     <script type="text/javascript">
+	    //我要做一个音乐播放器，烤炉用什么开发，播放javascript actionscript
+		//js如何播放音乐，
+		//第一步如何创建音乐播放器
+		var audioDom = document.createElement("audio");
+		audioDom.src = "mp3/08.mp3";
+		//第二问题：怎么播放音乐
+        for(var key in audioDom){
+		    console.log(key+"===="+audioDom[key]);	
+		}
+
+		audioDom.oncanplaythrough = function(){
+		    var msecond = this.duration;
+			var m = parseInt(msecond/60);//分
+			var s = parseInt(msecond%6);
+			var ms = (m<10?("0"+m):m)+":"+(s<10?("0"+s):s);
+			document.getElementById("timer").innerHTML = ms;
+		}
+
+		audioDom.addEventListener("timeupdate",function(){
+		   var ms = this.currentTime;
+		   var m = parseInt(ms/60);//分
+		   var s = parseInt(ms%60);
+		   var ms = (m<10?("0"+m):m)+":"+(s<10?("0"+s):s);
+		   document.getElementById("timer2").innerHTML = ms;
+		   alert
+		},false);
+		//播放
+		function tz_play(){
+		   audioDom.play();
+		};
+		//暂停
+	    function tz_stop(){
+		    audioDom.pause();		
+		};
+      
+	    //停止
+	    //播放下一首
+
+		//进度条
+	 </script>
+  </body>
+
+
+</html>
+

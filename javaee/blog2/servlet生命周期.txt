@@ -1,0 +1,23 @@
+web容器启动时会获取所有注册的servlet进行初始化调用init()方法，然后调用service 方法根据你请求的方式(get/post)
+如果是get进入doGet方法，如果是post的话进入doPost方法。然后通过HttpServletRequest获取用户请求的参数和请求的头信息等。
+处理完毕以后通过HttpServeletResponse响应给浏览器以后就调用destroy方法。
+
+servlet是单实例多线程(只初始化一次，每一次请求都会创建一个线程)
+因为所有在web.xml注册的servlet只初始化一次，也就是说每个用户发送请求都是同一个请求对象。
+如果用户并发量很大的时候，多线程会串行。数据会丢失或则交叉。这是为什么：因为所有的servlet都不是线程安全的。
+
+作用域：就是为了解决数据的存储和数据的传递，而在servlet里面以健值对形式存在的方法
+上下文作用域：ServletContext---applaction
+:容器启动完毕就一直存在，所有的servlet都可以获取到，你在任何一个地方存储了任何的servlet都可以获取到。
+请求作用域：HttpServletRequest---request
+：数据的存储指针对一个请求，请求完毕数据就消亡了。
+回话作用域:HttpSession ---session
+:session:回话：通过请求调用getSession()方法设置的一个数据，是一个浏览器的数据的存储。
+
+作用域的大小排列：appliaction > session > request
+数据的存储
+setAttribute(String key,Object object);
+数据的获取
+getAttribute(String key);
+
+断点：f6一行一行执行，f7跳到下一个断点,f8释放断点。

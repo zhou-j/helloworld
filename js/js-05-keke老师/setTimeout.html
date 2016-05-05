@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8" />
+      <title>计算器-keke老师</title>
+   </head>
+   <body>
+      <script type="text/javascript">
+
+          //eval("test()");
+          //setTimeout setInterval
+          //setTimeout(fn类型,time);//3000后执行，一次性。
+          //setInterval(fn类型,time);//3000后执行以后
+          //setTimeout(test,3000);过了一秒后执行test();
+          //执行test();
+/*        setInterval(function(){
+               var r = Math.random();
+               console.log(r); 
+          },100);*/
+
+
+          //色卡：Math(random floor ceil toString)==canvas
+          //alert(Math.pow(3,9));//9 3 * 3
+          //Math静态类--数学公式
+          /*
+              Math.abs();//取绝对值 如：Math.abs(-12)==12 Math.abs(12)=12;//绝对值
+              floor(x);返回等于或者小于最大整数
+              ceil(x)返回等于或者大于最小整数
+              max(n,n2,n3,n4.....);获取元素中最大值
+              min(n,n2,n3,n4.....);获取元素中最小值
+              sqrt(x)求平方根
+              pow(x,y)返回x的y次方，求次幂
+              random(x)获取随机数
+              round(x)获取元素的整数
+
+              //canvas---三角函数
+              cos余弦
+              asin反正弦
+              sin正弦
+              atan2反正切
+              acos反余弦
+              tan正切
+
+          */          
+
+
+          /*范围随机数-5-10*/
+          /*0-10*/
+          
+/*          var n = 1.1
+            console.log("Math.floor(1.9)=="+Math.floor(n));
+            console.log("Math.ceil(1.9)=="+Math.ceil(n));*/            
+          /*1-5的随机数*/
+/*          setInterval(function(){
+             var r = Math.floor(Math.random()*5)+1;
+             console.log(r);
+          },100);*/
+
+          //Math.random();//0<x<1;
+          //start - end
+/*        范围随机的公式:
+          Math.floor(Math.random()*(end-start+1))+start;
+          Math.ceil(Math.random()*(end-start))+start;
+
+          Math.floor(Math.random()*6)+5;*/
+       
+          function randomColor(){
+          	  var r = random(255);
+          	  var g = random(255);
+          	  var b = random(255);
+          	  return "rgb("+r+","+g+","+b+")";//IE7不支持rgb
+          }          
+
+          function randomColor2(){
+          	//0-255
+          	var r = random(255).toString(16);
+          	var g = random(255).toString(16);
+          	var b = random(255).toString(16);
+          	//255的数字转换成十六进制数
+          	if(r.length<2)r = "0"+r;
+          	if(g.length<2)g = "0"+g;
+          	if(g.length<2)b = "0"+b;
+          	return "#"+r+g+b;
+          }
+          
+          /*0-num的随机数*/
+          function random(num){
+          	 return Math.floor(Math.random()*(num+1));
+          }
+
+          /*start-end的范围随机数*/
+          function rangeRandom(start,end){
+          	 return Math.floor(Math.random()*(end-start+1))+start;
+          }
+
+          setInterval(function(){
+          	 var n = rangeRandom(5,8);
+             console.log(n);
+          },100)
+/*        var n = 10;
+          alert(n.toString(2));*/
+      </script>
+   </body>
+</html>

@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset = "utf-8" />
+      <title>北斗七星</title>
+      <style type="text/css">
+       #mycanvas{border:1px solid red;margin:100px 150px;background:#666;}
+
+
+      </style>
+   </head>
+   <body>
+   	  <p id="coords"></p>
+  	  <input type = "button" value="添加圆点" onclick = "ball.addBall()" />
+   	  <canvas id="mycanvas" width="960" height = "300" onmousemove = "coords.show_coords(event)" >你当前的浏览器不支持canvas......</canvas>
+      <script type="text/javascript">
+          var balls = [];
+          var ball = (function(){          	
+	            //把canvas当做phtoshop，建立
+	          var canvas = document.getElementById("mycanvas");
+	          //上下文
+
+	          var context = canvas.getContext("2d");
+	          //准备画布
+	          context.beginPath();
+
+	          function Ball(x,y,radius){
+	          	 this.x = x;
+	          	 this.y = y;
+	          	 this.radius = radius;
+	          };
+	          function addBall(){
+	          	 var r = 2;
+	              balls[0] = new Ball(20,20,r);
+	              balls[1] = new Ball(40,30,r);
+	              balls[2] = new Ball(40,40,r);
+	              balls[3] = new Ball(50,50,r);
+	              balls[4] = new Ball(60,80,r);
+	              balls[5] = new Ball(90,90,r);
+	              balls[6] = new Ball(100,80,r);	             		             	
+	          };   
+	          function drawBall(){
+	          	//清除画布
+	          	context.clearRect(0,0,canvas.width,canvas.height);
+	          	//开始绘制图片
+	          	context.beginPath();
+	          	var len = balls.length;
+	          	for(var i=0;i<len;i++){
+	          		var ball = balls[i];
+	          		context.beginPath();//开始重新绘制
+                    context.arc(ball.x,ball.y,ball.radius,0,Math.PI*2);
+	          		context.fillStyle = "#fff";
+	          		context.fill();
+	          		context.strokeStyle=randomColor(); 
+	          		context.stroke();
+	          	}
+                setTimeout(drawBall,20);
+	          };
+
+			  function randomColor(){
+				//0-255	
+				var r = Math.floor(Math.random()*256);
+				var g = Math.floor(Math.random()*256);
+				var b = Math.floor(Math.random()*256);
+				return "rgb("+r+","+g+","+b+")";
+			  };
+
+			  /*0-num的随机数*/
+			  function random(num){
+				return Math.floor(Math.random()*(num+1));
+			  };
+
+			  /*start -end的范围随机数 5-11 */
+			  function rangeRandom(start,end){
+				return Math.floor(Math.random()*(end-start+1))+start;
+			  };
+			  setTimeout(drawBall,20);
+			  return{
+			  	  addBall:addBall
+			  }
+	          
+          })();
+          
+          var coords = (function(){
+	          var timer = null; var time = 1;                             
+              var canvas = document.getElementById("mycanvas");
+              //上下文
+              var context = canvas.getContext("2d");          	
+	          function show_coords(event){
+	          	var x = event.clientX;var y = event.clientY;var say = document.all("coords");
+	          	say.innerHTML = "X:"+x+"Y:"+y;say.style.position = "absolute";say.style.left = x + 30;
+	          	say.style.top = y;
+	          	
+          	    if(x<270&&x>240&&y>110&&y<140){
+                  timer = setInterval(drawline,time);
+                  console.log(timer);          	    	
+          	    }
+          	    if(x>=270||x<=240||y<=110||y>=140&&timer!=null){
+	                clearInterval(timer);         	    	
+	                console.log(timer);	             	
+	            }
+           	
+	          }
+	          function drawline(){	          	
+	                var len = balls.length;
+		          	for(var i=0;i<len;i++){	                    
+	                        var ball = balls[i];
+			          		context.beginPath();
+			          		context.moveTo(ball.x,ball.y);
+			          		try{
+			          			context.lineTo(balls[i-1].x,balls[i-1].y);
+			          		}catch(e){
+			          			context.lineTo(ball.x,ball.y);
+			          		}
+			          		context.lineWitdth = 2;
+			          		context.strokeStyle = "#fff";
+			          		context.stroke();
+			        }	          	              
+	          }
+	          return {
+	          	show_coords:show_coords
+	          }
+
+         })();
+         
+   	
+    </script>
+
+
+
+
+   </body>
+</html>

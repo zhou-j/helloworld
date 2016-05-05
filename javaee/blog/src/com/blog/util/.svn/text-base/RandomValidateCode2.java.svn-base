@@ -1,0 +1,99 @@
+package com.blog.util;
+
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Graphics;
+import java.util.HashMap;
+import java.util.Random;
+
+public class RandomValidateCode2 {
+
+    private Random random = new Random();
+    private int width = 80;//图片宽
+    private int height = 30;//图片高
+    private int fontSize = 16;//字体大小
+    
+    /*
+     * 获得字体
+     */
+    private Font getFont(){
+        return new Font("Fixedsys",Font.CENTER_BASELINE,fontSize);
+    }
+    
+    /*
+     * 获得颜色
+     */
+    public Color getRandColor(int fc,int bc){
+        if(fc > 255)
+            fc = 255;
+        if(bc > 255)
+            bc = 255;
+        int r = fc + random.nextInt(bc-fc-16);
+        int g = fc + random.nextInt(bc-fc-14);
+        int b = fc + random.nextInt(bc-fc-18);
+        return new Color(r,g,b);
+    }
+    
+    /*
+     * 绘制字符串
+     */
+    public String drowString(Graphics g){
+    	//告诉你设置字体
+        g.setFont(getFont());
+        //设置字体的颜色
+        g.setColor(new Color(random.nextInt(101),random.nextInt(111),random.nextInt(121)));
+        //设定开始数字
+        int s = new Random().nextInt(100);
+        //设定结束数字
+        int e = new Random().nextInt(100);
+        //x坐标的位移，偏移量
+        int x= new Random().nextInt(10);
+        HashMap<String, Object> map = getFuhao(s,e);
+        g.translate(random.nextInt(3), random.nextInt(3));
+        //开始绘制图片
+        g.drawString(String.valueOf(map.get("result")), 5*x, 16);
+        return String.valueOf(map.get("last"));
+    }
+    
+    //这个是生成数据验证码方法
+    private  HashMap<String, Object> getFuhao(int snum,int enums){
+    	 String result = "+";
+    	 HashMap<String, Object> map = new HashMap<String, Object>();
+    	 int count = new Random().nextInt(5);
+    	 Integer lastResult = null;
+    	 if(count<=1){
+    		 result = snum+" + "+enums;
+    		 lastResult=snum + enums;
+    	 }else if(count==2){
+    		 result = snum+" - "+enums;
+    		 lastResult=snum - enums;
+    	 }else if(count==3){
+    		 result = snum+ " * "+enums;
+    		 lastResult=snum * enums;
+    	 }else if(count==4){
+    		 result = snum+" / "+enums;
+    		 lastResult=snum / enums;
+    	 }else if(count==5){
+    		 result = snum+" % "+enums;
+    		 result = "%";
+    		 lastResult=snum % enums;
+    	 }else{
+    		 result = snum+"+"+enums;
+    		 lastResult=snum + enums;
+    	 }
+    	 map.put("result", result);
+    	 map.put("last", lastResult);
+    	 return map;
+    }
+    
+    /*
+     * 绘制干扰线
+     */
+    public void drowLine(Graphics g){
+        int x = random.nextInt(width);
+        int y = random.nextInt(height);
+        int xl = random.nextInt(13);
+        int yl = random.nextInt(15);
+        g.drawLine(x, y, x+xl, y+yl);
+    }
+}

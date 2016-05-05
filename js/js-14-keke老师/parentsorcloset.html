@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+     <meta charset = "utf-8" />
+     <title></title>
+     <style type="text/css">
+         #box{width:100%;height:80px;}
+         .item{border:1px solid red;cursor:pointer;}
+     </style>
+  </head>
+   <div id="box" class="item">
+     <div class="item">
+        <div class="item">编辑1</div>
+        <div class="item">编辑2</div>
+        <div class="item">编辑3</div>
+        <div class="item">编辑4</div>
+        <div class="item">编辑5</div>
+     </div>
+   </div>
+  <body>
+     <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>    
+     <script type="text/javascript">
+        $(function(){
+            $("#box").find(".item").click(function(){
+                //$(this).parents(".item").remove();//寻找最远的父辈元素删除！
+                $(this).closest(".item").remove(); //寻找最近的父辈元素删除！如果没有也可以删除元素本身。
+            });
+        }); 
+     </script>
+  </body>
+</html>

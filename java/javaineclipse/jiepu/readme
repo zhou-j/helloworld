@@ -1,0 +1,22 @@
+使用说明：
+1.需要手动创建的目录
+a.D:/jiepu/temp/loginfo/info.log;D:/jiepu/temp/loginfo/cas_log.log,log日志输出的目录。
+b.D:/jiepu/temp/collection.properties,保存在AAA服务器上采集数据需要记录的变量值。
+c.D:/jiepu/radwtmp,存放AAA服务器记录的用户上网的信息文件。
+2.自动创建的文件
+a.D:/jiepu/temp/exception.dat,存放发生异常的时候还没有发送到服务器的数据。
+b.D:/jiepu/temp/upline.dat,存放还未匹配到下线信息的 用户的上线信息。
+
+2.数据库连接：
+a.首先按照CountMessageBean里面的属性创建一张用户上下线信息表。
+b.然后在oracle数据库中创建一个序列，创建语句如下：
+  create sequence seq
+　  increment by 1    
+　  start with 1    
+　  nomaxvalue    
+　  nocycle   
+　  cache 10 ;
+c.然后把你连接数据库的url,username,password通过ConnectionUtil类的getConnection方法获取连接。
+
+3.执行：
+先开启服务端，然后再开启客服端(AAA服务器),客户端采集数据然后再发给服务端保存数据。保存的结果可以在数据库中查询到，也可以查看日志信息。
